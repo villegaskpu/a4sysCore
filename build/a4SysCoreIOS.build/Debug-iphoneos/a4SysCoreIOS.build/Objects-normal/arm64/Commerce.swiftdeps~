@@ -1,0 +1,108 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Commerce"
+provides-nominal:
+- "12a4SysCoreIOS8CommerceC"
+provides-member:
+- ["12a4SysCoreIOS8CommerceC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "<-"
+- "Commerce"
+- "Keyword"
+- "Map"
+- "Mappable"
+- "Store"
+- "String"
+depends-member:
+- ["12ObjectMapper12BaseMappableP", ""]
+- !private ["12ObjectMapper12BaseMappableP", "idCommerce"]
+- ["12ObjectMapper12BaseMappableP", "init"]
+- !private ["12ObjectMapper12BaseMappableP", "keywords"]
+- !private ["12ObjectMapper12BaseMappableP", "logoURL"]
+- ["12ObjectMapper12BaseMappableP", "mapping"]
+- !private ["12ObjectMapper12BaseMappableP", "name"]
+- !private ["12ObjectMapper12BaseMappableP", "s3LogoURL"]
+- !private ["12ObjectMapper12BaseMappableP", "signDate"]
+- !private ["12ObjectMapper12BaseMappableP", "stores"]
+- !private ["12ObjectMapper12BaseMappableP", "taxReferenceId"]
+- !private ["12ObjectMapper12BaseMappableP", "website"]
+- ["12a4SysCoreIOS8CommerceC", "Keyword"]
+- ["12a4SysCoreIOS8CommerceC", "Map"]
+- ["12a4SysCoreIOS8CommerceC", "Store"]
+- ["12a4SysCoreIOS8CommerceC", "String"]
+- ["12a4SysCoreIOS8CommerceC", "deinit"]
+- ["12a4SysCoreIOS8CommerceC", "idCommerce"]
+- ["12a4SysCoreIOS8CommerceC", "init"]
+- ["12a4SysCoreIOS8CommerceC", "keywords"]
+- ["12a4SysCoreIOS8CommerceC", "logoURL"]
+- ["12a4SysCoreIOS8CommerceC", "mapping"]
+- ["12a4SysCoreIOS8CommerceC", "name"]
+- ["12a4SysCoreIOS8CommerceC", "s3LogoURL"]
+- ["12a4SysCoreIOS8CommerceC", "signDate"]
+- ["12a4SysCoreIOS8CommerceC", "stores"]
+- ["12a4SysCoreIOS8CommerceC", "taxReferenceId"]
+- ["12a4SysCoreIOS8CommerceC", "website"]
+- !private ["12a4SysCoreIOS7KeywordC", "deinit"]
+- !private ["12ObjectMapper3MapC", "subscript"]
+- ["12ObjectMapper8MappableP", ""]
+- !private ["12ObjectMapper8MappableP", "idCommerce"]
+- ["12ObjectMapper8MappableP", "init"]
+- !private ["12ObjectMapper8MappableP", "keywords"]
+- !private ["12ObjectMapper8MappableP", "logoURL"]
+- ["12ObjectMapper8MappableP", "mapping"]
+- !private ["12ObjectMapper8MappableP", "name"]
+- !private ["12ObjectMapper8MappableP", "s3LogoURL"]
+- !private ["12ObjectMapper8MappableP", "signDate"]
+- !private ["12ObjectMapper8MappableP", "stores"]
+- !private ["12ObjectMapper8MappableP", "taxReferenceId"]
+- !private ["12ObjectMapper8MappableP", "website"]
+- !private ["12a4SysCoreIOS5StoreC", "deinit"]
+depends-nominal:
+- "12ObjectMapper12BaseMappableP"
+- "12a4SysCoreIOS8CommerceC"
+- !private "12a4SysCoreIOS7KeywordC"
+- !private "12ObjectMapper3MapC"
+- "12ObjectMapper8MappableP"
+- !private "12a4SysCoreIOS5StoreC"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/a4SysCoreIOS.h"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/build/a4SysCoreIOS.build/Debug-iphoneos/a4SysCoreIOS.build/unextended-module.modulemap"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/Alamofire.framework/Modules/module.modulemap"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/ObjectMapper.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "306229a8e80578df1801ea67f6c4b584"

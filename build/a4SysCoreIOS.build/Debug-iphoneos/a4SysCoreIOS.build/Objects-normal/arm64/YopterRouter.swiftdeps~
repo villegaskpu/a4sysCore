@@ -1,0 +1,442 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "YopterRouter"
+provides-nominal:
+- "12a4SysCoreIOS12YopterRouterO"
+provides-member:
+- ["12a4SysCoreIOS12YopterRouterO", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "AssignmentPrecedence"
+- !private "Commons"
+- !private "Constants"
+- "HTTPMethod"
+- !private "JSONEncoding"
+- "Parameters"
+- !private "Settings"
+- "String"
+- !private "TimeZone"
+- !private "URLComponents"
+- !private "URLEncoding"
+- !private "URLQueryItem"
+- "URLRequest"
+- "URLRequestConvertible"
+- "YopterRouter"
+depends-member:
+- !private ["SK", "asURL"]
+- !private ["s7CVarArgP", "asURL"]
+- !private ["s7CVarArgP", "map"]
+- !private ["Sl", "asURL"]
+- !private ["Sl", "map"]
+- !private ["12a4SysCoreIOS7CommonsC", "getUserAgent"]
+- !private ["SL", "asURL"]
+- !private ["12a4SysCoreIOS9ConstantsV", "accept"]
+- !private ["12a4SysCoreIOS9ConstantsV", "appID"]
+- !private ["12a4SysCoreIOS9ConstantsV", "baseURLString"]
+- !private ["12a4SysCoreIOS9ConstantsV", "contentType"]
+- !private ["12a4SysCoreIOS9ConstantsV", "language"]
+- !private ["12a4SysCoreIOS9ConstantsV", "newBaseURLString"]
+- !private ["s28CustomDebugStringConvertibleP", "addValue"]
+- !private ["s28CustomDebugStringConvertibleP", "appendingPathComponent"]
+- !private ["s28CustomDebugStringConvertibleP", "asURL"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
+- !private ["s28CustomDebugStringConvertibleP", "httpMethod"]
+- !private ["s28CustomDebugStringConvertibleP", "identifier"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "queryItems"]
+- !private ["s28CustomDebugStringConvertibleP", "url"]
+- !private ["s17CustomReflectableP", "addValue"]
+- !private ["s17CustomReflectableP", "asURL"]
+- !private ["s17CustomReflectableP", "current"]
+- !private ["s17CustomReflectableP", "httpMethod"]
+- !private ["s17CustomReflectableP", "identifier"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "map"]
+- !private ["s17CustomReflectableP", "queryItems"]
+- !private ["s17CustomReflectableP", "url"]
+- !private ["s23CustomStringConvertibleP", "addValue"]
+- !private ["s23CustomStringConvertibleP", "appendInterpolation"]
+- !private ["s23CustomStringConvertibleP", "appendLiteral"]
+- !private ["s23CustomStringConvertibleP", "appendingPathComponent"]
+- !private ["s23CustomStringConvertibleP", "asURL"]
+- !private ["s23CustomStringConvertibleP", "current"]
+- !private ["s23CustomStringConvertibleP", "httpMethod"]
+- !private ["s23CustomStringConvertibleP", "identifier"]
+- !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "queryItems"]
+- !private ["s23CustomStringConvertibleP", "url"]
+- !private ["Se", "appendingPathComponent"]
+- !private ["Se", "asURL"]
+- !private ["Se", "current"]
+- !private ["Se", "identifier"]
+- !private ["Se", "init"]
+- !private ["Se", "map"]
+- !private ["Se", "queryItems"]
+- !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
+- !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SD", "map"]
+- !private ["SE", "appendingPathComponent"]
+- !private ["SE", "asURL"]
+- !private ["SE", "current"]
+- !private ["SE", "identifier"]
+- !private ["SE", "init"]
+- !private ["SE", "map"]
+- !private ["SE", "queryItems"]
+- !private ["SQ", "addValue"]
+- !private ["SQ", "appendingPathComponent"]
+- !private ["SQ", "asURL"]
+- !private ["SQ", "current"]
+- !private ["SQ", "delete"]
+- !private ["SQ", "get"]
+- !private ["SQ", "httpMethod"]
+- !private ["SQ", "identifier"]
+- !private ["SQ", "init"]
+- !private ["SQ", "map"]
+- !private ["SQ", "post"]
+- !private ["SQ", "put"]
+- !private ["SQ", "queryItems"]
+- !private ["SQ", "rawValue"]
+- !private ["SQ", "url"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "map"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "asURL"]
+- !private ["s32ExpressibleByStringInterpolationP", "asURL"]
+- !private ["s26ExpressibleByStringLiteralP", "asURL"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "asURL"]
+- !private ["9Alamofire10HTTPMethodO", "delete"]
+- !private ["9Alamofire10HTTPMethodO", "get"]
+- !private ["9Alamofire10HTTPMethodO", "post"]
+- !private ["9Alamofire10HTTPMethodO", "put"]
+- !private ["9Alamofire10HTTPMethodO", "rawValue"]
+- !private ["SH", "addValue"]
+- !private ["SH", "appendingPathComponent"]
+- !private ["SH", "asURL"]
+- !private ["SH", "current"]
+- !private ["SH", "delete"]
+- !private ["SH", "get"]
+- !private ["SH", "httpMethod"]
+- !private ["SH", "identifier"]
+- !private ["SH", "init"]
+- !private ["SH", "map"]
+- !private ["SH", "post"]
+- !private ["SH", "put"]
+- !private ["SH", "queryItems"]
+- !private ["SH", "rawValue"]
+- !private ["SH", "url"]
+- !private ["9Alamofire12JSONEncodingV", "default"]
+- !private ["9Alamofire12JSONEncodingV", "encode"]
+- !private ["s25LosslessStringConvertibleP", "asURL"]
+- !private ["s10MirrorPathP", "asURL"]
+- !private ["So8NSCodingP", "asURL"]
+- !private ["So9NSCopyingP", "asURL"]
+- !private ["So21NSItemProviderReadingP", "asURL"]
+- !private ["So21NSItemProviderWritingP", "asURL"]
+- !private ["So16NSMutableCopyingP", "asURL"]
+- !private ["So8NSObjectC", "asURL"]
+- !private ["So8NSObjectP", "asURL"]
+- !private ["So14NSSecureCodingP", "asURL"]
+- !private ["So8NSStringC", "asURL"]
+- !private ["9Alamofire17ParameterEncodingP", "default"]
+- !private ["9Alamofire17ParameterEncodingP", "encode"]
+- !private ["Sm", "asURL"]
+- !private ["SY", "delete"]
+- !private ["SY", "get"]
+- !private ["SY", "post"]
+- !private ["SY", "put"]
+- !private ["SY", "rawValue"]
+- !private ["10Foundation20ReferenceConvertibleP", "addValue"]
+- !private ["10Foundation20ReferenceConvertibleP", "appendingPathComponent"]
+- !private ["10Foundation20ReferenceConvertibleP", "asURL"]
+- !private ["10Foundation20ReferenceConvertibleP", "current"]
+- !private ["10Foundation20ReferenceConvertibleP", "httpMethod"]
+- !private ["10Foundation20ReferenceConvertibleP", "identifier"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "queryItems"]
+- !private ["10Foundation20ReferenceConvertibleP", "url"]
+- !private ["ST", "asURL"]
+- !private ["ST", "map"]
+- !private ["12a4SysCoreIOS8SettingsC", "getOldToken"]
+- !private ["12a4SysCoreIOS8SettingsC", "sharedInstance"]
+- !private ["SS", "asURL"]
+- !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
+- !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["Sy", "asURL"]
+- !private ["s16TextOutputStreamP", "appendInterpolation"]
+- !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "asURL"]
+- !private ["s20TextOutputStreamableP", "asURL"]
+- !private ["10Foundation8TimeZoneV", "current"]
+- !private ["10Foundation8TimeZoneV", "identifier"]
+- !private ["10Foundation3URLV", "appendingPathComponent"]
+- !private ["10Foundation13URLComponentsV", "asURL"]
+- !private ["10Foundation13URLComponentsV", "init"]
+- !private ["10Foundation13URLComponentsV", "queryItems"]
+- !private ["9Alamofire14URLConvertibleP", "appendingPathComponent"]
+- !private ["9Alamofire14URLConvertibleP", "asURL"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "queryItems"]
+- !private ["9Alamofire11URLEncodingV", "default"]
+- !private ["9Alamofire11URLEncodingV", "encode"]
+- !private ["10Foundation12URLQueryItemV", "init"]
+- !private ["10Foundation10URLRequestV", "addValue"]
+- !private ["10Foundation10URLRequestV", "httpMethod"]
+- !private ["10Foundation10URLRequestV", "init"]
+- !private ["10Foundation10URLRequestV", "url"]
+- ["9Alamofire21URLRequestConvertibleP", "Arrived"]
+- ["9Alamofire21URLRequestConvertibleP", "ArticleDelete"]
+- ["9Alamofire21URLRequestConvertibleP", "ArticleFavorite"]
+- ["9Alamofire21URLRequestConvertibleP", "ArticleRating"]
+- ["9Alamofire21URLRequestConvertibleP", "ArticleViewed"]
+- ["9Alamofire21URLRequestConvertibleP", "BeaconAnnouncements"]
+- ["9Alamofire21URLRequestConvertibleP", "BeaconTracking"]
+- ["9Alamofire21URLRequestConvertibleP", "ChangePassword"]
+- ["9Alamofire21URLRequestConvertibleP", "ChangeProduct"]
+- !private ["9Alamofire21URLRequestConvertibleP", "Commons"]
+- !private ["9Alamofire21URLRequestConvertibleP", "Constants"]
+- ["9Alamofire21URLRequestConvertibleP", "FBLogin"]
+- ["9Alamofire21URLRequestConvertibleP", "ForgotPassword"]
+- ["9Alamofire21URLRequestConvertibleP", "Geofencing"]
+- ["9Alamofire21URLRequestConvertibleP", "GetArticles"]
+- ["9Alamofire21URLRequestConvertibleP", "GetCategories"]
+- ["9Alamofire21URLRequestConvertibleP", "GetCompanies"]
+- ["9Alamofire21URLRequestConvertibleP", "GetCountries"]
+- ["9Alamofire21URLRequestConvertibleP", "GetFavoriteArticles"]
+- ["9Alamofire21URLRequestConvertibleP", "GetFavoriteOffers"]
+- ["9Alamofire21URLRequestConvertibleP", "GetFilters"]
+- ["9Alamofire21URLRequestConvertibleP", "GetHome"]
+- ["9Alamofire21URLRequestConvertibleP", "GetReportReason"]
+- ["9Alamofire21URLRequestConvertibleP", "GetReportSucursal"]
+- ["9Alamofire21URLRequestConvertibleP", "GetStates"]
+- ["9Alamofire21URLRequestConvertibleP", "GetStatistics"]
+- ["9Alamofire21URLRequestConvertibleP", "GetStores"]
+- ["9Alamofire21URLRequestConvertibleP", "GetTheme"]
+- ["9Alamofire21URLRequestConvertibleP", "HeartBeat"]
+- !private ["9Alamofire21URLRequestConvertibleP", "JSONEncoding"]
+- ["9Alamofire21URLRequestConvertibleP", "Login"]
+- ["9Alamofire21URLRequestConvertibleP", "Logout"]
+- ["9Alamofire21URLRequestConvertibleP", "OfferByBeacon"]
+- ["9Alamofire21URLRequestConvertibleP", "OfferDelete"]
+- ["9Alamofire21URLRequestConvertibleP", "OfferFavorite"]
+- ["9Alamofire21URLRequestConvertibleP", "OfferRating"]
+- ["9Alamofire21URLRequestConvertibleP", "OfferSearch"]
+- ["9Alamofire21URLRequestConvertibleP", "OfferSearchFilter"]
+- ["9Alamofire21URLRequestConvertibleP", "OfferShowed"]
+- ["9Alamofire21URLRequestConvertibleP", "OfferTaken"]
+- ["9Alamofire21URLRequestConvertibleP", "OfferViewed"]
+- ["9Alamofire21URLRequestConvertibleP", "Register"]
+- ["9Alamofire21URLRequestConvertibleP", "ReportOffer"]
+- ["9Alamofire21URLRequestConvertibleP", "SearchArticle"]
+- !private ["9Alamofire21URLRequestConvertibleP", "Settings"]
+- ["9Alamofire21URLRequestConvertibleP", "StoresSearch"]
+- ["9Alamofire21URLRequestConvertibleP", "SuccessNotification"]
+- ["9Alamofire21URLRequestConvertibleP", "Suggest"]
+- !private ["9Alamofire21URLRequestConvertibleP", "TimeZone"]
+- !private ["9Alamofire21URLRequestConvertibleP", "URLComponents"]
+- !private ["9Alamofire21URLRequestConvertibleP", "URLEncoding"]
+- !private ["9Alamofire21URLRequestConvertibleP", "URLQueryItem"]
+- !private ["9Alamofire21URLRequestConvertibleP", "URLRequest"]
+- ["9Alamofire21URLRequestConvertibleP", "ValidateGender"]
+- ["9Alamofire21URLRequestConvertibleP", "ValidateToken"]
+- ["9Alamofire21URLRequestConvertibleP", "WakeUp"]
+- ["9Alamofire21URLRequestConvertibleP", "WhoAmI"]
+- ["9Alamofire21URLRequestConvertibleP", ""]
+- !private ["9Alamofire21URLRequestConvertibleP", "addValue"]
+- ["9Alamofire21URLRequestConvertibleP", "asURLRequest"]
+- !private ["9Alamofire21URLRequestConvertibleP", "httpMethod"]
+- !private ["9Alamofire21URLRequestConvertibleP", "init"]
+- !private ["9Alamofire21URLRequestConvertibleP", "method"]
+- !private ["9Alamofire21URLRequestConvertibleP", "path"]
+- !private ["9Alamofire21URLRequestConvertibleP", "url"]
+- ["12a4SysCoreIOS12YopterRouterO", "Arrived"]
+- ["12a4SysCoreIOS12YopterRouterO", "ArticleDelete"]
+- ["12a4SysCoreIOS12YopterRouterO", "ArticleFavorite"]
+- ["12a4SysCoreIOS12YopterRouterO", "ArticleRating"]
+- ["12a4SysCoreIOS12YopterRouterO", "ArticleViewed"]
+- ["12a4SysCoreIOS12YopterRouterO", "BeaconAnnouncements"]
+- ["12a4SysCoreIOS12YopterRouterO", "BeaconTracking"]
+- ["12a4SysCoreIOS12YopterRouterO", "ChangePassword"]
+- ["12a4SysCoreIOS12YopterRouterO", "ChangeProduct"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "Commons"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "Constants"]
+- ["12a4SysCoreIOS12YopterRouterO", "FBLogin"]
+- ["12a4SysCoreIOS12YopterRouterO", "ForgotPassword"]
+- ["12a4SysCoreIOS12YopterRouterO", "Geofencing"]
+- ["12a4SysCoreIOS12YopterRouterO", "GetArticles"]
+- ["12a4SysCoreIOS12YopterRouterO", "GetCategories"]
+- ["12a4SysCoreIOS12YopterRouterO", "GetCompanies"]
+- ["12a4SysCoreIOS12YopterRouterO", "GetCountries"]
+- ["12a4SysCoreIOS12YopterRouterO", "GetFavoriteArticles"]
+- ["12a4SysCoreIOS12YopterRouterO", "GetFavoriteOffers"]
+- ["12a4SysCoreIOS12YopterRouterO", "GetFilters"]
+- ["12a4SysCoreIOS12YopterRouterO", "GetHome"]
+- ["12a4SysCoreIOS12YopterRouterO", "GetReportReason"]
+- ["12a4SysCoreIOS12YopterRouterO", "GetReportSucursal"]
+- ["12a4SysCoreIOS12YopterRouterO", "GetStates"]
+- ["12a4SysCoreIOS12YopterRouterO", "GetStatistics"]
+- ["12a4SysCoreIOS12YopterRouterO", "GetStores"]
+- ["12a4SysCoreIOS12YopterRouterO", "GetTheme"]
+- ["12a4SysCoreIOS12YopterRouterO", "HTTPMethod"]
+- ["12a4SysCoreIOS12YopterRouterO", "HeartBeat"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "JSONEncoding"]
+- ["12a4SysCoreIOS12YopterRouterO", "Login"]
+- ["12a4SysCoreIOS12YopterRouterO", "Logout"]
+- ["12a4SysCoreIOS12YopterRouterO", "OfferByBeacon"]
+- ["12a4SysCoreIOS12YopterRouterO", "OfferDelete"]
+- ["12a4SysCoreIOS12YopterRouterO", "OfferFavorite"]
+- ["12a4SysCoreIOS12YopterRouterO", "OfferRating"]
+- ["12a4SysCoreIOS12YopterRouterO", "OfferSearch"]
+- ["12a4SysCoreIOS12YopterRouterO", "OfferSearchFilter"]
+- ["12a4SysCoreIOS12YopterRouterO", "OfferShowed"]
+- ["12a4SysCoreIOS12YopterRouterO", "OfferTaken"]
+- ["12a4SysCoreIOS12YopterRouterO", "OfferViewed"]
+- ["12a4SysCoreIOS12YopterRouterO", "Parameters"]
+- ["12a4SysCoreIOS12YopterRouterO", "Register"]
+- ["12a4SysCoreIOS12YopterRouterO", "ReportOffer"]
+- ["12a4SysCoreIOS12YopterRouterO", "SearchArticle"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "Settings"]
+- ["12a4SysCoreIOS12YopterRouterO", "StoresSearch"]
+- ["12a4SysCoreIOS12YopterRouterO", "String"]
+- ["12a4SysCoreIOS12YopterRouterO", "SuccessNotification"]
+- ["12a4SysCoreIOS12YopterRouterO", "Suggest"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "TimeZone"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "URLComponents"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "URLEncoding"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "URLQueryItem"]
+- ["12a4SysCoreIOS12YopterRouterO", "URLRequest"]
+- ["12a4SysCoreIOS12YopterRouterO", "ValidateGender"]
+- ["12a4SysCoreIOS12YopterRouterO", "ValidateToken"]
+- ["12a4SysCoreIOS12YopterRouterO", "WakeUp"]
+- ["12a4SysCoreIOS12YopterRouterO", "WhoAmI"]
+- ["12a4SysCoreIOS12YopterRouterO", "asURLRequest"]
+- ["12a4SysCoreIOS12YopterRouterO", "deinit"]
+- ["12a4SysCoreIOS12YopterRouterO", "method"]
+- ["12a4SysCoreIOS12YopterRouterO", "path"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "appendingPathComponent"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "asURL"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "asURL"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "asURL"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "asURL"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "appendingPathComponent"]
+- !private ["s19_HasContiguousBytesP", "asURL"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "asURL"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "asURL"]
+- !private ["10Foundation14_MutableBoxingP", "asURL"]
+- !private ["10Foundation14_MutableBoxingP", "init"]
+- !private ["10Foundation14_MutableBoxingP", "queryItems"]
+- !private ["s21_ObjectiveCBridgeableP", "addValue"]
+- !private ["s21_ObjectiveCBridgeableP", "appendingPathComponent"]
+- !private ["s21_ObjectiveCBridgeableP", "asURL"]
+- !private ["s21_ObjectiveCBridgeableP", "current"]
+- !private ["s21_ObjectiveCBridgeableP", "httpMethod"]
+- !private ["s21_ObjectiveCBridgeableP", "identifier"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
+- !private ["s21_ObjectiveCBridgeableP", "queryItems"]
+- !private ["s21_ObjectiveCBridgeableP", "url"]
+depends-nominal:
+- !private "SK"
+- !private "s7CVarArgP"
+- !private "Sl"
+- !private "12a4SysCoreIOS7CommonsC"
+- !private "SL"
+- !private "12a4SysCoreIOS9ConstantsV"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "Se"
+- !private "s26DefaultStringInterpolationV"
+- !private "SD"
+- !private "SE"
+- !private "SQ"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "9Alamofire10HTTPMethodO"
+- !private "SH"
+- !private "9Alamofire12JSONEncodingV"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- !private "So8NSObjectP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
+- !private "9Alamofire17ParameterEncodingP"
+- !private "Sm"
+- !private "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "ST"
+- !private "12a4SysCoreIOS8SettingsC"
+- !private "SS"
+- !private "s27StringInterpolationProtocolP"
+- !private "Sy"
+- !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
+- !private "10Foundation8TimeZoneV"
+- !private "10Foundation3URLV"
+- !private "10Foundation13URLComponentsV"
+- !private "9Alamofire14URLConvertibleP"
+- !private "9Alamofire11URLEncodingV"
+- !private "10Foundation12URLQueryItemV"
+- !private "10Foundation10URLRequestV"
+- "9Alamofire21URLRequestConvertibleP"
+- "12a4SysCoreIOS12YopterRouterO"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s19_HasContiguousBytesP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
+- !private "10Foundation14_MutableBoxingP"
+- !private "s21_ObjectiveCBridgeableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/a4SysCoreIOS.h"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/build/a4SysCoreIOS.build/Debug-iphoneos/a4SysCoreIOS.build/unextended-module.modulemap"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/Alamofire.framework/Modules/module.modulemap"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/ObjectMapper.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "a60f19a4cb66617f9cff35e475153507"

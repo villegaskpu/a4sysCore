@@ -7,3 +7,18 @@
 //
 
 import Foundation
+import ObjectMapper
+
+class LoginParser: BaseParser {
+    
+    
+    override func parse(json: String) -> AnyObject? {
+        if let loginResponse = Mapper<LoginResponse>().map(JSONObject: json) {
+            print("parser perro : \(loginResponse.token)")
+            print("parser perro : \(loginResponse.tokenYopter)")
+            return loginResponse
+        }
+        
+        return nil
+    }
+}

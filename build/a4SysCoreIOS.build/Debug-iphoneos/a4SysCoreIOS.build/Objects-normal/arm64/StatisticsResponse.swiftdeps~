@@ -1,0 +1,119 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "StatisticsResponse"
+provides-nominal:
+- "12a4SysCoreIOS18StatisticsResponseC"
+provides-member:
+- ["12a4SysCoreIOS18StatisticsResponseC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "<-"
+- "CommerceCount"
+- "Map"
+- "Mappable"
+- "OfferCount"
+- "OfferSum"
+- "OfferTaken"
+- "OfferTakenSum"
+- "StatisticsResponse"
+- "UserCount"
+depends-member:
+- ["12ObjectMapper12BaseMappableP", ""]
+- !private ["12ObjectMapper12BaseMappableP", "commerceCount"]
+- ["12ObjectMapper12BaseMappableP", "init"]
+- ["12ObjectMapper12BaseMappableP", "mapping"]
+- !private ["12ObjectMapper12BaseMappableP", "offerCount"]
+- !private ["12ObjectMapper12BaseMappableP", "offerSum"]
+- !private ["12ObjectMapper12BaseMappableP", "offerTaken"]
+- !private ["12ObjectMapper12BaseMappableP", "offerTakenSum"]
+- !private ["12ObjectMapper12BaseMappableP", "topRated"]
+- !private ["12ObjectMapper12BaseMappableP", "topTaken"]
+- !private ["12ObjectMapper12BaseMappableP", "userCount"]
+- !private ["12a4SysCoreIOS13CommerceCountC", "deinit"]
+- !private ["12ObjectMapper3MapC", "subscript"]
+- ["12ObjectMapper8MappableP", ""]
+- !private ["12ObjectMapper8MappableP", "commerceCount"]
+- ["12ObjectMapper8MappableP", "init"]
+- ["12ObjectMapper8MappableP", "mapping"]
+- !private ["12ObjectMapper8MappableP", "offerCount"]
+- !private ["12ObjectMapper8MappableP", "offerSum"]
+- !private ["12ObjectMapper8MappableP", "offerTaken"]
+- !private ["12ObjectMapper8MappableP", "offerTakenSum"]
+- !private ["12ObjectMapper8MappableP", "topRated"]
+- !private ["12ObjectMapper8MappableP", "topTaken"]
+- !private ["12ObjectMapper8MappableP", "userCount"]
+- !private ["12a4SysCoreIOS10OfferCountC", "deinit"]
+- !private ["12a4SysCoreIOS8OfferSumC", "deinit"]
+- !private ["12a4SysCoreIOS10OfferTakenC", "deinit"]
+- !private ["12a4SysCoreIOS13OfferTakenSumC", "deinit"]
+- ["12a4SysCoreIOS18StatisticsResponseC", "CommerceCount"]
+- ["12a4SysCoreIOS18StatisticsResponseC", "Map"]
+- ["12a4SysCoreIOS18StatisticsResponseC", "OfferCount"]
+- ["12a4SysCoreIOS18StatisticsResponseC", "OfferSum"]
+- ["12a4SysCoreIOS18StatisticsResponseC", "OfferTaken"]
+- ["12a4SysCoreIOS18StatisticsResponseC", "OfferTakenSum"]
+- ["12a4SysCoreIOS18StatisticsResponseC", "UserCount"]
+- ["12a4SysCoreIOS18StatisticsResponseC", "commerceCount"]
+- ["12a4SysCoreIOS18StatisticsResponseC", "deinit"]
+- ["12a4SysCoreIOS18StatisticsResponseC", "init"]
+- ["12a4SysCoreIOS18StatisticsResponseC", "mapping"]
+- ["12a4SysCoreIOS18StatisticsResponseC", "offerCount"]
+- ["12a4SysCoreIOS18StatisticsResponseC", "offerSum"]
+- ["12a4SysCoreIOS18StatisticsResponseC", "offerTaken"]
+- ["12a4SysCoreIOS18StatisticsResponseC", "offerTakenSum"]
+- ["12a4SysCoreIOS18StatisticsResponseC", "topRated"]
+- ["12a4SysCoreIOS18StatisticsResponseC", "topTaken"]
+- ["12a4SysCoreIOS18StatisticsResponseC", "userCount"]
+- !private ["12a4SysCoreIOS9UserCountC", "deinit"]
+depends-nominal:
+- "12ObjectMapper12BaseMappableP"
+- !private "12a4SysCoreIOS13CommerceCountC"
+- !private "12ObjectMapper3MapC"
+- "12ObjectMapper8MappableP"
+- !private "12a4SysCoreIOS10OfferCountC"
+- !private "12a4SysCoreIOS8OfferSumC"
+- !private "12a4SysCoreIOS10OfferTakenC"
+- !private "12a4SysCoreIOS13OfferTakenSumC"
+- "12a4SysCoreIOS18StatisticsResponseC"
+- !private "12a4SysCoreIOS9UserCountC"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/a4SysCoreIOS.h"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/Alamofire.framework/Headers/Alamofire.h"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/ObjectMapper.framework/Headers/ObjectMapper.h"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/Alamofire.framework/Headers/Alamofire-Swift.h"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/ObjectMapper.framework/Headers/ObjectMapper-Swift.h"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/build/a4SysCoreIOS.build/Debug-iphoneos/a4SysCoreIOS.build/unextended-module.modulemap"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/Alamofire.framework/Modules/module.modulemap"
+- "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/ObjectMapper.framework/Modules/module.modulemap"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UserNotifications.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
+interface-hash: "f5e160c8c921ec9cc8d04be73e49f5cd"

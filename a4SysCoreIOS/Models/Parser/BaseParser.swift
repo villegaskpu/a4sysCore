@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import ObjectMapper
+
+
+class BaseParser: NSObject {
+    
+    var objeto: AnyObject?
+    override init() {
+        super.init()
+    }
+    
+    func parse(json : String) -> AnyObject? {
+        return objeto as AnyObject
+    }
+}
