@@ -8,24 +8,24 @@
 
 import ObjectMapper
 
-class Showed : Mappable
+open class Showed : Mappable
 {
-    var idOffer = 0
-    var latitude : Double = 0
-    var longitude : Double = 0
-    var position = 0
-    var page = 0
-    var date : String = ""
+    public var idOffer = 0
+    public var latitude : Double = 0
+    public var longitude : Double = 0
+    public var position = 0
+    public var page = 0
+    public var date : String = ""
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         idOffer <- map["idOffer"]
         latitude <- map["latitude"]
         longitude <- map["longitude"]

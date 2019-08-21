@@ -12,10 +12,8 @@ import ObjectMapper
 class LoginParser: BaseParser {
     
     
-    override func parse(json: String) -> AnyObject? {
-        if let loginResponse = Mapper<LoginResponse>().map(JSONObject: json) {
-            print("parser perro : \(loginResponse.token)")
-            print("parser perro : \(loginResponse.tokenYopter)")
+    override func parse(JSONObject: Any) -> AnyObject? {
+        if let loginResponse = Mapper<LoginResponse>().map(JSONObject: JSONObject) {
             return loginResponse
         }
         

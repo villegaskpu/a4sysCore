@@ -9,18 +9,18 @@
 import ObjectMapper
 
 class ArticlesResponse : Mappable{
-    var draw : Int = 0
-    var recordsTotal : Int = 0
-    var recordsFiltered : Int = 0
-    var data : [Article] = []
+    public var draw : Int = 0
+    public var recordsTotal : Int = 0
+    public var recordsFiltered : Int = 0
+    public var data : [Article] = []
     
-    required init?(map: Map) { }
+    required public init?(map: Map) { }
     
-    init() {
+    public init() {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         draw <- map["draw"]
         recordsTotal <- map["recordsTotal"]
         recordsFiltered <- map["recordsFiltered"]

@@ -8,22 +8,22 @@
 
 import ObjectMapper
 
-class ZoneImg : Mappable
+open class ZoneImg : Mappable
 {
-    var idMall = 0
-    var name : String = ""
-    var urlImg : String = ""
-    var idmallZoneImg = 0
+    public var idMall = 0
+    public var name : String = ""
+    public var urlImg : String = ""
+    public var idmallZoneImg = 0
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         idMall <- map["idMall"]
         name <- map["name"]
         urlImg <- map["urlImg"]

@@ -12,6 +12,7 @@ depends-top-level:
 - "Map"
 - "Mappable"
 - "String"
+- !private "StringLiteralType"
 - "WakeUpResponse"
 depends-member:
 - ["12ObjectMapper12BaseMappableP", ""]

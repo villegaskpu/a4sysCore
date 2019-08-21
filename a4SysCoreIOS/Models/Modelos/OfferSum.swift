@@ -10,17 +10,17 @@ import ObjectMapper
 
 class OfferSum : Mappable
 {
-    var sum = 0
-    var categories : [Category] = []
+    public var sum = 0
+    public var categories : [Category] = []
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         sum <- map["sum"]
         categories <- map["categories"]
     }

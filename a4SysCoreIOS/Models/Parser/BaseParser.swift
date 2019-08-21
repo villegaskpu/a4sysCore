@@ -17,7 +17,7 @@ class BaseParser: NSObject {
         super.init()
     }
     
-    func parse(json : String) -> AnyObject? {
+    func parse(JSONObject: Any) -> AnyObject? {
         return objeto as AnyObject
     }
 }

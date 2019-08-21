@@ -8,27 +8,27 @@
 
 import ObjectMapper
 
-class Commerce: Mappable
+open class Commerce: Mappable
 {
     
-    var idCommerce = 0
-    var name : String = ""
-    var taxReferenceId : String = ""
-    var logoURL : String = ""
-    var s3LogoURL : String = ""
-    var website : String = ""
-    var signDate : String = ""
-    var stores : [Store] = []
-    var keywords : [Keyword] = []
+    public var idCommerce = 0
+    public var name : String = ""
+    public var taxReferenceId : String = ""
+    public var logoURL : String = ""
+    public var s3LogoURL : String = ""
+    public var website : String = ""
+    public var signDate : String = ""
+    public var stores : [Store] = []
+    public var keywords : [Keyword] = []
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init(){
+    public init(){
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         idCommerce <- map["idCommerce"]
         name <- map["name"]
         taxReferenceId <- map["taxReferenceId"]

@@ -8,15 +8,15 @@
 
 import ObjectMapper
 
-class WhoAmI : Mappable
+open class WhoAmI : Mappable
 {
-    var name : String?
-    var logoURL : String?
-    var message : String?
+    public var name : String?
+    public var logoURL : String?
+    public var message : String?
     
-    required init?(map: Map) { }
+    required public init?(map: Map) { }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         name <- map["name"]
         logoURL <- map["logoURL"]
         message <- map["message"]

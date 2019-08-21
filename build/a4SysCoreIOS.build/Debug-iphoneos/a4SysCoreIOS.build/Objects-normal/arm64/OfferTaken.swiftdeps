@@ -8,9 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "<-"
+- "FloatLiteralType"
+- "IntegerLiteralType"
 - "Map"
 - "Mappable"
 - "OfferTaken"
+- !private "StringLiteralType"
 depends-member:
 - ["12ObjectMapper12BaseMappableP", ""]
 - !private ["12ObjectMapper12BaseMappableP", "allUsers"]
@@ -74,4 +77,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d63e051f154d0fcab4c69a07e98ccb7d"
+interface-hash: "3112d240d55de35cb8896f65765589c5"

@@ -9,17 +9,17 @@
 import Foundation
 import ObjectMapper
 
-class LoginResponse: Mappable
+open class LoginResponse: Mappable
 {
-    var status : String?
-    var registrationKey : String?
-    var token : String?
+    public var status : String?
+    public var registrationKey : String?
+    public var token : String?
     var customer : Customer?
-    var tokenYopter : String?
+    public var tokenYopter : String?
     
-    required init?(map: Map) { }
+    required public init?(map: Map) { }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         status <- map["status"]
         registrationKey <- map["registrationKey"]
         token <- map["token"]

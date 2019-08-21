@@ -9,44 +9,31 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "<-"
 - "Customer"
-- "ExternalInfo"
 - "Map"
 - "Mappable"
-- "MaritalStatus"
 - "State"
 - "String"
 - "User"
 depends-member:
-- ["12a4SysCoreIOS8CustomerC", "ExternalInfo"]
 - ["12a4SysCoreIOS8CustomerC", "Map"]
-- ["12a4SysCoreIOS8CustomerC", "MaritalStatus"]
 - ["12a4SysCoreIOS8CustomerC", "State"]
 - ["12a4SysCoreIOS8CustomerC", "String"]
 - ["12a4SysCoreIOS8CustomerC", "User"]
 - ["12a4SysCoreIOS8CustomerC", "birthday"]
-- ["12a4SysCoreIOS8CustomerC", "cellPhone"]
-- ["12a4SysCoreIOS8CustomerC", "externalInfo"]
 - ["12a4SysCoreIOS8CustomerC", "gender"]
 - ["12a4SysCoreIOS8CustomerC", "idCustomer"]
 - ["12a4SysCoreIOS8CustomerC", "init"]
 - !private ["12a4SysCoreIOS8CustomerC", "init"]
-- ["12a4SysCoreIOS8CustomerC", "lastName"]
-- ["12a4SysCoreIOS8CustomerC", "maritalStatus"]
 - ["12a4SysCoreIOS8CustomerC", "name"]
+- ["12a4SysCoreIOS8CustomerC", "phoneValidated"]
 - ["12a4SysCoreIOS8CustomerC", "state"]
 - ["12a4SysCoreIOS8CustomerC", "user"]
-- ["12a4SysCoreIOS12ExternalInfoC", "init"]
-- ["12a4SysCoreIOS12ExternalInfoC", "init"]
-- ["12a4SysCoreIOS13MaritalStatusC", "init"]
-- ["12a4SysCoreIOS13MaritalStatusC", "init"]
 - ["12a4SysCoreIOS5StateC", "init"]
 - ["12a4SysCoreIOS5StateC", "init"]
 - ["12a4SysCoreIOS4UserC", "init"]
 - ["12a4SysCoreIOS4UserC", "init"]
 depends-nominal:
 - "12a4SysCoreIOS8CustomerC"
-- "12a4SysCoreIOS12ExternalInfoC"
-- "12a4SysCoreIOS13MaritalStatusC"
 - "12a4SysCoreIOS5StateC"
 - "12a4SysCoreIOS4UserC"
 depends-dynamic-lookup:
@@ -88,4 +75,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "cd2303f4a9da735f947e5a1eb805667e"
+interface-hash: "d8c20ac9587a2fc02f4775335b270b96"

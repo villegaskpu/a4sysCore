@@ -9,21 +9,21 @@
 import Foundation
 import ObjectMapper
 
-class CustomColors: Mappable {
+open class CustomColors: Mappable {
     
-    var background = ""
-    var footer = ""
-    var header = ""
-    var titleBackground = ""
+    public var background = ""
+    public var footer = ""
+    public var header = ""
+    public var titleBackground = ""
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         background <- map["background"]
         footer <- map["footer"]
         header <- map["header"]

@@ -8,19 +8,19 @@
 
 import ObjectMapper
 
-class MaritalStatus: Mappable
+open class MaritalStatus: Mappable
 {
-    var idMaritalStatus = 0
-    var name : String = ""
+    public var idMaritalStatus = 0
+    public var name : String = ""
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         idMaritalStatus <- map["idMaritalStatus"]
         name <- map["name"]
     }

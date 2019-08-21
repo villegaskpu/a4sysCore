@@ -8,7 +8,7 @@
 
 import ObjectMapper
 
-class Store:  Mappable
+open class Store:  Mappable
 {
     
     var idStore = 0
@@ -31,14 +31,14 @@ class Store:  Mappable
     var offers : [Offer] = []
     var commerce : Commerce = Commerce ()
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         idStore <- map["idStore"]
         name <- map["name"]
         addressL1 <- map["addressL1"]

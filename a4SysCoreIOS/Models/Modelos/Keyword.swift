@@ -8,20 +8,20 @@
 
 import ObjectMapper
 
-class Keyword: Mappable
+open class Keyword: Mappable
 {
     
-    var keyword : String = ""
+    public var keyword : String = ""
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         keyword <- map["keyword"]
     }
 }

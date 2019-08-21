@@ -8,22 +8,22 @@
 
 import ObjectMapper
 
-class ReportSucursal : Mappable
+open class ReportSucursal : Mappable
 {
-    var idReportSucursal = 0
-    var name : String = ""
-    var reasonDescription : String = ""
-    var createdAt : String = ""
+    public var idReportSucursal = 0
+    public var name : String = ""
+    public var reasonDescription : String = ""
+    public var createdAt : String = ""
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         idReportSucursal <- map["idReportSucursal"]
         name <- map["name"]
         reasonDescription <- map["description"]

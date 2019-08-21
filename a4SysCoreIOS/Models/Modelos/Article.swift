@@ -8,26 +8,26 @@
 
 import ObjectMapper
 
-class Article : Mappable{
-    var idArticle = 0
-    var title : String = ""
-    var articleDescription : String = ""
-    var websiteURL : String = ""
-    var images : [Image] = []
-    var permanent = 0
-    var offerStatus : OfferStatus = OfferStatus ()
-    var viewed = 0
-    var favorite = 0
-    var rating : Rating =  Rating ()
+open class Article : Mappable{
+    public var idArticle = 0
+    public var title : String = ""
+    public var articleDescription : String = ""
+    public var websiteURL : String = ""
+    public var images : [Image] = []
+    public var permanent = 0
+    public var offerStatus : OfferStatus = OfferStatus ()
+    public var viewed = 0
+    public var favorite = 0
+    public var rating : Rating =  Rating ()
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         idArticle <- map["idArticle"]
         title <- map["title"]
         articleDescription <- map["description"]

@@ -35,53 +35,58 @@ open class Network: NSObject {
         self.parser = parser
     }
     
-    private func callService(_ url : URLRequestConvertible, _ respuesta : @escaping (_ statusCode: Int, _ value: Any, _ objeto:AnyObject?) ->(Void)) {
+    private func callService(_ url : URLRequestConvertible, parser:BaseParser, _ respuesta : @escaping (_ statusCode: String, _ value: Any, _ objeto:AnyObject?) ->(Void)) {
         let sessionManager = NetworkManager.sessionManager
-        
+        set(parser: parser)
         sessionManager.request(url).responseJSON{ (response) in
             
             let statusCode = response.response?.statusCode ?? 0
 //            print("Es el error : \(errRes) ....  \(ddd)")
+            
+            
             switch(response.result)
             {
             case .success(let value):
                 
                 print("exito: \(value)  statuscCode: \(String(describing: response.response?.statusCode))")
-                let jsonError = String(data: response.data!, encoding: .utf8)
-//                let apiError = Mapper<ApiError>().map(JSONString: jsonError!)
-//                let err = apiError?.message ?? "UNNATENDED_ERROR".localized
                 
-                let par = self.parser?.parse(json: jsonError ?? "")
-                respuesta(statusCode, value, par)
+                if statusCode >= 200 && statusCode < 300 {
+                    let obj = self.parser?.parse(JSONObject: value)
+                    respuesta("\(statusCode)", value, obj as AnyObject)
+                } else {
+                    let obj = self.parseError(JSONObject: value)
+                    respuesta("\(statusCode)", value, obj as AnyObject)
+                }
             case .failure(let value):
                 print("fallo")
-//                print("jsonerror = \(response.error)")
-//                print("jsonerror = \(response.description)")
-                let jsonError = String(data: response.data!, encoding: .utf8)
-                let apiError = Mapper<ApiError>().map(JSONString: jsonError!)
-                let err = apiError?.message ?? "UNNATENDED_ERROR".localized
-                print("a4syserror:\(response.error)")
-                print("a4syserror:\(response.description)")
-                print("a4syserror:\(response.value)")
-                respuesta(statusCode, value, err as AnyObject)
+                let obj = self.parseError(JSONObject: value)
+                respuesta("\(statusCode)", value, obj as AnyObject)
                 break
             }
         }
     }
     
+    private func parseError(JSONObject: Any) -> AnyObject? {
+        if let apiError = Mapper<ApiError>().map(JSONObject: JSONObject) {
+            return apiError
+        }
+        return nil
+    }
+
     // Mark: Login user
-    public func endPointN(endPont: endPoint, _ callback: @escaping(_ statusCode: Int, _ value: Any, _ objeto:AnyObject?) -> (Void)) {
+    public func endPointN(endPont: endPoint, _ callback: @escaping(_ statusCode: String, _ value: Any, _ objeto:AnyObject?) -> (Void)) {
         var urll: URLRequestConvertible?
-        
+        var parserB = BaseParser()
         switch endPont {
         case .Login:
             urll = YopterRouter.Login(parameter: self.urlParameters!)
+            parserB = LoginParser()
             break
         default:
             break
         }
         
-        callService(urll!){ response,value, objeto  in
+        callService(urll!,parser: parserB){ response,value, objeto  in
             _ = callback(response, value, objeto)
         }
     }

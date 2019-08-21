@@ -8,26 +8,26 @@
 
 import ObjectMapper
 
-class Category: Mappable
+open class Category: Mappable
 {
-    var idCategory = 0
-    var name : String = ""
-    var idParentCategory = 0
-    var imgURL : String = ""
-    var iconURL : String = ""
-    var iconUnicode : String = ""
-    var categories : [Category] = []
-    var offerCount = 0
-    var sum = 0
+    public var idCategory = 0
+    public var name : String = ""
+    public var idParentCategory = 0
+    public var imgURL : String = ""
+    public var iconURL : String = ""
+    public var iconUnicode : String = ""
+    public var categories : [Category] = []
+    public var offerCount = 0
+    public var sum = 0
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         idCategory <- map["idCategory"]
         name <- map["name"]
         idParentCategory <- map["idParentCategory"]

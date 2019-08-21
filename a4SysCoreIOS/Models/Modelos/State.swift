@@ -8,23 +8,23 @@
 
 import ObjectMapper
 
-class State: Mappable
+open class State: Mappable
 {
-    var country : Country = Country ()
-    var idState = 0
-    var name : String = ""
-    var abbreviation : String = ""
-    var active = 0
+    public var country : Country = Country ()
+    public var idState = 0
+    public var name : String = ""
+    public var abbreviation : String = ""
+    public var active = 0
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         country <- map["country"]
         idState <- map["idState"]
         name <- map["name"]

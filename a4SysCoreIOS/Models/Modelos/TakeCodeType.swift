@@ -8,21 +8,21 @@
 
 import ObjectMapper
 
-class TakeCodeType : Mappable
+open class TakeCodeType : Mappable
 {
-    var idTakeCodeType = 0
-    var name : String = ""
-    var status : String = ""
+    public var idTakeCodeType = 0
+    public var name : String = ""
+    public var status : String = ""
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         idTakeCodeType <- map["idTakeCodeType"]
         name <- map["name"]
         status <- map["status"]

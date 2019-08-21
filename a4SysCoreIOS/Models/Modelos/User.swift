@@ -8,21 +8,21 @@
 
 import ObjectMapper
 
-class User: Mappable
+open class User: Mappable
 {
-    var idUser = 0
-    var email : String = ""
-    var banned = 0
-    var userStatus: UserStatus = UserStatus ()
+    public var idUser = 0
+    public var email : String = ""
+    public var banned = 0
+    public var userStatus: UserStatus = UserStatus ()
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         idUser <- map["idUser"]
         email <- map["email"]
         banned <- map["banned"]

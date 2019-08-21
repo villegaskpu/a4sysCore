@@ -8,19 +8,19 @@
 
 import ObjectMapper
 
-class Image: Mappable
+open class Image: Mappable
 {
-    var imageURL : String = ""
-    var s3URL : String = ""
+    public var imageURL : String = ""
+    public var s3URL : String = ""
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         imageURL <- map["imageURL"]
         s3URL <- map["s3URL"]
     }

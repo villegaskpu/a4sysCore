@@ -8,21 +8,21 @@
 
 import ObjectMapper
 
-class Heartbeat : Mappable
+open class Heartbeat : Mappable
 {
-    var latitude : Double = 0
-    var longitude : Double = 0
-    var beatAt : String = ""
+    public var latitude : Double = 0
+    public var longitude : Double = 0
+    public var beatAt : String = ""
     
-    required convenience init?(map: Map) {
+    required public  convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         latitude <- map["latitude"]
         longitude <- map["longitude"]
         beatAt <- map["beatAt"]

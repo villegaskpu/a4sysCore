@@ -8,19 +8,20 @@
 
 import ObjectMapper
 
-class Rating: Mappable
+open class Rating: Mappable
 {
-    var rating : Double = 0
-    var count = 0
+    public var rating : Double = 0
+    public var count = 0
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
         
     }
-    func mapping(map: Map) {
+    
+    public func mapping(map: Map) {
         rating <- map["rating"]
         count <- map["count"]
     }

@@ -11,6 +11,7 @@ depends-top-level:
 - "Company"
 - "Map"
 - "Mappable"
+- !private "name"
 depends-member:
 - ["12ObjectMapper12BaseMappableP", ""]
 - !private ["12ObjectMapper12BaseMappableP", "idCompany"]
@@ -22,7 +23,7 @@ depends-member:
 - ["12a4SysCoreIOS7CompanyC", "idCompany"]
 - ["12a4SysCoreIOS7CompanyC", "init"]
 - ["12a4SysCoreIOS7CompanyC", "mapping"]
-- ["12a4SysCoreIOS7CompanyC", "name"]
+- !private ["12a4SysCoreIOS7CompanyC", "name"]
 - !private ["12ObjectMapper3MapC", "subscript"]
 - ["12ObjectMapper8MappableP", ""]
 - !private ["12ObjectMapper8MappableP", "idCompany"]
@@ -39,6 +40,7 @@ depends-external:
 - "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
 - "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/ObjectMapper.framework/Modules/ObjectMapper.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
@@ -74,4 +76,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "1998adf4dd1ded0a22d77e648ce762cf"
+interface-hash: "54cd4148ddd0d2cac72861756b1027f5"

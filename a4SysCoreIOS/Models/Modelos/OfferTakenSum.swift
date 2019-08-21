@@ -8,20 +8,20 @@
 
 import ObjectMapper
 
-class OfferTakenSum : Mappable
+open class OfferTakenSum : Mappable
 {
-    var sumAllUsers = 0
-    var sumMine = 0
+    public var sumAllUsers = 0
+    public var sumMine = 0
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         sumAllUsers <- map["sumAllUsers"]
         sumMine <- map["sumMine"]
     }

@@ -8,24 +8,24 @@
 
 import ObjectMapper
 
-class BeaconTrack : Mappable
+open class BeaconTrack : Mappable
 {
-    var beacon : Beacon = Beacon ()
-    var enterDate : String = ""
-    var exitDate : String = ""
-    var proximity : String = ""
-    var minDistance = 0
-    var maxDistance = 0
-    var date : String = ""
+    public var beacon : Beacon = Beacon ()
+    public var enterDate : String = ""
+    public var exitDate : String = ""
+    public var proximity : String = ""
+    public var minDistance = 0
+    public var maxDistance = 0
+    public var date : String = ""
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
     init() {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         beacon <- map["beacon"]
         enterDate <- map["enterDate"]
         exitDate <- map["exitDate"]

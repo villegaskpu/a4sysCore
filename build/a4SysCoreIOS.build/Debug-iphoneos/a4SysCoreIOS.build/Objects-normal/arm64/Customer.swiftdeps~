@@ -9,72 +9,52 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "<-"
 - "Customer"
-- "ExternalInfo"
+- "FloatLiteralType"
+- "IntegerLiteralType"
 - "Map"
 - "Mappable"
-- "MaritalStatus"
 - "State"
 - "String"
+- "StringLiteralType"
 - "User"
 depends-member:
-- ["12ObjectMapper12BaseMappableP", "ExternalInfo"]
-- ["12ObjectMapper12BaseMappableP", "MaritalStatus"]
 - ["12ObjectMapper12BaseMappableP", "State"]
 - ["12ObjectMapper12BaseMappableP", "User"]
 - ["12ObjectMapper12BaseMappableP", ""]
 - !private ["12ObjectMapper12BaseMappableP", "birthday"]
-- !private ["12ObjectMapper12BaseMappableP", "cellPhone"]
-- !private ["12ObjectMapper12BaseMappableP", "externalInfo"]
 - !private ["12ObjectMapper12BaseMappableP", "gender"]
 - !private ["12ObjectMapper12BaseMappableP", "idCustomer"]
 - ["12ObjectMapper12BaseMappableP", "init"]
-- !private ["12ObjectMapper12BaseMappableP", "lastName"]
 - ["12ObjectMapper12BaseMappableP", "mapping"]
-- !private ["12ObjectMapper12BaseMappableP", "maritalStatus"]
 - !private ["12ObjectMapper12BaseMappableP", "name"]
 - !private ["12ObjectMapper12BaseMappableP", "state"]
 - !private ["12ObjectMapper12BaseMappableP", "user"]
-- ["12a4SysCoreIOS8CustomerC", "ExternalInfo"]
 - ["12a4SysCoreIOS8CustomerC", "Map"]
-- ["12a4SysCoreIOS8CustomerC", "MaritalStatus"]
 - ["12a4SysCoreIOS8CustomerC", "State"]
 - ["12a4SysCoreIOS8CustomerC", "String"]
 - ["12a4SysCoreIOS8CustomerC", "User"]
 - ["12a4SysCoreIOS8CustomerC", "birthday"]
-- ["12a4SysCoreIOS8CustomerC", "cellPhone"]
 - ["12a4SysCoreIOS8CustomerC", "deinit"]
-- ["12a4SysCoreIOS8CustomerC", "externalInfo"]
 - ["12a4SysCoreIOS8CustomerC", "gender"]
 - ["12a4SysCoreIOS8CustomerC", "idCustomer"]
 - ["12a4SysCoreIOS8CustomerC", "init"]
-- ["12a4SysCoreIOS8CustomerC", "lastName"]
 - ["12a4SysCoreIOS8CustomerC", "mapping"]
-- ["12a4SysCoreIOS8CustomerC", "maritalStatus"]
 - ["12a4SysCoreIOS8CustomerC", "name"]
+- ["12a4SysCoreIOS8CustomerC", "phoneValidated"]
 - ["12a4SysCoreIOS8CustomerC", "state"]
 - ["12a4SysCoreIOS8CustomerC", "user"]
-- ["12a4SysCoreIOS12ExternalInfoC", "deinit"]
-- ["12a4SysCoreIOS12ExternalInfoC", "init"]
 - !private ["12ObjectMapper3MapC", "subscript"]
-- ["12ObjectMapper8MappableP", "ExternalInfo"]
-- ["12ObjectMapper8MappableP", "MaritalStatus"]
 - ["12ObjectMapper8MappableP", "State"]
 - ["12ObjectMapper8MappableP", "User"]
 - ["12ObjectMapper8MappableP", ""]
 - !private ["12ObjectMapper8MappableP", "birthday"]
-- !private ["12ObjectMapper8MappableP", "cellPhone"]
-- !private ["12ObjectMapper8MappableP", "externalInfo"]
 - !private ["12ObjectMapper8MappableP", "gender"]
 - !private ["12ObjectMapper8MappableP", "idCustomer"]
 - ["12ObjectMapper8MappableP", "init"]
-- !private ["12ObjectMapper8MappableP", "lastName"]
 - ["12ObjectMapper8MappableP", "mapping"]
-- !private ["12ObjectMapper8MappableP", "maritalStatus"]
 - !private ["12ObjectMapper8MappableP", "name"]
 - !private ["12ObjectMapper8MappableP", "state"]
 - !private ["12ObjectMapper8MappableP", "user"]
-- ["12a4SysCoreIOS13MaritalStatusC", "deinit"]
-- ["12a4SysCoreIOS13MaritalStatusC", "init"]
 - ["12a4SysCoreIOS5StateC", "deinit"]
 - ["12a4SysCoreIOS5StateC", "init"]
 - ["12a4SysCoreIOS4UserC", "deinit"]
@@ -82,10 +62,8 @@ depends-member:
 depends-nominal:
 - "12ObjectMapper12BaseMappableP"
 - "12a4SysCoreIOS8CustomerC"
-- "12a4SysCoreIOS12ExternalInfoC"
 - !private "12ObjectMapper3MapC"
 - "12ObjectMapper8MappableP"
-- "12a4SysCoreIOS13MaritalStatusC"
 - "12a4SysCoreIOS5StateC"
 - "12a4SysCoreIOS4UserC"
 depends-dynamic-lookup:
@@ -128,4 +106,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "cd2303f4a9da735f947e5a1eb805667e"
+interface-hash: "5ec546c04914303b579460937ed99f06"

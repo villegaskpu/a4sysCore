@@ -8,20 +8,20 @@
 
 import ObjectMapper
 
-class OfferCount: Mappable
+open class OfferCount: Mappable
 {
-    var count = 0
-    var categories : [Category] = []
+    public var count = 0
+    public var categories : [Category] = []
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         count <- map["count"]
         categories <- map["categories"]
     }

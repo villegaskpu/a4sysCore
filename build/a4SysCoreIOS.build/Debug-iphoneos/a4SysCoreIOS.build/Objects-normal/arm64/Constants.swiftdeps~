@@ -8,12 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "/"
-- "BooleanLiteralType"
 - "CGFloat"
 - "Constants"
-- "FloatLiteralType"
-- "IntegerLiteralType"
-- "StringLiteralType"
 - "UIColor"
 depends-member:
 - ["s7CVarArgP", "black"]

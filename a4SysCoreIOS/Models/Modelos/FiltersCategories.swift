@@ -11,15 +11,15 @@ import ObjectMapper
 
 class FiltersCategories : Mappable
 {
-    var idCategoryAlias : Int?
-    var name : String?
-    var iconUrl: String?
+    public var idCategoryAlias : Int?
+    public var name : String?
+    public var iconUrl: String?
     
-    required init?(map: Map) {
+    required public init?(map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         idCategoryAlias <- map["idCategoryAlias"]
         name <- map["name"]
         iconUrl <- map["iconUrl"]

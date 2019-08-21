@@ -8,19 +8,19 @@
 
 import ObjectMapper
 
-class OfferStatus: Mappable
+open class OfferStatus: Mappable
 {
     
-    var idOfferStatus = 0
+    public var idOfferStatus = 0
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         idOfferStatus <- map["idOfferStatus"]
     }
 }

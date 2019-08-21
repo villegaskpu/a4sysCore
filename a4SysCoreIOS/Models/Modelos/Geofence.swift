@@ -10,21 +10,21 @@ import Foundation
 import ObjectMapper
 
 
-class Geofence: Mappable
+open class Geofence: Mappable
 {
-    var name: String = ""
-    var location : LocationGeofence = LocationGeofence()
-    var radio : Double = 0
+    public var name: String = ""
+    public var location : LocationGeofence = LocationGeofence()
+    public var radio : Double = 0
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         name <- map["name"]
         location <- map["location"]
         radio <- map["radio"]

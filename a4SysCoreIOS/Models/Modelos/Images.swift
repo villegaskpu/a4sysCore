@@ -8,18 +8,18 @@
 
 import ObjectMapper
 
-class Images: Mappable
+open class Images: Mappable
 {
-    var headerURL : String = ""
+    public var headerURL : String = ""
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         headerURL <- map["headerURL"]
     }
 }

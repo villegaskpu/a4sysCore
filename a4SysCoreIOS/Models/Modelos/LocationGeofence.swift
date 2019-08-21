@@ -9,18 +9,18 @@
 import Foundation
 import ObjectMapper
 
-class LocationGeofence: Mappable{
-    var latitude : Double = 0
-    var longitude : Double = 0
+open class LocationGeofence: Mappable{
+    public var latitude : Double = 0
+    public var longitude : Double = 0
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         latitude <- map["latitude"]
         longitude <- map["longitude"]
     }

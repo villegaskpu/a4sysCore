@@ -8,22 +8,22 @@
 
 import ObjectMapper
 
-class Beacon : Mappable
+open class Beacon : Mappable
 {
-    var uuid : String = ""
-    var major = 0
-    var minor = 0
-    var temperature = 0
+    public var uuid : String = ""
+    public var major = 0
+    public var minor = 0
+    public var temperature = 0
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         uuid <- map["uuid"]
         major <- map["major"]
         minor <- map["minor"]

@@ -11,7 +11,6 @@ depends-top-level:
 - "Map"
 - "Mappable"
 - "String"
-- !private "StringLiteralType"
 - "WhoAmI"
 depends-member:
 - ["12ObjectMapper12BaseMappableP", ""]
@@ -80,4 +79,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b61c62fa54eb8f682b7598c7ad75461a"
+interface-hash: "7e2674c7775c7eba4bd138b99a6a43ef"

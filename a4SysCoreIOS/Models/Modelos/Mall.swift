@@ -8,26 +8,26 @@
 
 import ObjectMapper
 
-class Mall : Mappable
+open class Mall : Mappable
 {
-    var idMall = 0
-    var name : String = ""
-    var zoneImg : [ZoneImg] = []
-    var logoURL : String = ""
-    var countStore = 0
-    var countOffer = 0
-    var estimatedSavingsOffers = 0
-    var notify : String = ""
+    public var idMall = 0
+    public var name : String = ""
+    public var zoneImg : [ZoneImg] = []
+    public var logoURL : String = ""
+    public var countStore = 0
+    public var countOffer = 0
+    public var estimatedSavingsOffers = 0
+    public var notify : String = ""
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         idMall <- map["idMall"]
         name <- map["name"]
         zoneImg <- map["zoneImg"]

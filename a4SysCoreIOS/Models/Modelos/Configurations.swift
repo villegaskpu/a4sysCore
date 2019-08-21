@@ -9,20 +9,20 @@
 import ObjectMapper
 
 class Configurations: Mappable {
-    var customColors:CustomColors = CustomColors()
-    var images: Images = Images()
-    var menu:[Menu] = []
-    var refresh = 0
-//    var tutorialURL = ""
+    public var customColors:CustomColors = CustomColors()
+    public var images: Images = Images()
+    public var menu:[Menu] = []
+    public var refresh = 0
+//    public var tutorialURL = ""
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         customColors <- map["colors"]
         images <- map["images"]
         menu <- map["menu"]

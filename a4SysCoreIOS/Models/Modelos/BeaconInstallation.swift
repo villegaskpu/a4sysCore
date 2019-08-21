@@ -8,21 +8,21 @@
 
 import ObjectMapper
 
-class BeaconInstallation : Mappable
+open class BeaconInstallation : Mappable
 {
-    var store : Store = Store ()
-    var radio = 0
-    var forcePush = 0
-    var beaconInstallationType : BeaconInstallationType = BeaconInstallationType ()
+    public var store : Store = Store ()
+    public var radio = 0
+    public var forcePush = 0
+    public var beaconInstallationType : BeaconInstallationType = BeaconInstallationType ()
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         store <- map["store"]
         radio <- map["radio"]
         forcePush <- map["forcePush"]

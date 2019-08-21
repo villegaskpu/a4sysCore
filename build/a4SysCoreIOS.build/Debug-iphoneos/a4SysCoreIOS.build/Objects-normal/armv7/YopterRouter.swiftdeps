@@ -21,7 +21,6 @@ depends-top-level:
 - !private "URLQueryItem"
 - "URLRequest"
 - "URLRequestConvertible"
-- !private "UnicodeScalarType"
 - "YopterRouter"
 depends-member:
 - !private ["SK", "asURL"]

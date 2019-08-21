@@ -8,20 +8,20 @@
 
 import ObjectMapper
 
-class ApiError: Mappable
+public class ApiError: Mappable
 {
-    var code : String = ""
-    var message : String = ""
-    var cause : String = ""
+    public var code : String = ""
+    public var message : String = ""
+    public var cause : String = ""
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         code <- map["code"]
         message <- map["message"]
         cause <- map["cause"]

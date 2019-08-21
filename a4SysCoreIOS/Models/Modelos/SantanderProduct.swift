@@ -8,19 +8,19 @@
 
 import ObjectMapper
 
-class SantanderProduct: Mappable
+open class SantanderProduct: Mappable
 {
-    var idCode : String = ""
-    var idProduct = 0
+    public var idCode : String = ""
+    public var idProduct = 0
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         idCode <- map["idCode"]
         idProduct <- map["idProduct"]
     }

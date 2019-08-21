@@ -10,6 +10,7 @@ depends-top-level:
 - !private "<-"
 - "Article"
 - "AssignmentPrecedence"
+- "BooleanLiteralType"
 - "Category"
 - "Commerce"
 - "Image"
@@ -201,4 +202,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "cc549073f42eab0ec322b6bb3b78bbef"
+interface-hash: "f972c201b764b06427090621d71a6631"

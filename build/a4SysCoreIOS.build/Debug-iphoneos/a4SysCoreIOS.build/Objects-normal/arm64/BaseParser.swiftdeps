@@ -11,10 +11,8 @@ depends-top-level:
 - "BaseParser"
 - "CastingPrecedence"
 - "NSObject"
-- "String"
 depends-member:
 - ["12a4SysCoreIOS10BaseParserC", "AnyObject"]
-- ["12a4SysCoreIOS10BaseParserC", "String"]
 - ["12a4SysCoreIOS10BaseParserC", "deinit"]
 - ["12a4SysCoreIOS10BaseParserC", "init"]
 - ["12a4SysCoreIOS10BaseParserC", "objeto"]
@@ -35,7 +33,6 @@ depends-member:
 - !private ["SH", "init"]
 - !private ["SH", "objeto"]
 - ["So8NSObjectC", "AnyObject"]
-- ["So8NSObjectC", "String"]
 - ["So8NSObjectC", ""]
 - ["So8NSObjectC", "init"]
 - ["So8NSObjectC", "objeto"]
@@ -96,4 +93,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "bd7068711992471a297fda4632597d69"
+interface-hash: "aa4cd4c247eafd7cc3a00425a688b12e"

@@ -8,43 +8,43 @@
 
 import ObjectMapper
 
-class Offer: Mappable
+open class Offer: Mappable
 {
     
-    var idOffer = 0
-    var title : String = ""
-    var offerDescription : String = ""
-    var conditions : String = ""
-    var websiteURL: String = ""
-    var virtual = 0
-    var images : [Image] = []
-    var offerType : OfferType = OfferType ()
-    var customerRequired = 0
-    var permanent = 0
-    var offerStatus : OfferStatus = OfferStatus ()
-    var keywords : [Keyword] = []
-    var categories : [Category] = []
-    var commerce : Commerce = Commerce ()
-    var viewed = 0
-    var deleted = 0
-    var favorite = 0
-    var rating : Rating = Rating ()
-    var userRating : UserRating = UserRating ()
-    var createdAt : String = ""
-    var endDate : String = ""
-    var isHome = false
-    var isFavorite = false
-    var isArticle = false
+    public var idOffer = 0
+    public var title : String = ""
+    public var offerDescription : String = ""
+    public var conditions : String = ""
+    public var websiteURL: String = ""
+    public var virtual = 0
+    public var images : [Image] = []
+    public var offerType : OfferType = OfferType ()
+    public var customerRequired = 0
+    public var permanent = 0
+    public var offerStatus : OfferStatus = OfferStatus ()
+    public var keywords : [Keyword] = []
+    public var categories : [Category] = []
+    public var commerce : Commerce = Commerce ()
+    public var viewed = 0
+    public var deleted = 0
+    public var favorite = 0
+    public var rating : Rating = Rating ()
+    public var userRating : UserRating = UserRating ()
+    public var createdAt : String = ""
+    public var endDate : String = ""
+    public var isHome = false
+    public var isFavorite = false
+    public var isArticle = false
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
         
     }
     
-    convenience init?(article: Article)
+    convenience public init?(article: Article)
     {
         self.init()
         idOffer = article.idArticle
@@ -59,7 +59,7 @@ class Offer: Mappable
         rating = article.rating
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         idOffer <- map["idOffer"]
         title <- map["title"]
         offerDescription <- map["description"]

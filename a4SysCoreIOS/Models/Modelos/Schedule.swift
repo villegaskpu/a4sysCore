@@ -8,27 +8,27 @@
 
 import ObjectMapper
 
-class Schedule: Mappable
+open class Schedule: Mappable
 {
     
-    var idSchedule = 0
-    var weekdays : String = ""
-    var openAt : String = ""
-    var closedAt : String = ""
-    var createdAt : String = ""
-    var updatedAt : String = ""
-    var breakTimeStart : String = ""
-    var breakTimeEnd : String = ""
+    public var idSchedule = 0
+    public var weekdays : String = ""
+    public var openAt : String = ""
+    public var closedAt : String = ""
+    public var createdAt : String = ""
+    public var updatedAt : String = ""
+    public var breakTimeStart : String = ""
+    public var breakTimeEnd : String = ""
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         idSchedule <- map["idSchedule"]
         weekdays <- map["weekdays"]
         openAt <- map["openAt"]

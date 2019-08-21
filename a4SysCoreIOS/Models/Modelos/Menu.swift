@@ -8,23 +8,22 @@
 
 import ObjectMapper
 
-class Menu: Mappable {
+open class Menu: Mappable {
     
-    var action:Action = Action ()
-    var iconURL = ""
-    var name = ""
-    var order = 0
+    public var action:Action = Action ()
+    public var iconURL = ""
+    public var name = ""
+    public var order = 0
     
     
-    required convenience init?(map: Map) {
+    required public  convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
     }
     
-    func mapping(map: Map) {
-        
+    public func mapping(map: Map) {
         action <- map["action"]
         iconURL <- map["iconURL"]
         name <- map["name"]
@@ -32,19 +31,19 @@ class Menu: Mappable {
     }
 }
 
-class Action: Mappable {
-    var URL = ""
-    var type = 0
-    var webView:Int = 90
+open class Action: Mappable {
+    public var URL = ""
+    public var type = 0
+    public var webView:Int = 90
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         URL <- map["URL"]
         type <- map["type"]
         webView <- map["webView"]

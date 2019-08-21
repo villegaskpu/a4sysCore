@@ -8,19 +8,19 @@
 
 import ObjectMapper
 
-class BeaconFirmware : Mappable
+open class BeaconFirmware : Mappable
 {
-    var idBeaconFirmware = 0
+    public var idBeaconFirmware = 0
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    init() {
+    public init() {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         idBeaconFirmware <- map["idBeaconFirmware"]
     }
 }

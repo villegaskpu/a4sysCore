@@ -9,12 +9,9 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "<-"
 - "BeaconInstallationType"
-- "FloatLiteralType"
-- "IntegerLiteralType"
 - "Map"
 - "Mappable"
 - "String"
-- "StringLiteralType"
 depends-member:
 - ["12ObjectMapper12BaseMappableP", ""]
 - !private ["12ObjectMapper12BaseMappableP", "idBeaconInstallationType"]
@@ -79,4 +76,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "ce6919ae57674c14339a238eb54c3992"
+interface-hash: "a968beae3c2c0d5b8a29e2c7ee7e6af3"

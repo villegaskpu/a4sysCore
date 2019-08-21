@@ -8,16 +8,16 @@
 
 import ObjectMapper
 
-class ExternalInfo: Mappable
+open class ExternalInfo: Mappable
 {
-    var idExternal : String = ""
-    var santanderProduct : SantanderProduct = SantanderProduct ()
+    public var idExternal : String = ""
+    public var santanderProduct : SantanderProduct = SantanderProduct ()
     
-    required convenience init?(map: Map) {
+    required public convenience init?(map: Map) {
         self.init()
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         idExternal <- map["idExternal"]
         santanderProduct <- map["santanderProduct"]
     }
