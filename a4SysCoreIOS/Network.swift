@@ -40,10 +40,7 @@ open class Network: NSObject {
         set(parser: parser)
         sessionManager.request(url).responseJSON{ (response) in
             
-            let statusCode = response.response?.statusCode ?? 0
-//            print("Es el error : \(errRes) ....  \(ddd)")
-            
-            
+            let statusCode = response.response?.statusCode ?? 0            
             switch(response.result)
             {
             case .success(let value):
@@ -81,6 +78,14 @@ open class Network: NSObject {
         case .Login:
             urll = YopterRouter.Login(parameter: self.urlParameters!)
             parserB = LoginParser()
+            break
+        case .GetHome:
+            urll = YopterRouter.GetHome(parameter: self.urlParameters!)
+            parserB = HomeParser()
+            break
+        case .OfferSearch:
+            urll = YopterRouter.OfferSearch(parameter: self.urlParameters!)
+            parserB = HomeParser()
             break
         default:
             break

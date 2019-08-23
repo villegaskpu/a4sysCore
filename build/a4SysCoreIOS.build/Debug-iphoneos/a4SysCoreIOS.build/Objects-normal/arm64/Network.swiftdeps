@@ -16,6 +16,9 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "BaseParser"
 - !private "CastingPrecedence"
+- "FloatLiteralType"
+- !private "HomeParser"
+- "IntegerLiteralType"
 - !private "LoginParser"
 - !private "Mapper"
 - "NSObject"
@@ -23,6 +26,7 @@ depends-top-level:
 - !private "NetworkManager"
 - "SessionManager"
 - "String"
+- "StringLiteralType"
 - "URLRequestConvertible"
 - "URLSessionConfiguration"
 - "Void"
@@ -35,6 +39,7 @@ depends-member:
 - !private ["12a4SysCoreIOS10BaseParserC", "parse"]
 - !private ["SK", "init"]
 - !private ["s7CVarArgP", "BaseParser"]
+- !private ["s7CVarArgP", "HomeParser"]
 - !private ["s7CVarArgP", "LoginParser"]
 - !private ["s7CVarArgP", "Mapper"]
 - !private ["s7CVarArgP", "NetworkManager"]
@@ -56,6 +61,7 @@ depends-member:
 - !private ["Sl", "init"]
 - !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "BaseParser"]
+- !private ["s28CustomDebugStringConvertibleP", "HomeParser"]
 - !private ["s28CustomDebugStringConvertibleP", "LoginParser"]
 - !private ["s28CustomDebugStringConvertibleP", "Mapper"]
 - !private ["s28CustomDebugStringConvertibleP", "NetworkManager"]
@@ -81,6 +87,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "urlParameters"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "BaseParser"]
+- !private ["s23CustomStringConvertibleP", "HomeParser"]
 - !private ["s23CustomStringConvertibleP", "LoginParser"]
 - !private ["s23CustomStringConvertibleP", "Mapper"]
 - !private ["s23CustomStringConvertibleP", "NetworkManager"]
@@ -114,10 +121,13 @@ depends-member:
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "init"]
 - !private ["SQ", "BaseParser"]
+- ["SQ", "GetHome"]
+- !private ["SQ", "HomeParser"]
 - ["SQ", "Login"]
 - !private ["SQ", "LoginParser"]
 - !private ["SQ", "Mapper"]
 - !private ["SQ", "NetworkManager"]
+- ["SQ", "OfferSearch"]
 - !private ["SQ", "String"]
 - !private ["SQ", "YopterRouter"]
 - ["SQ", ""]
@@ -139,10 +149,13 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["So17NSHTTPURLResponseC", "statusCode"]
 - !private ["SH", "BaseParser"]
+- ["SH", "GetHome"]
+- !private ["SH", "HomeParser"]
 - ["SH", "Login"]
 - !private ["SH", "LoginParser"]
 - !private ["SH", "Mapper"]
 - !private ["SH", "NetworkManager"]
+- ["SH", "OfferSearch"]
 - !private ["SH", "String"]
 - !private ["SH", "YopterRouter"]
 - ["SH", ""]
@@ -158,6 +171,7 @@ depends-member:
 - !private ["SH", "set"]
 - !private ["SH", "statusCode"]
 - !private ["SH", "urlParameters"]
+- !private ["12a4SysCoreIOS10HomeParserC", "init"]
 - !private ["12a4SysCoreIOS11LoginParserC", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["12ObjectMapper0B0C", "init"]
@@ -170,6 +184,7 @@ depends-member:
 - ["So8NSObjectC", "AnyObject"]
 - !private ["So8NSObjectC", "ApiError"]
 - ["So8NSObjectC", "BaseParser"]
+- !private ["So8NSObjectC", "HomeParser"]
 - !private ["So8NSObjectC", "LoginParser"]
 - !private ["So8NSObjectC", "Mapper"]
 - !private ["So8NSObjectC", "NetworkManager"]
@@ -194,6 +209,7 @@ depends-member:
 - !private ["So8NSObjectC", "statusCode"]
 - ["So8NSObjectC", "urlParameters"]
 - !private ["So8NSObjectP", "BaseParser"]
+- !private ["So8NSObjectP", "HomeParser"]
 - !private ["So8NSObjectP", "LoginParser"]
 - !private ["So8NSObjectP", "Mapper"]
 - !private ["So8NSObjectP", "NetworkManager"]
@@ -216,6 +232,7 @@ depends-member:
 - ["12a4SysCoreIOS7NetworkC", "AnyObject"]
 - !private ["12a4SysCoreIOS7NetworkC", "ApiError"]
 - ["12a4SysCoreIOS7NetworkC", "BaseParser"]
+- !private ["12a4SysCoreIOS7NetworkC", "HomeParser"]
 - !private ["12a4SysCoreIOS7NetworkC", "LoginParser"]
 - !private ["12a4SysCoreIOS7NetworkC", "Mapper"]
 - !private ["12a4SysCoreIOS7NetworkC", "NetworkManager"]
@@ -253,11 +270,15 @@ depends-member:
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire21URLRequestConvertibleP", "GetHome"]
 - !private ["9Alamofire21URLRequestConvertibleP", "Login"]
+- !private ["9Alamofire21URLRequestConvertibleP", "OfferSearch"]
 - !private ["So13NSURLResponseC", "statusCode"]
 - ["So25NSURLSessionConfigurationC", "default"]
 - ["So25NSURLSessionConfigurationC", "httpAdditionalHeaders"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "GetHome"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "Login"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "OfferSearch"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "deinit"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -265,6 +286,7 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s19_HasContiguousBytesP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "BaseParser"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "HomeParser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "LoginParser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Mapper"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NetworkManager"]
@@ -284,7 +306,9 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "statusCode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "urlParameters"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- ["12a4SysCoreIOS8endPointO", "GetHome"]
 - ["12a4SysCoreIOS8endPointO", "Login"]
+- ["12a4SysCoreIOS8endPointO", "OfferSearch"]
 depends-nominal:
 - "12a4SysCoreIOS8ApiErrorC"
 - !private "12a4SysCoreIOS10BaseParserC"
@@ -307,6 +331,7 @@ depends-nominal:
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "So17NSHTTPURLResponseC"
 - "SH"
+- !private "12a4SysCoreIOS10HomeParserC"
 - !private "12a4SysCoreIOS11LoginParserC"
 - !private "s25LosslessStringConvertibleP"
 - !private "12ObjectMapper0B0C"

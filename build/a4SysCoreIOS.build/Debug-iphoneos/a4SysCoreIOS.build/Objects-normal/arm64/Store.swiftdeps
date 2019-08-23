@@ -10,6 +10,8 @@ depends-top-level:
 - !private "<-"
 - "Commerce"
 - "Double"
+- "FloatLiteralType"
+- "IntegerLiteralType"
 - "Mall"
 - "Map"
 - "Mappable"
@@ -18,6 +20,7 @@ depends-top-level:
 - "State"
 - "Store"
 - "String"
+- "StringLiteralType"
 depends-member:
 - ["12ObjectMapper12BaseMappableP", "Commerce"]
 - ["12ObjectMapper12BaseMappableP", "Mall"]
@@ -158,4 +161,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "6af05914d0bcc5d55aeb43d1bb82d7fe"
+interface-hash: "906ce2c18ac7f0e6a9053fa4b86352aa"

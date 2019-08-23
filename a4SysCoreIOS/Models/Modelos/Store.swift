@@ -11,25 +11,25 @@ import ObjectMapper
 open class Store:  Mappable
 {
     
-    var idStore = 0
-    var name: String = ""
-    var addressL1 : String = ""
-    var addressL2 : String = ""
-    var zipCode : String = ""
-    var city : String = ""
-    var state : State = State ()
-    var email : String = ""
-    var latitude : Double = 0
-    var longitude : Double = 0
-    var distance : Double = 0
-    var phoneNumber : String = ""
-    var website : String = ""
-    var imgURL : String = ""
-    var virtualCommerce = 0
-    var mall : Mall = Mall ()
-    var schedules : [Schedule] = []
-    var offers : [Offer] = []
-    var commerce : Commerce = Commerce ()
+    public var idStore = 0
+    public var name: String = ""
+    public var addressL1 : String = ""
+    public var addressL2 : String = ""
+    public var zipCode : String = ""
+    public var city : String = ""
+    public var state : State = State ()
+    public var email : String = ""
+    public var latitude : Double = 0
+    public var longitude : Double = 0
+    public var distance : Double = 0
+    public var phoneNumber : String = ""
+    public var website : String = ""
+    public var imgURL : String = ""
+    public var virtualCommerce = 0
+    public var mall : Mall = Mall ()
+    public var schedules : [Schedule] = []
+    public var offers : [Offer] = []
+    public var commerce : Commerce = Commerce ()
     
     required public convenience init?(map: Map) {
         self.init()

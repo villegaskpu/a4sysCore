@@ -275,6 +275,9 @@ enum YopterRouter: URLRequestConvertible
         urlRequest.addValue(Commons.getUserAgent(), forHTTPHeaderField: "user-agent")
         urlRequest.addValue(Constants.language, forHTTPHeaderField: "Accept-Language")
         urlRequest.addValue(TimeZone.current.identifier, forHTTPHeaderField: "Time-Zone")
+        urlRequest.addValue("bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJZb3B0ZXJBZFBsdXMiLCJhdWQiOiJZb3B0ZXJBZFBsdXNVc2VycyIsImV4cCI6MTU2NzA4NzEzMSwianRpIjoiLUt6YTFTeE44TU1tLUpxVVh1ekJHdyIsImlhdCI6MTU2NjQ4NzEzMSwibmJmIjoxNTY2NDg3MDcxLCJzdWIiOiJBY2Nlc3MgVG9rZW4iLCJVU0VSQUJMRV9JRCI6MTM5MjIxLCJQRVJNSVNTSU9OUyI6ImFwcF9zZXJ2aWNlIiwiVElNRV9aT05FIjoiQW1lcmljYS9NZXhpY29fQ2l0eSIsIklEX0NMSUVOVCI6NDIxLCJVU0VSX0lEIjoxNDE2MDIsIlVTRVIiOiJhZHNiQHlvcG1haWwuY29tIiwiQ09NUEFOWV9JRCI6ODYsIlRPS0VOIjoiM0FXSFRCUlV1YzY5aHZLb1lWY0gxejFtQ0xYRVo1WUEiLCJJRF9VU0VSIjoxNDE2MDJ9.lO5GHhOmk2lSSqPseE0ktr3kscGX9tgHxh8L9UlXK4aZcIVcWDpBFOjsRUqdnIvqryYD3nvKZGXKr8oyQJFL-rSrLrh6URGs1fEUdhnsNaMP8T_5rwNKJ3gGRH7fd0mKHFT18Gn3qep_XZyamTuvSxM4cQN5HJvlnLDFD_Zm3OCXsFF6YQY0GKqSWzlJH_VpJEiBgcKlrh-GLWWxEIC3S-kh83k3XiWDCPlIePBb_DexdHKrFYUqjX30X2W4LKaqnbinKuazczSIjzvj20_Y4v1OocstMZlDU99jqw4DA-_OCcqhFAvXHun46mjKkXLTcWP5cdd9oGswaXfZQvfxcg", forHTTPHeaderField: "Authorization")
+        
+        print("useragent: \(Commons.getUserAgent())")
         
         switch self
         {

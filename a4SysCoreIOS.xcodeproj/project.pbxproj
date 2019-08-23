@@ -89,6 +89,7 @@
 		63E2A78C230C32ED00EB0F9C /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E2A78B230C32ED00EB0F9C /* StringExtension.swift */; };
 		63E2A803230C4C8E00EB0F9C /* BaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E2A802230C4C8E00EB0F9C /* BaseParser.swift */; };
 		63E2A805230C4D3A00EB0F9C /* LoginParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E2A804230C4D3A00EB0F9C /* LoginParser.swift */; };
+		63E2A8A5230EE12900EB0F9C /* HomeParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E2A8A4230EE12900EB0F9C /* HomeParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -172,6 +173,7 @@
 		63E2A78B230C32ED00EB0F9C /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		63E2A802230C4C8E00EB0F9C /* BaseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseParser.swift; sourceTree = "<group>"; };
 		63E2A804230C4D3A00EB0F9C /* LoginParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginParser.swift; sourceTree = "<group>"; };
+		63E2A8A4230EE12900EB0F9C /* HomeParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -331,6 +333,7 @@
 			children = (
 				63E2A802230C4C8E00EB0F9C /* BaseParser.swift */,
 				63E2A804230C4D3A00EB0F9C /* LoginParser.swift */,
+				63E2A8A4230EE12900EB0F9C /* HomeParser.swift */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
@@ -512,6 +515,7 @@
 				63755E1822FDD1CD00D161FA /* ArticlesResponse.swift in Sources */,
 				63755E0D22FDD1CD00D161FA /* Heartbeat.swift in Sources */,
 				63755DC622FDD19B00D161FA /* LoginResponse.swift in Sources */,
+				63E2A8A5230EE12900EB0F9C /* HomeParser.swift in Sources */,
 				63755E1122FDD1CD00D161FA /* BeaconAnnouncement.swift in Sources */,
 				63755DB722FDD17F00D161FA /* Requests.swift in Sources */,
 				63755E1B22FDD1CD00D161FA /* Article.swift in Sources */,

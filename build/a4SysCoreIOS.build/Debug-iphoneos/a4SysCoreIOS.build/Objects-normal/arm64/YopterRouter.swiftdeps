@@ -10,18 +10,23 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "Commons"
 - !private "Constants"
+- !private "FloatLiteralType"
 - "HTTPMethod"
+- !private "IntegerLiteralType"
 - !private "JSONEncoding"
 - "Parameters"
 - !private "Settings"
 - "String"
+- !private "StringLiteralType"
 - !private "TimeZone"
 - !private "URLComponents"
 - !private "URLEncoding"
 - !private "URLQueryItem"
 - "URLRequest"
 - "URLRequestConvertible"
+- !private "UnicodeScalarType"
 - "YopterRouter"
+- !private "print"
 depends-member:
 - !private ["SK", "asURL"]
 - !private ["s7CVarArgP", "asURL"]
@@ -247,6 +252,7 @@ depends-member:
 - !private ["9Alamofire21URLRequestConvertibleP", "init"]
 - !private ["9Alamofire21URLRequestConvertibleP", "method"]
 - !private ["9Alamofire21URLRequestConvertibleP", "path"]
+- !private ["9Alamofire21URLRequestConvertibleP", "print"]
 - !private ["9Alamofire21URLRequestConvertibleP", "url"]
 - ["12a4SysCoreIOS12YopterRouterO", "Arrived"]
 - ["12a4SysCoreIOS12YopterRouterO", "ArticleDelete"]
@@ -312,6 +318,7 @@ depends-member:
 - ["12a4SysCoreIOS12YopterRouterO", "deinit"]
 - ["12a4SysCoreIOS12YopterRouterO", "method"]
 - ["12a4SysCoreIOS12YopterRouterO", "path"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "print"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "appendingPathComponent"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "asURL"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "asURL"]
