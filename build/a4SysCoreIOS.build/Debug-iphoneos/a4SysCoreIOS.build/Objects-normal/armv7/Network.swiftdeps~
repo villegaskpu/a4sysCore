@@ -15,7 +15,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "BaseParser"
 - !private "CastingPrecedence"
-- "Int"
+- !private "LoginParser"
 - !private "Mapper"
 - "NSObject"
 - "Network"
@@ -29,8 +29,11 @@ depends-top-level:
 - "endPoint"
 - !private "print"
 depends-member:
+- !private ["12a4SysCoreIOS10BaseParserC", "init"]
 - !private ["12a4SysCoreIOS10BaseParserC", "parse"]
 - !private ["SK", "init"]
+- !private ["s7CVarArgP", "BaseParser"]
+- !private ["s7CVarArgP", "LoginParser"]
 - !private ["s7CVarArgP", "Mapper"]
 - !private ["s7CVarArgP", "NetworkManager"]
 - !private ["s7CVarArgP", "String"]
@@ -44,10 +47,13 @@ depends-member:
 - !private ["s7CVarArgP", "parse"]
 - !private ["s7CVarArgP", "parser"]
 - !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "set"]
 - !private ["s7CVarArgP", "statusCode"]
 - !private ["s7CVarArgP", "urlParameters"]
 - !private ["Sl", "init"]
 - !private ["SL", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "BaseParser"]
+- !private ["s28CustomDebugStringConvertibleP", "LoginParser"]
 - !private ["s28CustomDebugStringConvertibleP", "Mapper"]
 - !private ["s28CustomDebugStringConvertibleP", "NetworkManager"]
 - !private ["s28CustomDebugStringConvertibleP", "String"]
@@ -68,11 +74,14 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "response"]
 - !private ["s28CustomDebugStringConvertibleP", "responseJSON"]
 - !private ["s28CustomDebugStringConvertibleP", "result"]
+- !private ["s28CustomDebugStringConvertibleP", "set"]
 - !private ["s28CustomDebugStringConvertibleP", "statusCode"]
 - !private ["s28CustomDebugStringConvertibleP", "success"]
 - !private ["s28CustomDebugStringConvertibleP", "urlParameters"]
 - !private ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "BaseParser"]
+- !private ["s23CustomStringConvertibleP", "LoginParser"]
 - !private ["s23CustomStringConvertibleP", "Mapper"]
 - !private ["s23CustomStringConvertibleP", "NetworkManager"]
 - !private ["s23CustomStringConvertibleP", "String"]
@@ -95,6 +104,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "response"]
 - !private ["s23CustomStringConvertibleP", "responseJSON"]
 - !private ["s23CustomStringConvertibleP", "result"]
+- !private ["s23CustomStringConvertibleP", "set"]
 - !private ["s23CustomStringConvertibleP", "statusCode"]
 - !private ["s23CustomStringConvertibleP", "success"]
 - !private ["s23CustomStringConvertibleP", "urlParameters"]
@@ -112,7 +122,9 @@ depends-member:
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "init"]
 - !private ["SS10FoundationE8EncodingV", "utf8"]
+- !private ["SQ", "BaseParser"]
 - ["SQ", "Login"]
+- !private ["SQ", "LoginParser"]
 - !private ["SQ", "Mapper"]
 - !private ["SQ", "NetworkManager"]
 - !private ["SQ", "String"]
@@ -126,6 +138,7 @@ depends-member:
 - !private ["SQ", "parse"]
 - !private ["SQ", "parser"]
 - !private ["SQ", "print"]
+- !private ["SQ", "set"]
 - !private ["SQ", "statusCode"]
 - !private ["SQ", "urlParameters"]
 - !private ["SQ", "utf8"]
@@ -134,7 +147,9 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["So17NSHTTPURLResponseC", "statusCode"]
+- !private ["SH", "BaseParser"]
 - ["SH", "Login"]
+- !private ["SH", "LoginParser"]
 - !private ["SH", "Mapper"]
 - !private ["SH", "NetworkManager"]
 - !private ["SH", "String"]
@@ -148,9 +163,11 @@ depends-member:
 - !private ["SH", "parse"]
 - !private ["SH", "parser"]
 - !private ["SH", "print"]
+- !private ["SH", "set"]
 - !private ["SH", "statusCode"]
 - !private ["SH", "urlParameters"]
 - !private ["SH", "utf8"]
+- !private ["12a4SysCoreIOS11LoginParserC", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "statusCode"]
@@ -159,7 +176,7 @@ depends-member:
 - !private ["So9NSCopyingP", "statusCode"]
 - ["So8NSObjectC", "AnyObject"]
 - ["So8NSObjectC", "BaseParser"]
-- ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "LoginParser"]
 - !private ["So8NSObjectC", "Mapper"]
 - !private ["So8NSObjectC", "NetworkManager"]
 - ["So8NSObjectC", "String"]
@@ -181,6 +198,8 @@ depends-member:
 - ["So8NSObjectC", "setUrlParameters"]
 - !private ["So8NSObjectC", "statusCode"]
 - ["So8NSObjectC", "urlParameters"]
+- !private ["So8NSObjectP", "BaseParser"]
+- !private ["So8NSObjectP", "LoginParser"]
 - !private ["So8NSObjectP", "Mapper"]
 - !private ["So8NSObjectP", "NetworkManager"]
 - !private ["So8NSObjectP", "String"]
@@ -194,12 +213,13 @@ depends-member:
 - !private ["So8NSObjectP", "parse"]
 - !private ["So8NSObjectP", "parser"]
 - !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "set"]
 - !private ["So8NSObjectP", "statusCode"]
 - !private ["So8NSObjectP", "urlParameters"]
 - !private ["So14NSSecureCodingP", "statusCode"]
 - ["12a4SysCoreIOS7NetworkC", "AnyObject"]
 - ["12a4SysCoreIOS7NetworkC", "BaseParser"]
-- ["12a4SysCoreIOS7NetworkC", "Int"]
+- !private ["12a4SysCoreIOS7NetworkC", "LoginParser"]
 - !private ["12a4SysCoreIOS7NetworkC", "Mapper"]
 - !private ["12a4SysCoreIOS7NetworkC", "NetworkManager"]
 - ["12a4SysCoreIOS7NetworkC", "String"]
@@ -251,6 +271,8 @@ depends-member:
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s19_HasContiguousBytesP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "BaseParser"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "LoginParser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Mapper"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NetworkManager"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
@@ -264,6 +286,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "parse"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "parser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "set"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "statusCode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "urlParameters"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -290,6 +313,7 @@ depends-nominal:
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "So17NSHTTPURLResponseC"
 - "SH"
+- !private "12a4SysCoreIOS11LoginParserC"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "So8NSCodingP"
@@ -362,4 +386,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "117faadc567cd43c17809b89a3893dc0"
+interface-hash: "5bce27efa37a5527c727401b15673cb9"

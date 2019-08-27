@@ -26,6 +26,7 @@ open class Network: NSObject {
     
     private var urlParameters:[String:Any]?
     private var parser: BaseParser?
+    private var idOffert:String = ""
     
     public func setUrlParameters(urlParameters:[String:Any]) {
         self.urlParameters = urlParameters
@@ -63,6 +64,10 @@ open class Network: NSObject {
         }
     }
     
+    public func setIdOffert(idOfert:String) {
+        self.idOffert = idOfert
+    }
+    
     private func parseError(JSONObject: Any) -> AnyObject? {
         if let apiError = Mapper<ApiError>().map(JSONObject: JSONObject) {
             return apiError
@@ -86,8 +91,13 @@ open class Network: NSObject {
         case .OfferSearch:
             urll = YopterRouter.OfferSearch(parameter: self.urlParameters!)
             parserB = HomeParser()
+        case .OfferRating:
+            urll = YopterRouter.OfferRating(idOffer: self.idOffert, parameter: self.urlParameters!)
+        case .ArticleRating:
+            urll = YopterRouter.ArticleRating(idOffer: self.idOffert, parameter: self.urlParameters!)
             break
         default:
+            print("sin endPoint")
             break
         }
         

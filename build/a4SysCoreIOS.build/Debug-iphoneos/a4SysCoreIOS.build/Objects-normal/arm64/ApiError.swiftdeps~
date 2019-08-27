@@ -12,7 +12,6 @@ depends-top-level:
 - "Map"
 - "Mappable"
 - "String"
-- "StringLiteralType"
 depends-member:
 - ["12a4SysCoreIOS8ApiErrorC", "Map"]
 - ["12a4SysCoreIOS8ApiErrorC", "String"]

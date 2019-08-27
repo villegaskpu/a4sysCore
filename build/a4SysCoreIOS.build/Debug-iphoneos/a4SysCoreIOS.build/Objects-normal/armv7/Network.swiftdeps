@@ -15,6 +15,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "BaseParser"
 - !private "CastingPrecedence"
+- !private "HomeParser"
 - !private "LoginParser"
 - !private "Mapper"
 - "NSObject"
@@ -33,6 +34,7 @@ depends-member:
 - !private ["12a4SysCoreIOS10BaseParserC", "parse"]
 - !private ["SK", "init"]
 - !private ["s7CVarArgP", "BaseParser"]
+- !private ["s7CVarArgP", "HomeParser"]
 - !private ["s7CVarArgP", "LoginParser"]
 - !private ["s7CVarArgP", "Mapper"]
 - !private ["s7CVarArgP", "NetworkManager"]
@@ -45,6 +47,7 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "parse"]
+- !private ["s7CVarArgP", "parseError"]
 - !private ["s7CVarArgP", "parser"]
 - !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "set"]
@@ -53,6 +56,7 @@ depends-member:
 - !private ["Sl", "init"]
 - !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "BaseParser"]
+- !private ["s28CustomDebugStringConvertibleP", "HomeParser"]
 - !private ["s28CustomDebugStringConvertibleP", "LoginParser"]
 - !private ["s28CustomDebugStringConvertibleP", "Mapper"]
 - !private ["s28CustomDebugStringConvertibleP", "NetworkManager"]
@@ -60,15 +64,13 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "YopterRouter"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "callService"]
-- !private ["s28CustomDebugStringConvertibleP", "data"]
 - ["s28CustomDebugStringConvertibleP", "default"]
-- !private ["s28CustomDebugStringConvertibleP", "description"]
-- !private ["s28CustomDebugStringConvertibleP", "error"]
 - !private ["s28CustomDebugStringConvertibleP", "failure"]
 - ["s28CustomDebugStringConvertibleP", "httpAdditionalHeaders"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "parse"]
+- !private ["s28CustomDebugStringConvertibleP", "parseError"]
 - !private ["s28CustomDebugStringConvertibleP", "parser"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "response"]
@@ -78,9 +80,9 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "statusCode"]
 - !private ["s28CustomDebugStringConvertibleP", "success"]
 - !private ["s28CustomDebugStringConvertibleP", "urlParameters"]
-- !private ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "BaseParser"]
+- !private ["s23CustomStringConvertibleP", "HomeParser"]
 - !private ["s23CustomStringConvertibleP", "LoginParser"]
 - !private ["s23CustomStringConvertibleP", "Mapper"]
 - !private ["s23CustomStringConvertibleP", "NetworkManager"]
@@ -90,15 +92,13 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "callService"]
-- !private ["s23CustomStringConvertibleP", "data"]
 - ["s23CustomStringConvertibleP", "default"]
-- !private ["s23CustomStringConvertibleP", "description"]
-- !private ["s23CustomStringConvertibleP", "error"]
 - !private ["s23CustomStringConvertibleP", "failure"]
 - ["s23CustomStringConvertibleP", "httpAdditionalHeaders"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "parse"]
+- !private ["s23CustomStringConvertibleP", "parseError"]
 - !private ["s23CustomStringConvertibleP", "parser"]
 - !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "response"]
@@ -108,25 +108,21 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "statusCode"]
 - !private ["s23CustomStringConvertibleP", "success"]
 - !private ["s23CustomStringConvertibleP", "urlParameters"]
-- !private ["s23CustomStringConvertibleP", "utf8"]
-- !private ["s23CustomStringConvertibleP", "value"]
 - !private ["9Alamofire11DataRequestC", "responseJSON"]
-- !private ["9Alamofire12DataResponseV", "data"]
-- !private ["9Alamofire12DataResponseV", "description"]
-- !private ["9Alamofire12DataResponseV", "error"]
 - !private ["9Alamofire12DataResponseV", "response"]
 - !private ["9Alamofire12DataResponseV", "result"]
-- !private ["9Alamofire12DataResponseV", "value"]
 - !private ["Se", "init"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - !private ["SE", "init"]
-- !private ["SS10FoundationE8EncodingV", "utf8"]
 - !private ["SQ", "BaseParser"]
+- ["SQ", "GetHome"]
+- !private ["SQ", "HomeParser"]
 - ["SQ", "Login"]
 - !private ["SQ", "LoginParser"]
 - !private ["SQ", "Mapper"]
 - !private ["SQ", "NetworkManager"]
+- ["SQ", "OfferSearch"]
 - !private ["SQ", "String"]
 - !private ["SQ", "YopterRouter"]
 - ["SQ", ""]
@@ -136,22 +132,25 @@ depends-member:
 - !private ["SQ", "init"]
 - !private ["SQ", "init"]
 - !private ["SQ", "parse"]
+- !private ["SQ", "parseError"]
 - !private ["SQ", "parser"]
 - !private ["SQ", "print"]
 - !private ["SQ", "set"]
 - !private ["SQ", "statusCode"]
 - !private ["SQ", "urlParameters"]
-- !private ["SQ", "utf8"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["So17NSHTTPURLResponseC", "statusCode"]
 - !private ["SH", "BaseParser"]
+- ["SH", "GetHome"]
+- !private ["SH", "HomeParser"]
 - ["SH", "Login"]
 - !private ["SH", "LoginParser"]
 - !private ["SH", "Mapper"]
 - !private ["SH", "NetworkManager"]
+- ["SH", "OfferSearch"]
 - !private ["SH", "String"]
 - !private ["SH", "YopterRouter"]
 - ["SH", ""]
@@ -161,12 +160,13 @@ depends-member:
 - !private ["SH", "init"]
 - !private ["SH", "init"]
 - !private ["SH", "parse"]
+- !private ["SH", "parseError"]
 - !private ["SH", "parser"]
 - !private ["SH", "print"]
 - !private ["SH", "set"]
 - !private ["SH", "statusCode"]
 - !private ["SH", "urlParameters"]
-- !private ["SH", "utf8"]
+- !private ["12a4SysCoreIOS10HomeParserC", "init"]
 - !private ["12a4SysCoreIOS11LoginParserC", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
@@ -176,6 +176,7 @@ depends-member:
 - !private ["So9NSCopyingP", "statusCode"]
 - ["So8NSObjectC", "AnyObject"]
 - ["So8NSObjectC", "BaseParser"]
+- !private ["So8NSObjectC", "HomeParser"]
 - !private ["So8NSObjectC", "LoginParser"]
 - !private ["So8NSObjectC", "Mapper"]
 - !private ["So8NSObjectC", "NetworkManager"]
@@ -192,6 +193,7 @@ depends-member:
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "parse"]
+- ["So8NSObjectC", "parseError"]
 - ["So8NSObjectC", "parser"]
 - !private ["So8NSObjectC", "print"]
 - ["So8NSObjectC", "set"]
@@ -199,6 +201,7 @@ depends-member:
 - !private ["So8NSObjectC", "statusCode"]
 - ["So8NSObjectC", "urlParameters"]
 - !private ["So8NSObjectP", "BaseParser"]
+- !private ["So8NSObjectP", "HomeParser"]
 - !private ["So8NSObjectP", "LoginParser"]
 - !private ["So8NSObjectP", "Mapper"]
 - !private ["So8NSObjectP", "NetworkManager"]
@@ -211,6 +214,7 @@ depends-member:
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "parse"]
+- !private ["So8NSObjectP", "parseError"]
 - !private ["So8NSObjectP", "parser"]
 - !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "set"]
@@ -219,6 +223,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "statusCode"]
 - ["12a4SysCoreIOS7NetworkC", "AnyObject"]
 - ["12a4SysCoreIOS7NetworkC", "BaseParser"]
+- !private ["12a4SysCoreIOS7NetworkC", "HomeParser"]
 - !private ["12a4SysCoreIOS7NetworkC", "LoginParser"]
 - !private ["12a4SysCoreIOS7NetworkC", "Mapper"]
 - !private ["12a4SysCoreIOS7NetworkC", "NetworkManager"]
@@ -231,20 +236,16 @@ depends-member:
 - ["12a4SysCoreIOS7NetworkC", "endPoint"]
 - ["12a4SysCoreIOS7NetworkC", "endPointN"]
 - ["12a4SysCoreIOS7NetworkC", "init"]
+- !private ["12a4SysCoreIOS7NetworkC", "parseError"]
 - !private ["12a4SysCoreIOS7NetworkC", "parser"]
 - !private ["12a4SysCoreIOS7NetworkC", "print"]
 - !private ["12a4SysCoreIOS7NetworkC", "set"]
 - ["12a4SysCoreIOS7NetworkC", "setUrlParameters"]
 - !private ["12a4SysCoreIOS7NetworkC", "urlParameters"]
 - !private ["Sm", "init"]
-- !private ["SY", "utf8"]
 - !private ["9Alamofire7RequestC", "responseJSON"]
-- !private ["9Alamofire8ResponseP", "data"]
-- !private ["9Alamofire8ResponseP", "description"]
-- !private ["9Alamofire8ResponseP", "error"]
 - !private ["9Alamofire8ResponseP", "response"]
 - !private ["9Alamofire8ResponseP", "result"]
-- !private ["9Alamofire8ResponseP", "value"]
 - !private ["9Alamofire6ResultO", "failure"]
 - !private ["9Alamofire6ResultO", "success"]
 - !private ["ST", "init"]
@@ -260,11 +261,15 @@ depends-member:
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire21URLRequestConvertibleP", "GetHome"]
 - !private ["9Alamofire21URLRequestConvertibleP", "Login"]
+- !private ["9Alamofire21URLRequestConvertibleP", "OfferSearch"]
 - !private ["So13NSURLResponseC", "statusCode"]
 - ["So25NSURLSessionConfigurationC", "default"]
 - ["So25NSURLSessionConfigurationC", "httpAdditionalHeaders"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "GetHome"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "Login"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "OfferSearch"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "deinit"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -272,6 +277,7 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s19_HasContiguousBytesP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "BaseParser"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "HomeParser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "LoginParser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Mapper"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NetworkManager"]
@@ -284,13 +290,16 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "parse"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "parseError"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "parser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "set"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "statusCode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "urlParameters"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- ["12a4SysCoreIOS8endPointO", "GetHome"]
 - ["12a4SysCoreIOS8endPointO", "Login"]
+- ["12a4SysCoreIOS8endPointO", "OfferSearch"]
 depends-nominal:
 - !private "12a4SysCoreIOS10BaseParserC"
 - !private "SK"
@@ -305,7 +314,6 @@ depends-nominal:
 - !private "Se"
 - !private "s26DefaultStringInterpolationV"
 - !private "SE"
-- !private "SS10FoundationE8EncodingV"
 - "SQ"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s32ExpressibleByStringInterpolationP"
@@ -313,6 +321,7 @@ depends-nominal:
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "So17NSHTTPURLResponseC"
 - "SH"
+- !private "12a4SysCoreIOS10HomeParserC"
 - !private "12a4SysCoreIOS11LoginParserC"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
@@ -323,7 +332,6 @@ depends-nominal:
 - !private "So14NSSecureCodingP"
 - "12a4SysCoreIOS7NetworkC"
 - !private "Sm"
-- !private "SY"
 - !private "9Alamofire7RequestC"
 - !private "9Alamofire8ResponseP"
 - !private "9Alamofire6ResultO"
@@ -386,4 +394,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5bce27efa37a5527c727401b15673cb9"
+interface-hash: "d63528ac989187ea22d4a03ae67fa2b7"

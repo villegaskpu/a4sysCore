@@ -13,7 +13,6 @@ depends-top-level:
 - "Mappable"
 - "SantanderProduct"
 - "String"
-- "StringLiteralType"
 depends-member:
 - ["12a4SysCoreIOS12ExternalInfoC", "Map"]
 - ["12a4SysCoreIOS12ExternalInfoC", "SantanderProduct"]
@@ -66,4 +65,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "2bd93b8f4f3b75a87ecb08bf0bf8a960"
+interface-hash: "cabb9e3c661700d7a9236c361d02dd9c"

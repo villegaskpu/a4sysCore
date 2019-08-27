@@ -9,11 +9,14 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "<-"
 - "Double"
+- "FloatLiteralType"
 - "Geofence"
+- "IntegerLiteralType"
 - "LocationGeofence"
 - "Map"
 - "Mappable"
 - "String"
+- "StringLiteralType"
 depends-member:
 - ["12ObjectMapper12BaseMappableP", "LocationGeofence"]
 - ["12ObjectMapper12BaseMappableP", ""]
@@ -88,4 +91,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "3a91b7a9a63569bba7006c4a0a52250c"
+interface-hash: "7dfffe369ee67783a72f970e9cc96a01"

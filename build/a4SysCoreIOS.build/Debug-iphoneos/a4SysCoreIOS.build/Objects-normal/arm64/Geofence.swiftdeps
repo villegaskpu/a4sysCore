@@ -9,14 +9,11 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "<-"
 - "Double"
-- "FloatLiteralType"
 - "Geofence"
-- "IntegerLiteralType"
 - "LocationGeofence"
 - "Map"
 - "Mappable"
 - "String"
-- "StringLiteralType"
 depends-member:
 - ["12ObjectMapper12BaseMappableP", "LocationGeofence"]
 - ["12ObjectMapper12BaseMappableP", ""]

@@ -8,12 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "<-"
-- "FloatLiteralType"
-- "IntegerLiteralType"
 - "Map"
 - "Mappable"
 - "OfferTaken"
-- !private "StringLiteralType"
 depends-member:
 - ["12ObjectMapper12BaseMappableP", ""]
 - !private ["12ObjectMapper12BaseMappableP", "allUsers"]
