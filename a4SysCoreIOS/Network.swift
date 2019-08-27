@@ -95,6 +95,18 @@ open class Network: NSObject {
             urll = YopterRouter.OfferRating(idOffer: self.idOffert, parameter: self.urlParameters!)
         case .ArticleRating:
             urll = YopterRouter.ArticleRating(idOffer: self.idOffert, parameter: self.urlParameters!)
+        case .GetFavoriteArticles:
+            urll = YopterRouter.OfferSearch(parameter: self.urlParameters!)
+            parserB = HomeParser()
+            break
+        case .ArticleFavorite:
+            urll = YopterRouter.OfferSearch(parameter: self.urlParameters!)
+            break
+        case .OfferFavorite:
+            urll = YopterRouter.OfferSearch(parameter: self.urlParameters!)
+            break
+        case .OfferDelete:
+            urll = YopterRouter.OfferSearch(parameter: self.urlParameters!)
             break
         default:
             print("sin endPoint")
