@@ -265,15 +265,16 @@ enum YopterRouter: URLRequestConvertible
     }
     
     func asURLRequest() throws -> URLRequest {
+        
         let url = try Constants.baseURLString.asURL()
         var urlRequest = URLRequest(url: (url.appendingPathComponent(path)))
         
         urlRequest.httpMethod = method.rawValue
-        urlRequest.addValue(Constants.contentType, forHTTPHeaderField: "content-type")
-        urlRequest.addValue(Constants.accept, forHTTPHeaderField: "accept")
+        urlRequest.addValue("application/json", forHTTPHeaderField: "content-type")
+        urlRequest.addValue("application/json", forHTTPHeaderField: "accept")
         urlRequest.addValue(Constants.appID, forHTTPHeaderField: "x-app-id")
         urlRequest.addValue(Commons.getUserAgent(), forHTTPHeaderField: "user-agent")
-        urlRequest.addValue(Constants.language, forHTTPHeaderField: "Accept-Language")
+        urlRequest.addValue("es-MX", forHTTPHeaderField: "Accept-Language")
         urlRequest.addValue(TimeZone.current.identifier, forHTTPHeaderField: "Time-Zone")
         urlRequest.addValue("bearer eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJZb3B0ZXJBZFBsdXMiLCJhdWQiOiJZb3B0ZXJBZFBsdXNVc2VycyIsImV4cCI6MTU2NzUxOTc0MywianRpIjoiYmhuNFBUME1TR1pOY3RwV2Y5X212USIsImlhdCI6MTU2NjkxOTc0MywibmJmIjoxNTY2OTE5NjgzLCJzdWIiOiJBY2Nlc3MgVG9rZW4iLCJVU0VSQUJMRV9JRCI6MTM5MjIxLCJQRVJNSVNTSU9OUyI6ImFwcF9zZXJ2aWNlIiwiVElNRV9aT05FIjoiQW1lcmljYS9NZXhpY29fQ2l0eSIsIklEX0NMSUVOVCI6NDIxLCJVU0VSX0lEIjoxNDE2MDIsIlVTRVIiOiJhZHNiQHlvcG1haWwuY29tIiwiQ09NUEFOWV9JRCI6ODYsIlRPS0VOIjoibEUyOHp6RGN0SllvOFhXN1h3TFJlTVZ2QkJ6VkYzNDEiLCJJRF9VU0VSIjoxNDE2MDJ9.gvMRR9aDYpA4BwFXFsuw-K-MzT2VHEE8itZ1mbpTI5ZZe82CT3RV2dnQ_WAhcwfZK7FPT1S1Reix_m-j87ARcn7nHyC1uqDOAZwJ14RuxLiwPdsSSviH3CfuJMqHqR_f1vtu65GZY8qLx87bJJa64haepyOEFAjxzjtAoAtGM_Xhe7V1o_6gV2vnL-DElBkdLy_V1b-4KSRYI6VNxVFw8Z5vPSejG4Ql7sdSNcjXah4IDXGTLpBLGrtomr5StIm1qtT6lkq-G06lw_1TtSLNmzd7pUnQMt8w78Q57PSSZXHY5cyAZdxoI0dHq_DXmlGyELihNTzuygPf_9ZvVn9vyQ", forHTTPHeaderField: "Authorization")
         
@@ -399,8 +400,8 @@ enum YopterRouter: URLRequestConvertible
             urlRequest = URLRequest(url: (finalUrl.appendingPathComponent(path)))
             
             urlRequest.httpMethod = method.rawValue
-            urlRequest.addValue(Constants.contentType, forHTTPHeaderField: "content-type")
-            urlRequest.addValue(Constants.accept, forHTTPHeaderField: "accept")
+            urlRequest.addValue("application/json", forHTTPHeaderField: "content-type")
+            urlRequest.addValue("application/json", forHTTPHeaderField: "accept")
             urlRequest.addValue(Constants.appID, forHTTPHeaderField: "x-app-id")
             urlRequest.addValue(Commons.getUserAgent(), forHTTPHeaderField: "user-agent")
             urlRequest.addValue(Constants.language, forHTTPHeaderField: "Accept-Language")

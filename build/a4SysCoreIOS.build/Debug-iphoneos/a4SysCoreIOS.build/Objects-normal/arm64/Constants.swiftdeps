@@ -8,8 +8,12 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "/"
+- "BooleanLiteralType"
 - "CGFloat"
 - "Constants"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "StringLiteralType"
 - "UIColor"
 depends-member:
 - ["s7CVarArgP", "black"]
@@ -142,4 +146,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "0e56cd30be7097b34c8c605bb0d9638c"
+interface-hash: "2f261c134badb6e0dca262bf459ba990"

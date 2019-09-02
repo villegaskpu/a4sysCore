@@ -16,9 +16,7 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "BaseParser"
 - !private "CastingPrecedence"
-- "FloatLiteralType"
 - !private "HomeParser"
-- "IntegerLiteralType"
 - !private "LoginParser"
 - !private "Mapper"
 - "NSObject"
@@ -26,7 +24,6 @@ depends-top-level:
 - !private "NetworkManager"
 - "SessionManager"
 - "String"
-- "StringLiteralType"
 - "URLRequestConvertible"
 - "URLSessionConfiguration"
 - "Void"
@@ -133,6 +130,7 @@ depends-member:
 - !private ["SQ", "LoginParser"]
 - !private ["SQ", "Mapper"]
 - !private ["SQ", "NetworkManager"]
+- ["SQ", "OfferDelete"]
 - ["SQ", "OfferFavorite"]
 - ["SQ", "OfferRating"]
 - ["SQ", "OfferSearch"]
@@ -167,6 +165,7 @@ depends-member:
 - !private ["SH", "LoginParser"]
 - !private ["SH", "Mapper"]
 - !private ["SH", "NetworkManager"]
+- ["SH", "OfferDelete"]
 - ["SH", "OfferFavorite"]
 - ["SH", "OfferRating"]
 - ["SH", "OfferSearch"]
@@ -209,6 +208,7 @@ depends-member:
 - !private ["So8NSObjectC", "YopterRouter"]
 - ["So8NSObjectC", ""]
 - ["So8NSObjectC", "callService"]
+- ["So8NSObjectC", "constants"]
 - ["So8NSObjectC", "default"]
 - ["So8NSObjectC", "endPoint"]
 - ["So8NSObjectC", "endPointN"]
@@ -221,6 +221,7 @@ depends-member:
 - ["So8NSObjectC", "parser"]
 - !private ["So8NSObjectC", "print"]
 - ["So8NSObjectC", "set"]
+- ["So8NSObjectC", "setConstants"]
 - ["So8NSObjectC", "setIdOffert"]
 - ["So8NSObjectC", "setUrlParameters"]
 - !private ["So8NSObjectC", "statusCode"]
@@ -259,6 +260,7 @@ depends-member:
 - ["12a4SysCoreIOS7NetworkC", "Void"]
 - !private ["12a4SysCoreIOS7NetworkC", "YopterRouter"]
 - !private ["12a4SysCoreIOS7NetworkC", "callService"]
+- !private ["12a4SysCoreIOS7NetworkC", "constants"]
 - ["12a4SysCoreIOS7NetworkC", "deinit"]
 - ["12a4SysCoreIOS7NetworkC", "endPoint"]
 - ["12a4SysCoreIOS7NetworkC", "endPointN"]
@@ -268,6 +270,7 @@ depends-member:
 - !private ["12a4SysCoreIOS7NetworkC", "parser"]
 - !private ["12a4SysCoreIOS7NetworkC", "print"]
 - !private ["12a4SysCoreIOS7NetworkC", "set"]
+- ["12a4SysCoreIOS7NetworkC", "setConstants"]
 - ["12a4SysCoreIOS7NetworkC", "setIdOffert"]
 - ["12a4SysCoreIOS7NetworkC", "setUrlParameters"]
 - !private ["12a4SysCoreIOS7NetworkC", "urlParameters"]
@@ -336,6 +339,7 @@ depends-member:
 - ["12a4SysCoreIOS8endPointO", "GetFavoriteArticles"]
 - ["12a4SysCoreIOS8endPointO", "GetHome"]
 - ["12a4SysCoreIOS8endPointO", "Login"]
+- ["12a4SysCoreIOS8endPointO", "OfferDelete"]
 - ["12a4SysCoreIOS8endPointO", "OfferFavorite"]
 - ["12a4SysCoreIOS8endPointO", "OfferRating"]
 - ["12a4SysCoreIOS8endPointO", "OfferSearch"]
@@ -436,4 +440,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "8dbc6754eede9c4441072697f73f8376"
+interface-hash: "6b46d473a6459d48b0f4af9ad2c31275"

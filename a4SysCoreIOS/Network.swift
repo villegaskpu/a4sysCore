@@ -27,9 +27,19 @@ open class Network: NSObject {
     private var urlParameters:[String:Any]?
     private var parser: BaseParser?
     private var idOffert:String = ""
+    private var constants: [String:Any] = [:]
     
     public func setUrlParameters(urlParameters:[String:Any]) {
         self.urlParameters = urlParameters
+    }
+    
+    public func setConstants(constants: [String:Any]) {
+        
+//        self.constants = constants.
+//        123456
+        
+        
+        print("nameApp: \(constants)")
     }
     
     private func set(parser: BaseParser) {

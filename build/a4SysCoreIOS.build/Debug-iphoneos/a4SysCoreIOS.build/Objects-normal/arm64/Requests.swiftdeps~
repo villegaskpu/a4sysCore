@@ -16,6 +16,7 @@ depends-top-level:
 - "Requests"
 - !private "Settings"
 - "String"
+- !private "StringLiteralType"
 depends-member:
 - !private ["So10CLLocationC", "coordinate"]
 - !private ["So22CLLocationCoordinate2DV", "latitude"]
@@ -90,7 +91,6 @@ depends-member:
 - ["12a4SysCoreIOS8RequestsC", "createViewOfferRequest"]
 - ["12a4SysCoreIOS8RequestsC", "createWakeUpRequest"]
 - ["12a4SysCoreIOS8RequestsC", "createWhoAmIRequiest"]
-- ["12a4SysCoreIOS8RequestsC", "deinit"]
 - ["12a4SysCoreIOS8RequestsC", "init"]
 - !private ["12a4SysCoreIOS8SettingsC", "getDateRefreshTheme"]
 - !private ["12a4SysCoreIOS8SettingsC", "getDeviceId"]

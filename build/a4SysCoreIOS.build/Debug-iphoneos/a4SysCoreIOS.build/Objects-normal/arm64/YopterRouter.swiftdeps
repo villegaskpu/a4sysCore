@@ -1,5 +1,6 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "globalURL"
 - "YopterRouter"
 provides-nominal:
 - "12a4SysCoreIOS12YopterRouterO"
@@ -17,8 +18,9 @@ depends-top-level:
 - "Parameters"
 - !private "Settings"
 - "String"
-- !private "StringLiteralType"
+- "StringLiteralType"
 - !private "TimeZone"
+- "URL"
 - !private "URLComponents"
 - !private "URLEncoding"
 - !private "URLQueryItem"
@@ -26,6 +28,7 @@ depends-top-level:
 - "URLRequestConvertible"
 - !private "UnicodeScalarType"
 - "YopterRouter"
+- "globalURL"
 - !private "print"
 depends-member:
 - !private ["SK", "asURL"]
@@ -35,10 +38,8 @@ depends-member:
 - !private ["Sl", "map"]
 - !private ["12a4SysCoreIOS7CommonsC", "getUserAgent"]
 - !private ["SL", "asURL"]
-- !private ["12a4SysCoreIOS9ConstantsV", "accept"]
 - !private ["12a4SysCoreIOS9ConstantsV", "appID"]
 - !private ["12a4SysCoreIOS9ConstantsV", "baseURLString"]
-- !private ["12a4SysCoreIOS9ConstantsV", "contentType"]
 - !private ["12a4SysCoreIOS9ConstantsV", "language"]
 - !private ["12a4SysCoreIOS9ConstantsV", "newBaseURLString"]
 - !private ["s28CustomDebugStringConvertibleP", "addValue"]
@@ -47,7 +48,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "current"]
 - !private ["s28CustomDebugStringConvertibleP", "httpMethod"]
 - !private ["s28CustomDebugStringConvertibleP", "identifier"]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "map"]
 - !private ["s28CustomDebugStringConvertibleP", "queryItems"]
 - !private ["s28CustomDebugStringConvertibleP", "url"]
@@ -68,7 +69,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "current"]
 - !private ["s23CustomStringConvertibleP", "httpMethod"]
 - !private ["s23CustomStringConvertibleP", "identifier"]
-- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "map"]
 - !private ["s23CustomStringConvertibleP", "queryItems"]
 - !private ["s23CustomStringConvertibleP", "url"]
@@ -76,7 +77,7 @@ depends-member:
 - !private ["Se", "asURL"]
 - !private ["Se", "current"]
 - !private ["Se", "identifier"]
-- !private ["Se", "init"]
+- ["Se", "init"]
 - !private ["Se", "map"]
 - !private ["Se", "queryItems"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
@@ -86,7 +87,7 @@ depends-member:
 - !private ["SE", "asURL"]
 - !private ["SE", "current"]
 - !private ["SE", "identifier"]
-- !private ["SE", "init"]
+- ["SE", "init"]
 - !private ["SE", "map"]
 - !private ["SE", "queryItems"]
 - !private ["SQ", "addValue"]
@@ -97,7 +98,7 @@ depends-member:
 - !private ["SQ", "get"]
 - !private ["SQ", "httpMethod"]
 - !private ["SQ", "identifier"]
-- !private ["SQ", "init"]
+- ["SQ", "init"]
 - !private ["SQ", "map"]
 - !private ["SQ", "post"]
 - !private ["SQ", "put"]
@@ -122,7 +123,7 @@ depends-member:
 - !private ["SH", "get"]
 - !private ["SH", "httpMethod"]
 - !private ["SH", "identifier"]
-- !private ["SH", "init"]
+- ["SH", "init"]
 - !private ["SH", "map"]
 - !private ["SH", "post"]
 - !private ["SH", "put"]
@@ -156,7 +157,7 @@ depends-member:
 - !private ["10Foundation20ReferenceConvertibleP", "current"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpMethod"]
 - !private ["10Foundation20ReferenceConvertibleP", "identifier"]
-- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "queryItems"]
 - !private ["10Foundation20ReferenceConvertibleP", "url"]
 - !private ["ST", "asURL"]
@@ -174,12 +175,13 @@ depends-member:
 - !private ["10Foundation8TimeZoneV", "current"]
 - !private ["10Foundation8TimeZoneV", "identifier"]
 - !private ["10Foundation3URLV", "appendingPathComponent"]
+- ["10Foundation3URLV", "init"]
 - !private ["10Foundation13URLComponentsV", "asURL"]
 - !private ["10Foundation13URLComponentsV", "init"]
 - !private ["10Foundation13URLComponentsV", "queryItems"]
 - !private ["9Alamofire14URLConvertibleP", "appendingPathComponent"]
 - !private ["9Alamofire14URLConvertibleP", "asURL"]
-- !private ["9Alamofire14URLConvertibleP", "init"]
+- ["9Alamofire14URLConvertibleP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "queryItems"]
 - !private ["9Alamofire11URLEncodingV", "default"]
 - !private ["9Alamofire11URLEncodingV", "encode"]
@@ -321,10 +323,12 @@ depends-member:
 - !private ["12a4SysCoreIOS12YopterRouterO", "print"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "appendingPathComponent"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "asURL"]
+- ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "asURL"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "asURL"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "asURL"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "appendingPathComponent"]
+- ["s34_ExpressibleByFileReferenceLiteralP", "init"]
 - !private ["s19_HasContiguousBytesP", "asURL"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "asURL"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
@@ -338,7 +342,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "current"]
 - !private ["s21_ObjectiveCBridgeableP", "httpMethod"]
 - !private ["s21_ObjectiveCBridgeableP", "identifier"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
+- ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "queryItems"]
 - !private ["s21_ObjectiveCBridgeableP", "url"]
@@ -349,21 +353,21 @@ depends-nominal:
 - !private "12a4SysCoreIOS7CommonsC"
 - !private "SL"
 - !private "12a4SysCoreIOS9ConstantsV"
-- !private "s28CustomDebugStringConvertibleP"
+- "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
-- !private "s23CustomStringConvertibleP"
-- !private "Se"
+- "s23CustomStringConvertibleP"
+- "Se"
 - !private "s26DefaultStringInterpolationV"
 - !private "SD"
-- !private "SE"
-- !private "SQ"
+- "SE"
+- "SQ"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "9Alamofire10HTTPMethodO"
-- !private "SH"
+- "SH"
 - !private "9Alamofire12JSONEncodingV"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
@@ -379,7 +383,7 @@ depends-nominal:
 - !private "9Alamofire17ParameterEncodingP"
 - !private "Sm"
 - !private "SY"
-- !private "10Foundation20ReferenceConvertibleP"
+- "10Foundation20ReferenceConvertibleP"
 - !private "ST"
 - !private "12a4SysCoreIOS8SettingsC"
 - !private "SS"
@@ -388,24 +392,24 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "10Foundation8TimeZoneV"
-- !private "10Foundation3URLV"
+- "10Foundation3URLV"
 - !private "10Foundation13URLComponentsV"
-- !private "9Alamofire14URLConvertibleP"
+- "9Alamofire14URLConvertibleP"
 - !private "9Alamofire11URLEncodingV"
 - !private "10Foundation12URLQueryItemV"
 - !private "10Foundation10URLRequestV"
 - "9Alamofire21URLRequestConvertibleP"
 - "12a4SysCoreIOS12YopterRouterO"
-- !private "s30_CustomPlaygroundQuickLookableP"
+- "s30_CustomPlaygroundQuickLookableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- !private "s34_ExpressibleByFileReferenceLiteralP"
+- "s34_ExpressibleByFileReferenceLiteralP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation14_MutableBoxingP"
-- !private "s21_ObjectiveCBridgeableP"
+- "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
@@ -446,4 +450,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "a60f19a4cb66617f9cff35e475153507"
+interface-hash: "57371c5ffea357ca718a2a0ca2f39eaa"

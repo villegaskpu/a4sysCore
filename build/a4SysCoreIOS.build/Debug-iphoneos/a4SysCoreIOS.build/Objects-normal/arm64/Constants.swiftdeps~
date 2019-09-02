@@ -2,47 +2,53 @@
 provides-top-level:
 - "Constants"
 provides-nominal:
-- "12a4SysCoreIOS9ConstantsV"
+- "12a4SysCoreIOS9ConstantsC"
 provides-member:
-- ["12a4SysCoreIOS9ConstantsV", ""]
+- ["12a4SysCoreIOS9ConstantsC", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "/"
+- "BooleanLiteralType"
 - "CGFloat"
 - "Constants"
+- "FloatLiteralType"
+- "IntegerLiteralType"
+- "StringLiteralType"
 - "UIColor"
 depends-member:
 - ["s7CVarArgP", "black"]
 - ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "init"]
-- ["12a4SysCoreIOS9ConstantsV", "CGFloat"]
-- ["12a4SysCoreIOS9ConstantsV", "UIColor"]
-- ["12a4SysCoreIOS9ConstantsV", "accept"]
-- ["12a4SysCoreIOS9ConstantsV", "animationDurationTextField"]
-- ["12a4SysCoreIOS9ConstantsV", "appID"]
-- ["12a4SysCoreIOS9ConstantsV", "appIDTienda"]
-- ["12a4SysCoreIOS9ConstantsV", "appName"]
-- ["12a4SysCoreIOS9ConstantsV", "baseURLString"]
-- ["12a4SysCoreIOS9ConstantsV", "beaconRegionName"]
-- ["12a4SysCoreIOS9ConstantsV", "cellToSignUp"]
-- ["12a4SysCoreIOS9ConstantsV", "contentType"]
-- ["12a4SysCoreIOS9ConstantsV", "defaultColor"]
-- ["12a4SysCoreIOS9ConstantsV", "emailContact"]
-- ["12a4SysCoreIOS9ConstantsV", "emailSubject"]
-- ["12a4SysCoreIOS9ConstantsV", "hasCode"]
-- ["12a4SysCoreIOS9ConstantsV", "idCountry"]
-- ["12a4SysCoreIOS9ConstantsV", "init"]
-- ["12a4SysCoreIOS9ConstantsV", "isCodeOptional"]
-- ["12a4SysCoreIOS9ConstantsV", "language"]
-- ["12a4SysCoreIOS9ConstantsV", "lastNameToSignUp"]
-- ["12a4SysCoreIOS9ConstantsV", "movementTextFieldDistance"]
-- ["12a4SysCoreIOS9ConstantsV", "nameToSignUp"]
-- ["12a4SysCoreIOS9ConstantsV", "newBaseURLString"]
-- ["12a4SysCoreIOS9ConstantsV", "numberOfRowsPerPage"]
-- ["12a4SysCoreIOS9ConstantsV", "secondColor"]
-- ["12a4SysCoreIOS9ConstantsV", "temperature"]
-- ["12a4SysCoreIOS9ConstantsV", "thirdColor"]
-- ["12a4SysCoreIOS9ConstantsV", "uuid"]
+- ["12a4SysCoreIOS9ConstantsC", "CGFloat"]
+- ["12a4SysCoreIOS9ConstantsC", "Constants"]
+- ["12a4SysCoreIOS9ConstantsC", "UIColor"]
+- ["12a4SysCoreIOS9ConstantsC", "accept"]
+- ["12a4SysCoreIOS9ConstantsC", "animationDurationTextField"]
+- ["12a4SysCoreIOS9ConstantsC", "appID"]
+- ["12a4SysCoreIOS9ConstantsC", "appIDTienda"]
+- ["12a4SysCoreIOS9ConstantsC", "appName"]
+- ["12a4SysCoreIOS9ConstantsC", "baseURLString"]
+- ["12a4SysCoreIOS9ConstantsC", "beaconRegionName"]
+- ["12a4SysCoreIOS9ConstantsC", "cellToSignUp"]
+- ["12a4SysCoreIOS9ConstantsC", "constant"]
+- ["12a4SysCoreIOS9ConstantsC", "contentType"]
+- ["12a4SysCoreIOS9ConstantsC", "defaultColor"]
+- ["12a4SysCoreIOS9ConstantsC", "emailContact"]
+- ["12a4SysCoreIOS9ConstantsC", "emailSubject"]
+- ["12a4SysCoreIOS9ConstantsC", "hasCode"]
+- ["12a4SysCoreIOS9ConstantsC", "idCountry"]
+- ["12a4SysCoreIOS9ConstantsC", "init"]
+- ["12a4SysCoreIOS9ConstantsC", "isCodeOptional"]
+- ["12a4SysCoreIOS9ConstantsC", "language"]
+- ["12a4SysCoreIOS9ConstantsC", "lastNameToSignUp"]
+- ["12a4SysCoreIOS9ConstantsC", "movementTextFieldDistance"]
+- ["12a4SysCoreIOS9ConstantsC", "nameToSignUp"]
+- ["12a4SysCoreIOS9ConstantsC", "newBaseURLString"]
+- ["12a4SysCoreIOS9ConstantsC", "numberOfRowsPerPage"]
+- ["12a4SysCoreIOS9ConstantsC", "secondColor"]
+- ["12a4SysCoreIOS9ConstantsC", "temperature"]
+- ["12a4SysCoreIOS9ConstantsC", "thirdColor"]
+- ["12a4SysCoreIOS9ConstantsC", "uuid"]
 - ["s28CustomDebugStringConvertibleP", "black"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - ["s28CustomDebugStringConvertibleP", "init"]
@@ -87,7 +93,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 depends-nominal:
 - "s7CVarArgP"
-- "12a4SysCoreIOS9ConstantsV"
+- "12a4SysCoreIOS9ConstantsC"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
 - "SQ"
@@ -142,4 +148,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "0e56cd30be7097b34c8c605bb0d9638c"
+interface-hash: "3b03992273fbe5e2f4312979658e2704"
