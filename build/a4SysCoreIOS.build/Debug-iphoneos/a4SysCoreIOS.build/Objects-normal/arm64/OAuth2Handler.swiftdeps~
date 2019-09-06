@@ -92,10 +92,10 @@ depends-member:
 - !private ["12a4SysCoreIOS7CommonsC", "getUserAgent"]
 - !private ["SL", "hasPrefix"]
 - ["SL", "init"]
-- !private ["12a4SysCoreIOS9ConstantsC", "appID"]
-- !private ["12a4SysCoreIOS9ConstantsC", "baseURLString"]
-- !private ["12a4SysCoreIOS9ConstantsC", "language"]
-- !private ["12a4SysCoreIOS9ConstantsC", "newBaseURLString"]
+- !private ["12a4SysCoreIOS9ConstantsV", "appID"]
+- !private ["12a4SysCoreIOS9ConstantsV", "baseURLString"]
+- !private ["12a4SysCoreIOS9ConstantsV", "language"]
+- !private ["12a4SysCoreIOS9ConstantsV", "newBaseURLString"]
 - !private ["10Foundation15ContiguousBytesP", "append"]
 - ["10Foundation15ContiguousBytesP", "enumerated"]
 - !private ["10Foundation15ContiguousBytesP", "forEach"]
@@ -584,7 +584,7 @@ depends-nominal:
 - "Sl"
 - !private "12a4SysCoreIOS7CommonsC"
 - "SL"
-- !private "12a4SysCoreIOS9ConstantsC"
+- !private "12a4SysCoreIOS9ConstantsV"
 - "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
 - "s17CustomReflectableP"

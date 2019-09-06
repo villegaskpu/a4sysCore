@@ -16,35 +16,52 @@ depends-top-level:
 - "AssignmentPrecedence"
 - "BaseParser"
 - !private "CastingPrecedence"
+- !private "ENVIRONMENTFRAME"
+- "Environment"
+- !private "FilterParse"
+- !private "FloatLiteralType"
 - !private "HomeParser"
+- !private "IntegerLiteralType"
 - !private "LoginParser"
 - !private "Mapper"
 - "NSObject"
 - "Network"
 - !private "NetworkManager"
+- !private "OffertsParser"
 - "SessionManager"
+- !private "StoresParse"
 - "String"
+- "StringLiteralType"
 - "URLRequestConvertible"
 - "URLSessionConfiguration"
 - "Void"
+- !private "WakeUpParser"
+- !private "WebService"
 - !private "YopterRouter"
 - "endPoint"
+- !private "globalConstants"
 - !private "print"
 depends-member:
 - ["12a4SysCoreIOS8ApiErrorC", "deinit"]
 - !private ["12a4SysCoreIOS10BaseParserC", "init"]
 - !private ["12a4SysCoreIOS10BaseParserC", "parse"]
-- !private ["SK", "init"]
 - !private ["s7CVarArgP", "BaseParser"]
+- !private ["s7CVarArgP", "ENVIRONMENTFRAME"]
+- !private ["s7CVarArgP", "EnviromentSet"]
+- !private ["s7CVarArgP", "FilterParse"]
 - !private ["s7CVarArgP", "HomeParser"]
 - !private ["s7CVarArgP", "LoginParser"]
 - !private ["s7CVarArgP", "Mapper"]
 - !private ["s7CVarArgP", "NetworkManager"]
-- !private ["s7CVarArgP", "String"]
+- !private ["s7CVarArgP", "OffertsParser"]
+- !private ["s7CVarArgP", "StoresParse"]
+- !private ["s7CVarArgP", "WakeUpParser"]
+- !private ["s7CVarArgP", "WebService"]
 - !private ["s7CVarArgP", "YopterRouter"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "callService"]
 - ["s7CVarArgP", "default"]
+- !private ["s7CVarArgP", "globalConstants"]
 - ["s7CVarArgP", "httpAdditionalHeaders"]
 - !private ["s7CVarArgP", "idOffert"]
 - !private ["s7CVarArgP", "init"]
@@ -54,21 +71,27 @@ depends-member:
 - !private ["s7CVarArgP", "parser"]
 - !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "set"]
+- !private ["s7CVarArgP", "setup"]
 - !private ["s7CVarArgP", "statusCode"]
 - !private ["s7CVarArgP", "urlParameters"]
-- !private ["Sl", "init"]
-- !private ["SL", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "BaseParser"]
+- !private ["s28CustomDebugStringConvertibleP", "ENVIRONMENTFRAME"]
+- !private ["s28CustomDebugStringConvertibleP", "EnviromentSet"]
+- !private ["s28CustomDebugStringConvertibleP", "FilterParse"]
 - !private ["s28CustomDebugStringConvertibleP", "HomeParser"]
 - !private ["s28CustomDebugStringConvertibleP", "LoginParser"]
 - !private ["s28CustomDebugStringConvertibleP", "Mapper"]
 - !private ["s28CustomDebugStringConvertibleP", "NetworkManager"]
-- !private ["s28CustomDebugStringConvertibleP", "String"]
+- !private ["s28CustomDebugStringConvertibleP", "OffertsParser"]
+- !private ["s28CustomDebugStringConvertibleP", "StoresParse"]
+- !private ["s28CustomDebugStringConvertibleP", "WakeUpParser"]
+- !private ["s28CustomDebugStringConvertibleP", "WebService"]
 - !private ["s28CustomDebugStringConvertibleP", "YopterRouter"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "callService"]
 - ["s28CustomDebugStringConvertibleP", "default"]
 - !private ["s28CustomDebugStringConvertibleP", "failure"]
+- !private ["s28CustomDebugStringConvertibleP", "globalConstants"]
 - ["s28CustomDebugStringConvertibleP", "httpAdditionalHeaders"]
 - !private ["s28CustomDebugStringConvertibleP", "idOffert"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
@@ -81,16 +104,22 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "responseJSON"]
 - !private ["s28CustomDebugStringConvertibleP", "result"]
 - !private ["s28CustomDebugStringConvertibleP", "set"]
+- !private ["s28CustomDebugStringConvertibleP", "setup"]
 - !private ["s28CustomDebugStringConvertibleP", "statusCode"]
 - !private ["s28CustomDebugStringConvertibleP", "success"]
 - !private ["s28CustomDebugStringConvertibleP", "urlParameters"]
-- !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "BaseParser"]
+- !private ["s23CustomStringConvertibleP", "ENVIRONMENTFRAME"]
+- !private ["s23CustomStringConvertibleP", "EnviromentSet"]
+- !private ["s23CustomStringConvertibleP", "FilterParse"]
 - !private ["s23CustomStringConvertibleP", "HomeParser"]
 - !private ["s23CustomStringConvertibleP", "LoginParser"]
 - !private ["s23CustomStringConvertibleP", "Mapper"]
 - !private ["s23CustomStringConvertibleP", "NetworkManager"]
-- !private ["s23CustomStringConvertibleP", "String"]
+- !private ["s23CustomStringConvertibleP", "OffertsParser"]
+- !private ["s23CustomStringConvertibleP", "StoresParse"]
+- !private ["s23CustomStringConvertibleP", "WakeUpParser"]
+- !private ["s23CustomStringConvertibleP", "WebService"]
 - !private ["s23CustomStringConvertibleP", "YopterRouter"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
@@ -98,6 +127,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "callService"]
 - ["s23CustomStringConvertibleP", "default"]
 - !private ["s23CustomStringConvertibleP", "failure"]
+- !private ["s23CustomStringConvertibleP", "globalConstants"]
 - ["s23CustomStringConvertibleP", "httpAdditionalHeaders"]
 - !private ["s23CustomStringConvertibleP", "idOffert"]
 - !private ["s23CustomStringConvertibleP", "init"]
@@ -110,20 +140,24 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "responseJSON"]
 - !private ["s23CustomStringConvertibleP", "result"]
 - !private ["s23CustomStringConvertibleP", "set"]
+- !private ["s23CustomStringConvertibleP", "setup"]
 - !private ["s23CustomStringConvertibleP", "statusCode"]
 - !private ["s23CustomStringConvertibleP", "success"]
 - !private ["s23CustomStringConvertibleP", "urlParameters"]
 - !private ["9Alamofire11DataRequestC", "responseJSON"]
 - !private ["9Alamofire12DataResponseV", "response"]
 - !private ["9Alamofire12DataResponseV", "result"]
-- !private ["Se", "init"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
-- !private ["SE", "init"]
+- ["12a4SysCoreIOS11EnvironmentO", "test"]
 - ["SQ", "ArticleFavorite"]
 - ["SQ", "ArticleRating"]
 - !private ["SQ", "BaseParser"]
+- !private ["SQ", "ENVIRONMENTFRAME"]
+- !private ["SQ", "EnviromentSet"]
+- !private ["SQ", "FilterParse"]
 - ["SQ", "GetFavoriteArticles"]
+- ["SQ", "GetFilters"]
 - ["SQ", "GetHome"]
 - !private ["SQ", "HomeParser"]
 - ["SQ", "Login"]
@@ -134,11 +168,17 @@ depends-member:
 - ["SQ", "OfferFavorite"]
 - ["SQ", "OfferRating"]
 - ["SQ", "OfferSearch"]
-- !private ["SQ", "String"]
+- !private ["SQ", "OffertsParser"]
+- !private ["SQ", "StoresParse"]
+- ["SQ", "StoresSearch"]
+- ["SQ", "WakeUp"]
+- !private ["SQ", "WakeUpParser"]
+- !private ["SQ", "WebService"]
 - !private ["SQ", "YopterRouter"]
 - ["SQ", ""]
 - !private ["SQ", "callService"]
 - ["SQ", "default"]
+- !private ["SQ", "globalConstants"]
 - ["SQ", "httpAdditionalHeaders"]
 - !private ["SQ", "idOffert"]
 - !private ["SQ", "init"]
@@ -148,17 +188,20 @@ depends-member:
 - !private ["SQ", "parser"]
 - !private ["SQ", "print"]
 - !private ["SQ", "set"]
+- !private ["SQ", "setup"]
 - !private ["SQ", "statusCode"]
+- ["SQ", "test"]
 - !private ["SQ", "urlParameters"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s32ExpressibleByStringInterpolationP", "init"]
-- !private ["s26ExpressibleByStringLiteralP", "init"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["12a4SysCoreIOS11FilterParseC", "init"]
 - !private ["So17NSHTTPURLResponseC", "statusCode"]
 - ["SH", "ArticleFavorite"]
 - ["SH", "ArticleRating"]
 - !private ["SH", "BaseParser"]
+- !private ["SH", "ENVIRONMENTFRAME"]
+- !private ["SH", "EnviromentSet"]
+- !private ["SH", "FilterParse"]
 - ["SH", "GetFavoriteArticles"]
+- ["SH", "GetFilters"]
 - ["SH", "GetHome"]
 - !private ["SH", "HomeParser"]
 - ["SH", "Login"]
@@ -169,11 +212,17 @@ depends-member:
 - ["SH", "OfferFavorite"]
 - ["SH", "OfferRating"]
 - ["SH", "OfferSearch"]
-- !private ["SH", "String"]
+- !private ["SH", "OffertsParser"]
+- !private ["SH", "StoresParse"]
+- ["SH", "StoresSearch"]
+- ["SH", "WakeUp"]
+- !private ["SH", "WakeUpParser"]
+- !private ["SH", "WebService"]
 - !private ["SH", "YopterRouter"]
 - ["SH", ""]
 - !private ["SH", "callService"]
 - ["SH", "default"]
+- !private ["SH", "globalConstants"]
 - ["SH", "httpAdditionalHeaders"]
 - !private ["SH", "idOffert"]
 - !private ["SH", "init"]
@@ -183,14 +232,14 @@ depends-member:
 - !private ["SH", "parser"]
 - !private ["SH", "print"]
 - !private ["SH", "set"]
+- !private ["SH", "setup"]
 - !private ["SH", "statusCode"]
+- ["SH", "test"]
 - !private ["SH", "urlParameters"]
 - !private ["12a4SysCoreIOS10HomeParserC", "init"]
 - !private ["12a4SysCoreIOS11LoginParserC", "init"]
-- !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["12ObjectMapper0B0C", "init"]
 - !private ["12ObjectMapper0B0C", "map"]
-- !private ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "statusCode"]
 - ["So9NSCopyingP", "default"]
 - ["So9NSCopyingP", "httpAdditionalHeaders"]
@@ -198,13 +247,21 @@ depends-member:
 - ["So8NSObjectC", "AnyObject"]
 - !private ["So8NSObjectC", "ApiError"]
 - ["So8NSObjectC", "BaseParser"]
+- !private ["So8NSObjectC", "ENVIRONMENTFRAME"]
+- ["So8NSObjectC", "EnviromentSet"]
+- ["So8NSObjectC", "Environment"]
+- !private ["So8NSObjectC", "FilterParse"]
 - !private ["So8NSObjectC", "HomeParser"]
 - !private ["So8NSObjectC", "LoginParser"]
 - !private ["So8NSObjectC", "Mapper"]
 - !private ["So8NSObjectC", "NetworkManager"]
+- !private ["So8NSObjectC", "OffertsParser"]
+- !private ["So8NSObjectC", "StoresParse"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "URLRequestConvertible"]
 - ["So8NSObjectC", "Void"]
+- !private ["So8NSObjectC", "WakeUpParser"]
+- !private ["So8NSObjectC", "WebService"]
 - !private ["So8NSObjectC", "YopterRouter"]
 - ["So8NSObjectC", ""]
 - ["So8NSObjectC", "callService"]
@@ -212,6 +269,7 @@ depends-member:
 - ["So8NSObjectC", "default"]
 - ["So8NSObjectC", "endPoint"]
 - ["So8NSObjectC", "endPointN"]
+- !private ["So8NSObjectC", "globalConstants"]
 - ["So8NSObjectC", "httpAdditionalHeaders"]
 - ["So8NSObjectC", "idOffert"]
 - ["So8NSObjectC", "init"]
@@ -222,20 +280,29 @@ depends-member:
 - !private ["So8NSObjectC", "print"]
 - ["So8NSObjectC", "set"]
 - ["So8NSObjectC", "setConstants"]
+- ["So8NSObjectC", "setEnvironment"]
 - ["So8NSObjectC", "setIdOffert"]
 - ["So8NSObjectC", "setUrlParameters"]
+- !private ["So8NSObjectC", "setup"]
 - !private ["So8NSObjectC", "statusCode"]
 - ["So8NSObjectC", "urlParameters"]
 - !private ["So8NSObjectP", "BaseParser"]
+- !private ["So8NSObjectP", "ENVIRONMENTFRAME"]
+- !private ["So8NSObjectP", "EnviromentSet"]
+- !private ["So8NSObjectP", "FilterParse"]
 - !private ["So8NSObjectP", "HomeParser"]
 - !private ["So8NSObjectP", "LoginParser"]
 - !private ["So8NSObjectP", "Mapper"]
 - !private ["So8NSObjectP", "NetworkManager"]
-- !private ["So8NSObjectP", "String"]
+- !private ["So8NSObjectP", "OffertsParser"]
+- !private ["So8NSObjectP", "StoresParse"]
+- !private ["So8NSObjectP", "WakeUpParser"]
+- !private ["So8NSObjectP", "WebService"]
 - !private ["So8NSObjectP", "YopterRouter"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "callService"]
 - ["So8NSObjectP", "default"]
+- !private ["So8NSObjectP", "globalConstants"]
 - ["So8NSObjectP", "httpAdditionalHeaders"]
 - !private ["So8NSObjectP", "idOffert"]
 - !private ["So8NSObjectP", "init"]
@@ -245,25 +312,35 @@ depends-member:
 - !private ["So8NSObjectP", "parser"]
 - !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "set"]
+- !private ["So8NSObjectP", "setup"]
 - !private ["So8NSObjectP", "statusCode"]
 - !private ["So8NSObjectP", "urlParameters"]
 - !private ["So14NSSecureCodingP", "statusCode"]
 - ["12a4SysCoreIOS7NetworkC", "AnyObject"]
 - !private ["12a4SysCoreIOS7NetworkC", "ApiError"]
 - ["12a4SysCoreIOS7NetworkC", "BaseParser"]
+- !private ["12a4SysCoreIOS7NetworkC", "ENVIRONMENTFRAME"]
+- !private ["12a4SysCoreIOS7NetworkC", "EnviromentSet"]
+- ["12a4SysCoreIOS7NetworkC", "Environment"]
+- !private ["12a4SysCoreIOS7NetworkC", "FilterParse"]
 - !private ["12a4SysCoreIOS7NetworkC", "HomeParser"]
 - !private ["12a4SysCoreIOS7NetworkC", "LoginParser"]
 - !private ["12a4SysCoreIOS7NetworkC", "Mapper"]
 - !private ["12a4SysCoreIOS7NetworkC", "NetworkManager"]
+- !private ["12a4SysCoreIOS7NetworkC", "OffertsParser"]
+- !private ["12a4SysCoreIOS7NetworkC", "StoresParse"]
 - ["12a4SysCoreIOS7NetworkC", "String"]
 - ["12a4SysCoreIOS7NetworkC", "URLRequestConvertible"]
 - ["12a4SysCoreIOS7NetworkC", "Void"]
+- !private ["12a4SysCoreIOS7NetworkC", "WakeUpParser"]
+- !private ["12a4SysCoreIOS7NetworkC", "WebService"]
 - !private ["12a4SysCoreIOS7NetworkC", "YopterRouter"]
 - !private ["12a4SysCoreIOS7NetworkC", "callService"]
 - !private ["12a4SysCoreIOS7NetworkC", "constants"]
 - ["12a4SysCoreIOS7NetworkC", "deinit"]
 - ["12a4SysCoreIOS7NetworkC", "endPoint"]
 - ["12a4SysCoreIOS7NetworkC", "endPointN"]
+- !private ["12a4SysCoreIOS7NetworkC", "globalConstants"]
 - !private ["12a4SysCoreIOS7NetworkC", "idOffert"]
 - ["12a4SysCoreIOS7NetworkC", "init"]
 - !private ["12a4SysCoreIOS7NetworkC", "parseError"]
@@ -271,57 +348,63 @@ depends-member:
 - !private ["12a4SysCoreIOS7NetworkC", "print"]
 - !private ["12a4SysCoreIOS7NetworkC", "set"]
 - ["12a4SysCoreIOS7NetworkC", "setConstants"]
+- ["12a4SysCoreIOS7NetworkC", "setEnvironment"]
 - ["12a4SysCoreIOS7NetworkC", "setIdOffert"]
 - ["12a4SysCoreIOS7NetworkC", "setUrlParameters"]
 - !private ["12a4SysCoreIOS7NetworkC", "urlParameters"]
-- !private ["Sm", "init"]
+- !private ["12a4SysCoreIOS13OffertsParserC", "init"]
 - !private ["9Alamofire7RequestC", "responseJSON"]
 - !private ["9Alamofire8ResponseP", "response"]
 - !private ["9Alamofire8ResponseP", "result"]
 - !private ["9Alamofire6ResultO", "failure"]
 - !private ["9Alamofire6ResultO", "success"]
-- !private ["ST", "init"]
 - ["9Alamofire14SessionManagerC", "defaultHTTPHeaders"]
 - ["9Alamofire14SessionManagerC", "init"]
 - !private ["9Alamofire14SessionManagerC", "request"]
-- !private ["SS", "init"]
+- !private ["12a4SysCoreIOS11StoresParseC", "init"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
-- !private ["Sy", "init"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
-- !private ["s16TextOutputStreamP", "init"]
-- !private ["s20TextOutputStreamableP", "init"]
-- !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["9Alamofire21URLRequestConvertibleP", "ArticleRating"]
+- !private ["9Alamofire21URLRequestConvertibleP", "GetFilters"]
 - !private ["9Alamofire21URLRequestConvertibleP", "GetHome"]
 - !private ["9Alamofire21URLRequestConvertibleP", "Login"]
 - !private ["9Alamofire21URLRequestConvertibleP", "OfferRating"]
 - !private ["9Alamofire21URLRequestConvertibleP", "OfferSearch"]
+- !private ["9Alamofire21URLRequestConvertibleP", "StoresSearch"]
+- !private ["9Alamofire21URLRequestConvertibleP", "WakeUp"]
 - !private ["So13NSURLResponseC", "statusCode"]
 - ["So25NSURLSessionConfigurationC", "default"]
 - ["So25NSURLSessionConfigurationC", "httpAdditionalHeaders"]
+- !private ["12a4SysCoreIOS12WakeUpParserC", "init"]
+- !private ["12a4SysCoreIOS10WebServiceC", "setup"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "ArticleRating"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "GetFilters"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "GetHome"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "Login"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "OfferRating"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "OfferSearch"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "StoresSearch"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "WakeUp"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "deinit"]
-- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
-- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
-- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
-- !private ["s19_HasContiguousBytesP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "BaseParser"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ENVIRONMENTFRAME"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "EnviromentSet"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "FilterParse"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "HomeParser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "LoginParser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Mapper"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NetworkManager"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "OffertsParser"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "StoresParse"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "WakeUpParser"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "WebService"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "YopterRouter"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "callService"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "default"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "globalConstants"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "httpAdditionalHeaders"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "idOffert"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -331,74 +414,59 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "parser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "set"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setup"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "statusCode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "urlParameters"]
-- !private ["s21_ObjectiveCBridgeableP", "init"]
 - ["12a4SysCoreIOS8endPointO", "ArticleFavorite"]
 - ["12a4SysCoreIOS8endPointO", "ArticleRating"]
 - ["12a4SysCoreIOS8endPointO", "GetFavoriteArticles"]
+- ["12a4SysCoreIOS8endPointO", "GetFilters"]
 - ["12a4SysCoreIOS8endPointO", "GetHome"]
 - ["12a4SysCoreIOS8endPointO", "Login"]
 - ["12a4SysCoreIOS8endPointO", "OfferDelete"]
 - ["12a4SysCoreIOS8endPointO", "OfferFavorite"]
 - ["12a4SysCoreIOS8endPointO", "OfferRating"]
 - ["12a4SysCoreIOS8endPointO", "OfferSearch"]
+- ["12a4SysCoreIOS8endPointO", "StoresSearch"]
+- ["12a4SysCoreIOS8endPointO", "WakeUp"]
 depends-nominal:
 - "12a4SysCoreIOS8ApiErrorC"
 - !private "12a4SysCoreIOS10BaseParserC"
-- !private "SK"
 - "s7CVarArgP"
-- !private "Sl"
-- !private "SL"
 - "s28CustomDebugStringConvertibleP"
-- !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "9Alamofire11DataRequestC"
 - !private "9Alamofire12DataResponseV"
-- !private "Se"
 - !private "s26DefaultStringInterpolationV"
-- !private "SE"
+- "12a4SysCoreIOS11EnvironmentO"
 - "SQ"
-- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s32ExpressibleByStringInterpolationP"
-- !private "s26ExpressibleByStringLiteralP"
-- !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "12a4SysCoreIOS11FilterParseC"
 - !private "So17NSHTTPURLResponseC"
 - "SH"
 - !private "12a4SysCoreIOS10HomeParserC"
 - !private "12a4SysCoreIOS11LoginParserC"
-- !private "s25LosslessStringConvertibleP"
 - !private "12ObjectMapper0B0C"
-- !private "s10MirrorPathP"
 - !private "So8NSCodingP"
 - "So9NSCopyingP"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - "12a4SysCoreIOS7NetworkC"
-- !private "Sm"
+- !private "12a4SysCoreIOS13OffertsParserC"
 - !private "9Alamofire7RequestC"
 - !private "9Alamofire8ResponseP"
 - !private "9Alamofire6ResultO"
-- !private "ST"
 - "9Alamofire14SessionManagerC"
-- !private "SS"
+- !private "12a4SysCoreIOS11StoresParseC"
 - !private "s27StringInterpolationProtocolP"
-- !private "Sy"
 - !private "s16TextOutputStreamP"
-- !private "s20TextOutputStreamableP"
-- !private "9Alamofire14URLConvertibleP"
 - !private "9Alamofire21URLRequestConvertibleP"
 - !private "So13NSURLResponseC"
 - "So25NSURLSessionConfigurationC"
+- !private "12a4SysCoreIOS12WakeUpParserC"
+- !private "12a4SysCoreIOS10WebServiceC"
 - !private "12a4SysCoreIOS12YopterRouterO"
-- !private "s30_CustomPlaygroundQuickLookableP"
-- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s34_ExpressibleByBuiltinStringLiteralP"
-- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- !private "s19_HasContiguousBytesP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s21_ObjectiveCBridgeableP"
 - "12a4SysCoreIOS8endPointO"
 depends-dynamic-lookup:
 depends-external:
@@ -440,4 +508,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "6b46d473a6459d48b0f4af9ad2c31275"
+interface-hash: "ba263080b78ee032ad2720f586368955"

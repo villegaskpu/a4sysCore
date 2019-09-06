@@ -10,7 +10,6 @@ depends-top-level:
 - !private "<-"
 - "Article"
 - "AssignmentPrecedence"
-- "BooleanLiteralType"
 - "Category"
 - "Commerce"
 - "Image"
@@ -22,7 +21,6 @@ depends-top-level:
 - "OfferType"
 - "Rating"
 - "String"
-- "StringLiteralType"
 - "UserRating"
 depends-member:
 - !private ["12a4SysCoreIOS7ArticleC", "articleDescription"]

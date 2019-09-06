@@ -9,15 +9,15 @@
 import Foundation
 import ObjectMapper
 
-class WakeUpResponse : Mappable
+public class WakeUpResponse : Mappable
 {
-    var androidVersion : String?
-    var iOSVersion : String?
-    var mall : Mall?
+    public var androidVersion : String?
+    public var iOSVersion : String?
+    public var mall : Mall?
     
-    required init?(map: Map) { }
+    public required init?(map: Map) { }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         androidVersion <- map["androidVersion"]
         iOSVersion <- map["iOSVersion"]
         mall <- map["mall"]

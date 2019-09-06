@@ -9,7 +9,7 @@
 import Foundation
 import ObjectMapper
 
-class FiltersCategories : Mappable
+public class FiltersCategories : Mappable
 {
     public var idCategoryAlias : Int?
     public var name : String?

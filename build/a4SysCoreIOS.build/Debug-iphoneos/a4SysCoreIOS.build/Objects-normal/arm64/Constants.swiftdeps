@@ -1,5 +1,7 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "ENVIRONMENTFRAME"
+- "globalConstants"
 - "Constants"
 provides-nominal:
 - "12a4SysCoreIOS9ConstantsV"
@@ -8,13 +10,13 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "/"
-- "BooleanLiteralType"
 - "CGFloat"
 - "Constants"
-- "FloatLiteralType"
-- "IntegerLiteralType"
-- "StringLiteralType"
+- "ENVIRONMENTFRAME"
+- "Environment"
+- "String"
 - "UIColor"
+- "globalConstants"
 depends-member:
 - ["s7CVarArgP", "black"]
 - ["s7CVarArgP", "init"]
@@ -53,12 +55,15 @@ depends-member:
 - ["s23CustomStringConvertibleP", "black"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["s23CustomStringConvertibleP", "init"]
+- ["12a4SysCoreIOS11EnvironmentO", "test"]
 - ["SQ", "black"]
 - ["SQ", "init"]
 - ["SQ", "init"]
+- ["SQ", "test"]
 - ["SH", "black"]
 - ["SH", "init"]
 - ["SH", "init"]
+- ["SH", "test"]
 - ["So8NSCodingP", "black"]
 - ["So8NSCodingP", "init"]
 - ["So8NSCodingP", "init"]
@@ -94,6 +99,7 @@ depends-nominal:
 - "12a4SysCoreIOS9ConstantsV"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
+- "12a4SysCoreIOS11EnvironmentO"
 - "SQ"
 - "SH"
 - "So8NSCodingP"
@@ -146,4 +152,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "2f261c134badb6e0dca262bf459ba990"
+interface-hash: "ebe70a2f57664dac98fd5da781281ff6"

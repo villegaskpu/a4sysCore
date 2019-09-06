@@ -28,18 +28,20 @@ open class Network: NSObject {
     private var parser: BaseParser?
     private var idOffert:String = ""
     private var constants: [String:Any] = [:]
+    private var EnviromentSet:Environment = .test
     
     public func setUrlParameters(urlParameters:[String:Any]) {
         self.urlParameters = urlParameters
     }
     
     public func setConstants(constants: [String:Any]) {
-        
-//        self.constants = constants.
-//        123456
-        
-        
-        print("nameApp: \(constants)")
+        globalConstants = constants
+        print("globalConstants: \(globalConstants)")
+    }
+    
+    public func setEnvironment(Environment: Environment) {
+        ENVIRONMENTFRAME = Environment
+        self.EnviromentSet = Environment
     }
     
     private func set(parser: BaseParser) {
@@ -51,12 +53,13 @@ open class Network: NSObject {
         set(parser: parser)
         sessionManager.request(url).responseJSON{ (response) in
             
-            let statusCode = response.response?.statusCode ?? 0            
+            let statusCode = response.response?.statusCode ?? 0
+//            print("response.result: \(response.request)")
             switch(response.result)
             {
             case .success(let value):
                 
-                print("exito: \(value)  statuscCode: \(String(describing: response.response?.statusCode))")
+//                print("exito: \(value)  statuscCode: \(String(describing: response.response?.statusCode))")
                 
                 if statusCode >= 200 && statusCode < 300 {
                     let obj = self.parser?.parse(JSONObject: value)
@@ -65,6 +68,7 @@ open class Network: NSObject {
                     let obj = self.parseError(JSONObject: value)
                     respuesta("\(statusCode)", value, obj as AnyObject)
                 }
+                break
             case .failure(let value):
                 print("fallo")
                 let obj = self.parseError(JSONObject: value)
@@ -89,8 +93,10 @@ open class Network: NSObject {
     public func endPointN(endPont: endPoint, _ callback: @escaping(_ statusCode: String, _ value: Any, _ objeto:AnyObject?) -> (Void)) {
         var urll: URLRequestConvertible?
         var parserB = BaseParser()
+        WebService.setup()
         switch endPont {
         case .Login:
+            print("llegasteallogin")
             urll = YopterRouter.Login(parameter: self.urlParameters!)
             parserB = LoginParser()
             break
@@ -100,7 +106,7 @@ open class Network: NSObject {
             break
         case .OfferSearch:
             urll = YopterRouter.OfferSearch(parameter: self.urlParameters!)
-            parserB = HomeParser()
+            parserB = OffertsParser()
         case .OfferRating:
             urll = YopterRouter.OfferRating(idOffer: self.idOffert, parameter: self.urlParameters!)
         case .ArticleRating:
@@ -117,6 +123,18 @@ open class Network: NSObject {
             break
         case .OfferDelete:
             urll = YopterRouter.OfferSearch(parameter: self.urlParameters!)
+            break
+        case .WakeUp:
+            urll = YopterRouter.WakeUp(parameter: self.urlParameters!)
+            parserB = WakeUpParser()
+            break
+        case .GetFilters:
+            urll = YopterRouter.GetFilters
+            parserB = FilterParse()
+            break
+        case .StoresSearch:
+            urll = YopterRouter.StoresSearch(parameter: self.urlParameters!)
+            parserB = StoresParse()
             break
         default:
             print("sin endPoint")

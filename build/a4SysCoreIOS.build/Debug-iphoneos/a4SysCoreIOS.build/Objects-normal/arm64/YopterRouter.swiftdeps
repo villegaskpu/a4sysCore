@@ -1,6 +1,5 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "globalURL"
 - "YopterRouter"
 provides-nominal:
 - "12a4SysCoreIOS12YopterRouterO"
@@ -8,33 +7,38 @@ provides-member:
 - ["12a4SysCoreIOS12YopterRouterO", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "=="
 - "AssignmentPrecedence"
 - !private "Commons"
 - !private "Constants"
-- !private "FloatLiteralType"
 - "HTTPMethod"
-- !private "IntegerLiteralType"
 - !private "JSONEncoding"
 - "Parameters"
 - !private "Settings"
 - "String"
-- "StringLiteralType"
 - !private "TimeZone"
-- "URL"
 - !private "URLComponents"
 - !private "URLEncoding"
 - !private "URLQueryItem"
 - "URLRequest"
 - "URLRequestConvertible"
-- !private "UnicodeScalarType"
+- !private "WebService"
 - "YopterRouter"
-- "globalURL"
+- !private "globalConstants"
 - !private "print"
 depends-member:
+- !private ["Sa", "first"]
 - !private ["SK", "asURL"]
+- !private ["SK", "first"]
 - !private ["s7CVarArgP", "asURL"]
+- !private ["s7CVarArgP", "baseURLString"]
+- !private ["s7CVarArgP", "filter"]
+- !private ["s7CVarArgP", "first"]
 - !private ["s7CVarArgP", "map"]
+- !private ["s7CVarArgP", "newBaseURLString"]
 - !private ["Sl", "asURL"]
+- !private ["Sl", "filter"]
+- !private ["Sl", "first"]
 - !private ["Sl", "map"]
 - !private ["12a4SysCoreIOS7CommonsC", "getUserAgent"]
 - !private ["SL", "asURL"]
@@ -42,19 +46,26 @@ depends-member:
 - !private ["12a4SysCoreIOS9ConstantsV", "baseURLString"]
 - !private ["12a4SysCoreIOS9ConstantsV", "language"]
 - !private ["12a4SysCoreIOS9ConstantsV", "newBaseURLString"]
+- !private ["10Foundation15ContiguousBytesP", "first"]
 - !private ["s28CustomDebugStringConvertibleP", "addValue"]
 - !private ["s28CustomDebugStringConvertibleP", "appendingPathComponent"]
 - !private ["s28CustomDebugStringConvertibleP", "asURL"]
+- !private ["s28CustomDebugStringConvertibleP", "baseURLString"]
 - !private ["s28CustomDebugStringConvertibleP", "current"]
+- !private ["s28CustomDebugStringConvertibleP", "filter"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
 - !private ["s28CustomDebugStringConvertibleP", "httpMethod"]
 - !private ["s28CustomDebugStringConvertibleP", "identifier"]
-- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "map"]
+- !private ["s28CustomDebugStringConvertibleP", "newBaseURLString"]
 - !private ["s28CustomDebugStringConvertibleP", "queryItems"]
 - !private ["s28CustomDebugStringConvertibleP", "url"]
 - !private ["s17CustomReflectableP", "addValue"]
 - !private ["s17CustomReflectableP", "asURL"]
 - !private ["s17CustomReflectableP", "current"]
+- !private ["s17CustomReflectableP", "filter"]
+- !private ["s17CustomReflectableP", "first"]
 - !private ["s17CustomReflectableP", "httpMethod"]
 - !private ["s17CustomReflectableP", "identifier"]
 - !private ["s17CustomReflectableP", "init"]
@@ -66,45 +77,63 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "appendingPathComponent"]
 - !private ["s23CustomStringConvertibleP", "asURL"]
+- !private ["s23CustomStringConvertibleP", "baseURLString"]
 - !private ["s23CustomStringConvertibleP", "current"]
+- !private ["s23CustomStringConvertibleP", "filter"]
+- !private ["s23CustomStringConvertibleP", "first"]
 - !private ["s23CustomStringConvertibleP", "httpMethod"]
 - !private ["s23CustomStringConvertibleP", "identifier"]
-- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "map"]
+- !private ["s23CustomStringConvertibleP", "newBaseURLString"]
 - !private ["s23CustomStringConvertibleP", "queryItems"]
 - !private ["s23CustomStringConvertibleP", "url"]
+- !private ["10Foundation12DataProtocolP", "first"]
 - !private ["Se", "appendingPathComponent"]
 - !private ["Se", "asURL"]
 - !private ["Se", "current"]
+- !private ["Se", "filter"]
+- !private ["Se", "first"]
 - !private ["Se", "identifier"]
-- ["Se", "init"]
+- !private ["Se", "init"]
 - !private ["Se", "map"]
 - !private ["Se", "queryItems"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["SD", "filter"]
+- !private ["SD", "first"]
 - !private ["SD", "map"]
 - !private ["SE", "appendingPathComponent"]
 - !private ["SE", "asURL"]
 - !private ["SE", "current"]
+- !private ["SE", "filter"]
+- !private ["SE", "first"]
 - !private ["SE", "identifier"]
-- ["SE", "init"]
+- !private ["SE", "init"]
 - !private ["SE", "map"]
 - !private ["SE", "queryItems"]
 - !private ["SQ", "addValue"]
 - !private ["SQ", "appendingPathComponent"]
 - !private ["SQ", "asURL"]
+- !private ["SQ", "baseURLString"]
 - !private ["SQ", "current"]
 - !private ["SQ", "delete"]
+- !private ["SQ", "filter"]
+- !private ["SQ", "first"]
 - !private ["SQ", "get"]
 - !private ["SQ", "httpMethod"]
 - !private ["SQ", "identifier"]
-- ["SQ", "init"]
+- !private ["SQ", "init"]
 - !private ["SQ", "map"]
+- !private ["SQ", "newBaseURLString"]
 - !private ["SQ", "post"]
 - !private ["SQ", "put"]
 - !private ["SQ", "queryItems"]
 - !private ["SQ", "rawValue"]
 - !private ["SQ", "url"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "filter"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "first"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "map"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "asURL"]
 - !private ["s32ExpressibleByStringInterpolationP", "asURL"]
@@ -118,13 +147,17 @@ depends-member:
 - !private ["SH", "addValue"]
 - !private ["SH", "appendingPathComponent"]
 - !private ["SH", "asURL"]
+- !private ["SH", "baseURLString"]
 - !private ["SH", "current"]
 - !private ["SH", "delete"]
+- !private ["SH", "filter"]
+- !private ["SH", "first"]
 - !private ["SH", "get"]
 - !private ["SH", "httpMethod"]
 - !private ["SH", "identifier"]
-- ["SH", "init"]
+- !private ["SH", "init"]
 - !private ["SH", "map"]
+- !private ["SH", "newBaseURLString"]
 - !private ["SH", "post"]
 - !private ["SH", "put"]
 - !private ["SH", "queryItems"]
@@ -134,18 +167,26 @@ depends-member:
 - !private ["9Alamofire12JSONEncodingV", "encode"]
 - !private ["s25LosslessStringConvertibleP", "asURL"]
 - !private ["s10MirrorPathP", "asURL"]
+- !private ["SM", "first"]
+- !private ["10Foundation19MutableDataProtocolP", "first"]
 - !private ["So8NSCodingP", "asURL"]
 - !private ["So9NSCopyingP", "asURL"]
 - !private ["So21NSItemProviderReadingP", "asURL"]
 - !private ["So21NSItemProviderWritingP", "asURL"]
 - !private ["So16NSMutableCopyingP", "asURL"]
 - !private ["So8NSObjectC", "asURL"]
+- !private ["So8NSObjectC", "baseURLString"]
+- !private ["So8NSObjectC", "newBaseURLString"]
 - !private ["So8NSObjectP", "asURL"]
+- !private ["So8NSObjectP", "baseURLString"]
+- !private ["So8NSObjectP", "newBaseURLString"]
 - !private ["So14NSSecureCodingP", "asURL"]
 - !private ["So8NSStringC", "asURL"]
 - !private ["9Alamofire17ParameterEncodingP", "default"]
 - !private ["9Alamofire17ParameterEncodingP", "encode"]
+- !private ["Sk", "first"]
 - !private ["Sm", "asURL"]
+- !private ["Sm", "first"]
 - !private ["SY", "delete"]
 - !private ["SY", "get"]
 - !private ["SY", "post"]
@@ -157,10 +198,12 @@ depends-member:
 - !private ["10Foundation20ReferenceConvertibleP", "current"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpMethod"]
 - !private ["10Foundation20ReferenceConvertibleP", "identifier"]
-- ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "queryItems"]
 - !private ["10Foundation20ReferenceConvertibleP", "url"]
 - !private ["ST", "asURL"]
+- !private ["ST", "filter"]
+- !private ["ST", "first"]
 - !private ["ST", "map"]
 - !private ["12a4SysCoreIOS8SettingsC", "getOldToken"]
 - !private ["12a4SysCoreIOS8SettingsC", "sharedInstance"]
@@ -175,13 +218,12 @@ depends-member:
 - !private ["10Foundation8TimeZoneV", "current"]
 - !private ["10Foundation8TimeZoneV", "identifier"]
 - !private ["10Foundation3URLV", "appendingPathComponent"]
-- ["10Foundation3URLV", "init"]
 - !private ["10Foundation13URLComponentsV", "asURL"]
 - !private ["10Foundation13URLComponentsV", "init"]
 - !private ["10Foundation13URLComponentsV", "queryItems"]
 - !private ["9Alamofire14URLConvertibleP", "appendingPathComponent"]
 - !private ["9Alamofire14URLConvertibleP", "asURL"]
-- ["9Alamofire14URLConvertibleP", "init"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "queryItems"]
 - !private ["9Alamofire11URLEncodingV", "default"]
 - !private ["9Alamofire11URLEncodingV", "encode"]
@@ -246,16 +288,20 @@ depends-member:
 - ["9Alamofire21URLRequestConvertibleP", "ValidateGender"]
 - ["9Alamofire21URLRequestConvertibleP", "ValidateToken"]
 - ["9Alamofire21URLRequestConvertibleP", "WakeUp"]
+- !private ["9Alamofire21URLRequestConvertibleP", "WebService"]
 - ["9Alamofire21URLRequestConvertibleP", "WhoAmI"]
 - ["9Alamofire21URLRequestConvertibleP", ""]
 - !private ["9Alamofire21URLRequestConvertibleP", "addValue"]
 - ["9Alamofire21URLRequestConvertibleP", "asURLRequest"]
+- !private ["9Alamofire21URLRequestConvertibleP", "globalConstants"]
 - !private ["9Alamofire21URLRequestConvertibleP", "httpMethod"]
 - !private ["9Alamofire21URLRequestConvertibleP", "init"]
 - !private ["9Alamofire21URLRequestConvertibleP", "method"]
 - !private ["9Alamofire21URLRequestConvertibleP", "path"]
 - !private ["9Alamofire21URLRequestConvertibleP", "print"]
 - !private ["9Alamofire21URLRequestConvertibleP", "url"]
+- !private ["12a4SysCoreIOS10WebServiceC", "baseURLString"]
+- !private ["12a4SysCoreIOS10WebServiceC", "newBaseURLString"]
 - ["12a4SysCoreIOS12YopterRouterO", "Arrived"]
 - ["12a4SysCoreIOS12YopterRouterO", "ArticleDelete"]
 - ["12a4SysCoreIOS12YopterRouterO", "ArticleFavorite"]
@@ -315,24 +361,31 @@ depends-member:
 - ["12a4SysCoreIOS12YopterRouterO", "ValidateGender"]
 - ["12a4SysCoreIOS12YopterRouterO", "ValidateToken"]
 - ["12a4SysCoreIOS12YopterRouterO", "WakeUp"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "WebService"]
 - ["12a4SysCoreIOS12YopterRouterO", "WhoAmI"]
 - ["12a4SysCoreIOS12YopterRouterO", "asURLRequest"]
 - ["12a4SysCoreIOS12YopterRouterO", "deinit"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "globalConstants"]
 - ["12a4SysCoreIOS12YopterRouterO", "method"]
 - ["12a4SysCoreIOS12YopterRouterO", "path"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "print"]
+- !private ["s14_ArrayProtocolP", "first"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "appendingPathComponent"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "asURL"]
-- ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "first"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "asURL"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "asURL"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "asURL"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "appendingPathComponent"]
-- ["s34_ExpressibleByFileReferenceLiteralP", "init"]
 - !private ["s19_HasContiguousBytesP", "asURL"]
+- !private ["s19_HasContiguousBytesP", "first"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "asURL"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "filter"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "first"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "map"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "asURL"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "baseURLString"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "newBaseURLString"]
 - !private ["10Foundation14_MutableBoxingP", "asURL"]
 - !private ["10Foundation14_MutableBoxingP", "init"]
 - !private ["10Foundation14_MutableBoxingP", "queryItems"]
@@ -340,37 +393,45 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "appendingPathComponent"]
 - !private ["s21_ObjectiveCBridgeableP", "asURL"]
 - !private ["s21_ObjectiveCBridgeableP", "current"]
+- !private ["s21_ObjectiveCBridgeableP", "filter"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
 - !private ["s21_ObjectiveCBridgeableP", "httpMethod"]
 - !private ["s21_ObjectiveCBridgeableP", "identifier"]
-- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "queryItems"]
 - !private ["s21_ObjectiveCBridgeableP", "url"]
 depends-nominal:
+- !private "Sa"
 - !private "SK"
 - !private "s7CVarArgP"
 - !private "Sl"
 - !private "12a4SysCoreIOS7CommonsC"
 - !private "SL"
 - !private "12a4SysCoreIOS9ConstantsV"
-- "s28CustomDebugStringConvertibleP"
+- !private "10Foundation15ContiguousBytesP"
+- !private "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
-- "s23CustomStringConvertibleP"
-- "Se"
+- !private "s23CustomStringConvertibleP"
+- !private "10Foundation12DataProtocolP"
+- !private "Se"
 - !private "s26DefaultStringInterpolationV"
 - !private "SD"
-- "SE"
-- "SQ"
+- !private "SE"
+- !private "SQ"
+- !private "s25ExpressibleByArrayLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "9Alamofire10HTTPMethodO"
-- "SH"
+- !private "SH"
 - !private "9Alamofire12JSONEncodingV"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
+- !private "SM"
+- !private "10Foundation19MutableDataProtocolP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
@@ -381,9 +442,10 @@ depends-nominal:
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
 - !private "9Alamofire17ParameterEncodingP"
+- !private "Sk"
 - !private "Sm"
 - !private "SY"
-- "10Foundation20ReferenceConvertibleP"
+- !private "10Foundation20ReferenceConvertibleP"
 - !private "ST"
 - !private "12a4SysCoreIOS8SettingsC"
 - !private "SS"
@@ -392,24 +454,27 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "10Foundation8TimeZoneV"
-- "10Foundation3URLV"
+- !private "10Foundation3URLV"
 - !private "10Foundation13URLComponentsV"
-- "9Alamofire14URLConvertibleP"
+- !private "9Alamofire14URLConvertibleP"
 - !private "9Alamofire11URLEncodingV"
 - !private "10Foundation12URLQueryItemV"
 - !private "10Foundation10URLRequestV"
 - "9Alamofire21URLRequestConvertibleP"
+- !private "12a4SysCoreIOS10WebServiceC"
 - "12a4SysCoreIOS12YopterRouterO"
-- "s30_CustomPlaygroundQuickLookableP"
+- !private "s14_ArrayProtocolP"
+- !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
-- "s34_ExpressibleByFileReferenceLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
 - !private "s19_HasContiguousBytesP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "10Foundation14_MutableBoxingP"
-- "s21_ObjectiveCBridgeableP"
+- !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Framework/Alamofire.framework/Modules/Alamofire.swiftmodule/arm64.swiftmodule"
@@ -450,4 +515,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "57371c5ffea357ca718a2a0ca2f39eaa"
+interface-hash: "a60f19a4cb66617f9cff35e475153507"

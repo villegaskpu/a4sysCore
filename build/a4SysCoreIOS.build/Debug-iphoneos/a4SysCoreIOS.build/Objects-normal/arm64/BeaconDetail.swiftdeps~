@@ -11,12 +11,9 @@ depends-top-level:
 - "BeaconDetail"
 - "BeaconFirmware"
 - "BeaconInstallation"
-- "FloatLiteralType"
-- "IntegerLiteralType"
 - "Map"
 - "Mappable"
 - "String"
-- "StringLiteralType"
 depends-member:
 - ["12ObjectMapper12BaseMappableP", "BeaconFirmware"]
 - ["12ObjectMapper12BaseMappableP", "BeaconInstallation"]

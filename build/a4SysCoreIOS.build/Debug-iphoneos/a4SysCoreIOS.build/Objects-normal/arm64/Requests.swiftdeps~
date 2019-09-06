@@ -17,6 +17,7 @@ depends-top-level:
 - !private "Settings"
 - "String"
 - !private "StringLiteralType"
+- !private "print"
 depends-member:
 - !private ["So10CLLocationC", "coordinate"]
 - !private ["So22CLLocationCoordinate2DV", "latitude"]
@@ -71,6 +72,7 @@ depends-member:
 - ["12a4SysCoreIOS8RequestsC", "createDeleteOfferRequest"]
 - ["12a4SysCoreIOS8RequestsC", "createFavoriteOfferRequest"]
 - ["12a4SysCoreIOS8RequestsC", "createFavoriteOffersRequest"]
+- ["12a4SysCoreIOS8RequestsC", "createFilters"]
 - ["12a4SysCoreIOS8RequestsC", "createForgotPasswordRequest"]
 - ["12a4SysCoreIOS8RequestsC", "createGeofencesRequest"]
 - ["12a4SysCoreIOS8RequestsC", "createGetStoresRequest"]
@@ -92,6 +94,7 @@ depends-member:
 - ["12a4SysCoreIOS8RequestsC", "createWakeUpRequest"]
 - ["12a4SysCoreIOS8RequestsC", "createWhoAmIRequiest"]
 - ["12a4SysCoreIOS8RequestsC", "init"]
+- !private ["12a4SysCoreIOS8RequestsC", "print"]
 - !private ["12a4SysCoreIOS8SettingsC", "getDateRefreshTheme"]
 - !private ["12a4SysCoreIOS8SettingsC", "getDeviceId"]
 - !private ["12a4SysCoreIOS8SettingsC", "sharedInstance"]
@@ -168,4 +171,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "38fa1d5425c728f6fca390720eaec97b"
+interface-hash: "2fd16203440e483a3ee131f62a5ec988"

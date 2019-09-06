@@ -84,6 +84,11 @@
 		637EE0802304527500429C34 /* ObjectMapper.framework in Sources */ = {isa = PBXBuildFile; fileRef = 63755D9B22FDD08800D161FA /* ObjectMapper.framework */; };
 		637EE0852304539F00429C34 /* Alamofire.framework in Resources */ = {isa = PBXBuildFile; fileRef = 63755D9D22FDD08900D161FA /* Alamofire.framework */; };
 		637EE0862304539F00429C34 /* ObjectMapper.framework in Resources */ = {isa = PBXBuildFile; fileRef = 63755D9B22FDD08800D161FA /* ObjectMapper.framework */; };
+		63A63370232180D5008C047C /* FilterParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6336F232180D5008C047C /* FilterParse.swift */; };
+		63A6337E2321AD01008C047C /* StoresParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A6337D2321AD01008C047C /* StoresParse.swift */; };
+		63A6338A2321BAA5008C047C /* OffertsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A633892321BAA5008C047C /* OffertsParser.swift */; };
+		63B5A7DE23200B9D00DB9159 /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5A7DD23200B9D00DB9159 /* Enviroment.swift */; };
+		63B5A80D2321481800DB9159 /* WakeUpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B5A80C2321481800DB9159 /* WakeUpParser.swift */; };
 		63E2A757230AF9C700EB0F9C /* enumsNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E2A756230AF9C700EB0F9C /* enumsNetwork.swift */; };
 		63E2A789230C324500EB0F9C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63E2A788230C324500EB0F9C /* Localizable.strings */; };
 		63E2A78C230C32ED00EB0F9C /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E2A78B230C32ED00EB0F9C /* StringExtension.swift */; };
@@ -168,6 +173,11 @@
 		63755DFD22FDD1CC00D161FA /* SantanderProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SantanderProduct.swift; sourceTree = "<group>"; };
 		63755DFE22FDD1CC00D161FA /* OfferTakenSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferTakenSum.swift; sourceTree = "<group>"; };
 		63755E3222FDD1E200D161FA /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		63A6336F232180D5008C047C /* FilterParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterParse.swift; sourceTree = "<group>"; };
+		63A6337D2321AD01008C047C /* StoresParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoresParse.swift; sourceTree = "<group>"; };
+		63A633892321BAA5008C047C /* OffertsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffertsParser.swift; sourceTree = "<group>"; };
+		63B5A7DD23200B9D00DB9159 /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
+		63B5A80C2321481800DB9159 /* WakeUpParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpParser.swift; sourceTree = "<group>"; };
 		63E2A756230AF9C700EB0F9C /* enumsNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enumsNetwork.swift; sourceTree = "<group>"; };
 		63E2A788230C324500EB0F9C /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		63E2A78B230C32ED00EB0F9C /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
@@ -218,6 +228,7 @@
 				63755D9322FDD05800D161FA /* Info.plist */,
 				63755E3222FDD1E200D161FA /* Network.swift */,
 				63E2A756230AF9C700EB0F9C /* enumsNetwork.swift */,
+				63B5A7DD23200B9D00DB9159 /* Enviroment.swift */,
 			);
 			path = a4SysCoreIOS;
 			sourceTree = "<group>";
@@ -334,6 +345,10 @@
 				63E2A802230C4C8E00EB0F9C /* BaseParser.swift */,
 				63E2A804230C4D3A00EB0F9C /* LoginParser.swift */,
 				63E2A8A4230EE12900EB0F9C /* HomeParser.swift */,
+				63A633892321BAA5008C047C /* OffertsParser.swift */,
+				63B5A80C2321481800DB9159 /* WakeUpParser.swift */,
+				63A6336F232180D5008C047C /* FilterParse.swift */,
+				63A6337D2321AD01008C047C /* StoresParse.swift */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
@@ -500,6 +515,7 @@
 				63755E2422FDD1CD00D161FA /* Geofence.swift in Sources */,
 				63E2A803230C4C8E00EB0F9C /* BaseParser.swift in Sources */,
 				63755DC322FDD19B00D161FA /* WakeUpResponse.swift in Sources */,
+				63A6337E2321AD01008C047C /* StoresParse.swift in Sources */,
 				63755E0C22FDD1CD00D161FA /* Category.swift in Sources */,
 				63755DA522FDD0E200D161FA /* DateExtencion.swift in Sources */,
 				63755E2322FDD1CD00D161FA /* Configurations.swift in Sources */,
@@ -516,12 +532,15 @@
 				63755E0D22FDD1CD00D161FA /* Heartbeat.swift in Sources */,
 				63755DC622FDD19B00D161FA /* LoginResponse.swift in Sources */,
 				63E2A8A5230EE12900EB0F9C /* HomeParser.swift in Sources */,
+				63B5A7DE23200B9D00DB9159 /* Enviroment.swift in Sources */,
 				63755E1122FDD1CD00D161FA /* BeaconAnnouncement.swift in Sources */,
 				63755DB722FDD17F00D161FA /* Requests.swift in Sources */,
 				63755E1B22FDD1CD00D161FA /* Article.swift in Sources */,
 				63755E3122FDD1CD00D161FA /* OfferTakenSum.swift in Sources */,
 				63755E0B22FDD1CD00D161FA /* ExternalInfo.swift in Sources */,
 				63E2A78C230C32ED00EB0F9C /* StringExtension.swift in Sources */,
+				63A63370232180D5008C047C /* FilterParse.swift in Sources */,
+				63B5A80D2321481800DB9159 /* WakeUpParser.swift in Sources */,
 				63755E2522FDD1CD00D161FA /* BeaconInstallationType.swift in Sources */,
 				63755E1D22FDD1CD00D161FA /* UserStatus.swift in Sources */,
 				63755E1622FDD1CD00D161FA /* OfferCount.swift in Sources */,
@@ -547,6 +566,7 @@
 				63755DC522FDD19B00D161FA /* AnnouncementResponse.swift in Sources */,
 				63755E3022FDD1CD00D161FA /* SantanderProduct.swift in Sources */,
 				63755E1222FDD1CD00D161FA /* Rating.swift in Sources */,
+				63A6338A2321BAA5008C047C /* OffertsParser.swift in Sources */,
 				63755DAC22FDD0FE00D161FA /* LocationUtil.swift in Sources */,
 				63755DAB22FDD0FE00D161FA /* Settings.swift in Sources */,
 				63755E0222FDD1CD00D161FA /* Offer.swift in Sources */,

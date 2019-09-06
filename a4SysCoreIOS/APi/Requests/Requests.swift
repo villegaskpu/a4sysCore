@@ -97,6 +97,7 @@ open class Requests{
     
     open class func createWakeUpRequest(advertisementId : String?) -> [String : Any]
     {
+        print("Settings.sharedInstance.getDeviceId()frame: \(Settings.sharedInstance.getDeviceId())")
         return ["deviceId" : Settings.sharedInstance.getDeviceId() ?? "", "idAdvertisement" : advertisementId ?? ""]
     }
     open class func createWhoAmIRequiest() -> [String : Any]
@@ -178,5 +179,14 @@ open class Requests{
             "beatAt": Commons.getCurrentDate()]
         
         return parameters
+    }
+    
+    open class func createFilters(_ appId: String) -> [String : Any] {
+        let queryStringParam  =  [
+            "xAppId": appId,
+            "lastUpdate": "2019-04-28"
+        ]
+        
+        return queryStringParam
     }
 }

@@ -8,9 +8,14 @@
 
 import UIKit
 
+var ENVIRONMENTFRAME:Environment = .test
+
+var globalConstants: [String:Any] = [:]
+
+
 public struct Constants{
-    static  public let baseURLString = "https://fyf5tabava.execute-api.us-east-1.amazonaws.com/pro"
-    static  public let newBaseURLString = "https://tms93ofcxe.execute-api.us-east-1.amazonaws.com/pro"
+    static  public let baseURLString = "https://fyf5tabava.execute-api.us-east-1.amazonaws.com/test"
+    static  public let newBaseURLString = "https://tms93ofcxe.execute-api.us-east-1.amazonaws.com/test"
     static  public let appID = "1ed3d6e03ee03c04bf3365f808fc28f1"
     static  public let appIDTienda = "1464721739"
     static  public let appName = "Vyco Comunica"

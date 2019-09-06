@@ -10,12 +10,9 @@ depends-top-level:
 - !private "<-"
 - "BeaconInstallation"
 - "BeaconInstallationType"
-- "FloatLiteralType"
-- "IntegerLiteralType"
 - "Map"
 - "Mappable"
 - "Store"
-- !private "StringLiteralType"
 depends-member:
 - ["12ObjectMapper12BaseMappableP", "BeaconInstallationType"]
 - ["12ObjectMapper12BaseMappableP", "Store"]

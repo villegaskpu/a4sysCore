@@ -8,12 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "<-"
-- "FloatLiteralType"
-- "IntegerLiteralType"
 - "Map"
 - "Mappable"
 - "String"
-- "StringLiteralType"
 - "ZoneImg"
 depends-member:
 - ["12ObjectMapper12BaseMappableP", ""]

@@ -10,6 +10,7 @@ depends-top-level:
 - !private "<-"
 - "AnnouncementResponse"
 - "BeaconDetail"
+- "BooleanLiteralType"
 - "Map"
 - "Mappable"
 - "Offer"
