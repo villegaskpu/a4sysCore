@@ -13,6 +13,7 @@ depends-top-level:
 - !private "??"
 - "AnyObject"
 - !private "ApiError"
+- !private "ArticulosParse"
 - "AssignmentPrecedence"
 - "BaseParser"
 - !private "CastingPrecedence"
@@ -27,6 +28,7 @@ depends-top-level:
 - "NSObject"
 - "Network"
 - !private "NetworkManager"
+- !private "OffertTakenResponseParse"
 - !private "OffertsParser"
 - "SessionManager"
 - !private "StoresParse"
@@ -43,8 +45,10 @@ depends-top-level:
 - !private "print"
 depends-member:
 - ["12a4SysCoreIOS8ApiErrorC", "deinit"]
+- !private ["12a4SysCoreIOS14ArticulosParseC", "init"]
 - !private ["12a4SysCoreIOS10BaseParserC", "init"]
 - !private ["12a4SysCoreIOS10BaseParserC", "parse"]
+- !private ["s7CVarArgP", "ArticulosParse"]
 - !private ["s7CVarArgP", "BaseParser"]
 - !private ["s7CVarArgP", "ENVIRONMENTFRAME"]
 - !private ["s7CVarArgP", "EnviromentSet"]
@@ -53,6 +57,7 @@ depends-member:
 - !private ["s7CVarArgP", "LoginParser"]
 - !private ["s7CVarArgP", "Mapper"]
 - !private ["s7CVarArgP", "NetworkManager"]
+- !private ["s7CVarArgP", "OffertTakenResponseParse"]
 - !private ["s7CVarArgP", "OffertsParser"]
 - !private ["s7CVarArgP", "StoresParse"]
 - !private ["s7CVarArgP", "WakeUpParser"]
@@ -74,6 +79,7 @@ depends-member:
 - !private ["s7CVarArgP", "setup"]
 - !private ["s7CVarArgP", "statusCode"]
 - !private ["s7CVarArgP", "urlParameters"]
+- !private ["s28CustomDebugStringConvertibleP", "ArticulosParse"]
 - !private ["s28CustomDebugStringConvertibleP", "BaseParser"]
 - !private ["s28CustomDebugStringConvertibleP", "ENVIRONMENTFRAME"]
 - !private ["s28CustomDebugStringConvertibleP", "EnviromentSet"]
@@ -82,6 +88,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "LoginParser"]
 - !private ["s28CustomDebugStringConvertibleP", "Mapper"]
 - !private ["s28CustomDebugStringConvertibleP", "NetworkManager"]
+- !private ["s28CustomDebugStringConvertibleP", "OffertTakenResponseParse"]
 - !private ["s28CustomDebugStringConvertibleP", "OffertsParser"]
 - !private ["s28CustomDebugStringConvertibleP", "StoresParse"]
 - !private ["s28CustomDebugStringConvertibleP", "WakeUpParser"]
@@ -108,6 +115,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "statusCode"]
 - !private ["s28CustomDebugStringConvertibleP", "success"]
 - !private ["s28CustomDebugStringConvertibleP", "urlParameters"]
+- !private ["s23CustomStringConvertibleP", "ArticulosParse"]
 - !private ["s23CustomStringConvertibleP", "BaseParser"]
 - !private ["s23CustomStringConvertibleP", "ENVIRONMENTFRAME"]
 - !private ["s23CustomStringConvertibleP", "EnviromentSet"]
@@ -116,6 +124,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "LoginParser"]
 - !private ["s23CustomStringConvertibleP", "Mapper"]
 - !private ["s23CustomStringConvertibleP", "NetworkManager"]
+- !private ["s23CustomStringConvertibleP", "OffertTakenResponseParse"]
 - !private ["s23CustomStringConvertibleP", "OffertsParser"]
 - !private ["s23CustomStringConvertibleP", "StoresParse"]
 - !private ["s23CustomStringConvertibleP", "WakeUpParser"]
@@ -150,13 +159,17 @@ depends-member:
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - ["12a4SysCoreIOS11EnvironmentO", "test"]
+- ["SQ", "ArticleDelete"]
 - ["SQ", "ArticleFavorite"]
 - ["SQ", "ArticleRating"]
+- !private ["SQ", "ArticulosParse"]
 - !private ["SQ", "BaseParser"]
 - !private ["SQ", "ENVIRONMENTFRAME"]
 - !private ["SQ", "EnviromentSet"]
 - !private ["SQ", "FilterParse"]
+- ["SQ", "GetArticles"]
 - ["SQ", "GetFavoriteArticles"]
+- ["SQ", "GetFavoriteOffers"]
 - ["SQ", "GetFilters"]
 - ["SQ", "GetHome"]
 - !private ["SQ", "HomeParser"]
@@ -168,6 +181,8 @@ depends-member:
 - ["SQ", "OfferFavorite"]
 - ["SQ", "OfferRating"]
 - ["SQ", "OfferSearch"]
+- ["SQ", "OfferTaken"]
+- !private ["SQ", "OffertTakenResponseParse"]
 - !private ["SQ", "OffertsParser"]
 - !private ["SQ", "StoresParse"]
 - ["SQ", "StoresSearch"]
@@ -194,13 +209,17 @@ depends-member:
 - !private ["SQ", "urlParameters"]
 - !private ["12a4SysCoreIOS11FilterParseC", "init"]
 - !private ["So17NSHTTPURLResponseC", "statusCode"]
+- ["SH", "ArticleDelete"]
 - ["SH", "ArticleFavorite"]
 - ["SH", "ArticleRating"]
+- !private ["SH", "ArticulosParse"]
 - !private ["SH", "BaseParser"]
 - !private ["SH", "ENVIRONMENTFRAME"]
 - !private ["SH", "EnviromentSet"]
 - !private ["SH", "FilterParse"]
+- ["SH", "GetArticles"]
 - ["SH", "GetFavoriteArticles"]
+- ["SH", "GetFavoriteOffers"]
 - ["SH", "GetFilters"]
 - ["SH", "GetHome"]
 - !private ["SH", "HomeParser"]
@@ -212,6 +231,8 @@ depends-member:
 - ["SH", "OfferFavorite"]
 - ["SH", "OfferRating"]
 - ["SH", "OfferSearch"]
+- ["SH", "OfferTaken"]
+- !private ["SH", "OffertTakenResponseParse"]
 - !private ["SH", "OffertsParser"]
 - !private ["SH", "StoresParse"]
 - ["SH", "StoresSearch"]
@@ -246,6 +267,7 @@ depends-member:
 - !private ["So9NSCopyingP", "statusCode"]
 - ["So8NSObjectC", "AnyObject"]
 - !private ["So8NSObjectC", "ApiError"]
+- !private ["So8NSObjectC", "ArticulosParse"]
 - ["So8NSObjectC", "BaseParser"]
 - !private ["So8NSObjectC", "ENVIRONMENTFRAME"]
 - ["So8NSObjectC", "EnviromentSet"]
@@ -255,6 +277,7 @@ depends-member:
 - !private ["So8NSObjectC", "LoginParser"]
 - !private ["So8NSObjectC", "Mapper"]
 - !private ["So8NSObjectC", "NetworkManager"]
+- !private ["So8NSObjectC", "OffertTakenResponseParse"]
 - !private ["So8NSObjectC", "OffertsParser"]
 - !private ["So8NSObjectC", "StoresParse"]
 - ["So8NSObjectC", "String"]
@@ -286,6 +309,7 @@ depends-member:
 - !private ["So8NSObjectC", "setup"]
 - !private ["So8NSObjectC", "statusCode"]
 - ["So8NSObjectC", "urlParameters"]
+- !private ["So8NSObjectP", "ArticulosParse"]
 - !private ["So8NSObjectP", "BaseParser"]
 - !private ["So8NSObjectP", "ENVIRONMENTFRAME"]
 - !private ["So8NSObjectP", "EnviromentSet"]
@@ -294,6 +318,7 @@ depends-member:
 - !private ["So8NSObjectP", "LoginParser"]
 - !private ["So8NSObjectP", "Mapper"]
 - !private ["So8NSObjectP", "NetworkManager"]
+- !private ["So8NSObjectP", "OffertTakenResponseParse"]
 - !private ["So8NSObjectP", "OffertsParser"]
 - !private ["So8NSObjectP", "StoresParse"]
 - !private ["So8NSObjectP", "WakeUpParser"]
@@ -318,6 +343,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "statusCode"]
 - ["12a4SysCoreIOS7NetworkC", "AnyObject"]
 - !private ["12a4SysCoreIOS7NetworkC", "ApiError"]
+- !private ["12a4SysCoreIOS7NetworkC", "ArticulosParse"]
 - ["12a4SysCoreIOS7NetworkC", "BaseParser"]
 - !private ["12a4SysCoreIOS7NetworkC", "ENVIRONMENTFRAME"]
 - !private ["12a4SysCoreIOS7NetworkC", "EnviromentSet"]
@@ -327,6 +353,7 @@ depends-member:
 - !private ["12a4SysCoreIOS7NetworkC", "LoginParser"]
 - !private ["12a4SysCoreIOS7NetworkC", "Mapper"]
 - !private ["12a4SysCoreIOS7NetworkC", "NetworkManager"]
+- !private ["12a4SysCoreIOS7NetworkC", "OffertTakenResponseParse"]
 - !private ["12a4SysCoreIOS7NetworkC", "OffertsParser"]
 - !private ["12a4SysCoreIOS7NetworkC", "StoresParse"]
 - ["12a4SysCoreIOS7NetworkC", "String"]
@@ -352,6 +379,7 @@ depends-member:
 - ["12a4SysCoreIOS7NetworkC", "setIdOffert"]
 - ["12a4SysCoreIOS7NetworkC", "setUrlParameters"]
 - !private ["12a4SysCoreIOS7NetworkC", "urlParameters"]
+- !private ["12a4SysCoreIOS24OffertTakenResponseParseC", "init"]
 - !private ["12a4SysCoreIOS13OffertsParserC", "init"]
 - !private ["9Alamofire7RequestC", "responseJSON"]
 - !private ["9Alamofire8ResponseP", "response"]
@@ -366,12 +394,18 @@ depends-member:
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["9Alamofire21URLRequestConvertibleP", "ArticleDelete"]
 - !private ["9Alamofire21URLRequestConvertibleP", "ArticleRating"]
+- !private ["9Alamofire21URLRequestConvertibleP", "GetArticles"]
+- !private ["9Alamofire21URLRequestConvertibleP", "GetFavoriteOffers"]
 - !private ["9Alamofire21URLRequestConvertibleP", "GetFilters"]
 - !private ["9Alamofire21URLRequestConvertibleP", "GetHome"]
 - !private ["9Alamofire21URLRequestConvertibleP", "Login"]
+- !private ["9Alamofire21URLRequestConvertibleP", "OfferDelete"]
+- !private ["9Alamofire21URLRequestConvertibleP", "OfferFavorite"]
 - !private ["9Alamofire21URLRequestConvertibleP", "OfferRating"]
 - !private ["9Alamofire21URLRequestConvertibleP", "OfferSearch"]
+- !private ["9Alamofire21URLRequestConvertibleP", "OfferTaken"]
 - !private ["9Alamofire21URLRequestConvertibleP", "StoresSearch"]
 - !private ["9Alamofire21URLRequestConvertibleP", "WakeUp"]
 - !private ["So13NSURLResponseC", "statusCode"]
@@ -379,15 +413,22 @@ depends-member:
 - ["So25NSURLSessionConfigurationC", "httpAdditionalHeaders"]
 - !private ["12a4SysCoreIOS12WakeUpParserC", "init"]
 - !private ["12a4SysCoreIOS10WebServiceC", "setup"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "ArticleDelete"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "ArticleRating"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "GetArticles"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "GetFavoriteOffers"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "GetFilters"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "GetHome"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "Login"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "OfferDelete"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "OfferFavorite"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "OfferRating"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "OfferSearch"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "OfferTaken"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "StoresSearch"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "WakeUp"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "deinit"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ArticulosParse"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "BaseParser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ENVIRONMENTFRAME"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "EnviromentSet"]
@@ -396,6 +437,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "LoginParser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Mapper"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NetworkManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "OffertTakenResponseParse"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "OffertsParser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "StoresParse"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "WakeUpParser"]
@@ -417,9 +459,12 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setup"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "statusCode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "urlParameters"]
+- ["12a4SysCoreIOS8endPointO", "ArticleDelete"]
 - ["12a4SysCoreIOS8endPointO", "ArticleFavorite"]
 - ["12a4SysCoreIOS8endPointO", "ArticleRating"]
+- ["12a4SysCoreIOS8endPointO", "GetArticles"]
 - ["12a4SysCoreIOS8endPointO", "GetFavoriteArticles"]
+- ["12a4SysCoreIOS8endPointO", "GetFavoriteOffers"]
 - ["12a4SysCoreIOS8endPointO", "GetFilters"]
 - ["12a4SysCoreIOS8endPointO", "GetHome"]
 - ["12a4SysCoreIOS8endPointO", "Login"]
@@ -427,10 +472,12 @@ depends-member:
 - ["12a4SysCoreIOS8endPointO", "OfferFavorite"]
 - ["12a4SysCoreIOS8endPointO", "OfferRating"]
 - ["12a4SysCoreIOS8endPointO", "OfferSearch"]
+- ["12a4SysCoreIOS8endPointO", "OfferTaken"]
 - ["12a4SysCoreIOS8endPointO", "StoresSearch"]
 - ["12a4SysCoreIOS8endPointO", "WakeUp"]
 depends-nominal:
 - "12a4SysCoreIOS8ApiErrorC"
+- !private "12a4SysCoreIOS14ArticulosParseC"
 - !private "12a4SysCoreIOS10BaseParserC"
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
@@ -452,6 +499,7 @@ depends-nominal:
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - "12a4SysCoreIOS7NetworkC"
+- !private "12a4SysCoreIOS24OffertTakenResponseParseC"
 - !private "12a4SysCoreIOS13OffertsParserC"
 - !private "9Alamofire7RequestC"
 - !private "9Alamofire8ResponseP"

@@ -395,6 +395,15 @@ enum YopterRouter: URLRequestConvertible
         case .GetArticles(let parameters):
             let newUrl = try Constants.newBaseURLString.asURL()
             urlRequest.url = newUrl.appendingPathComponent(path)
+            
+            
+            if let tokenYopter = globalConstants.filter({$0.key == "token"}).first {
+                print("tokenYopter.valueNETOKKKKK: \(tokenYopter.value)")
+                urlRequest.setValue("bearer \(tokenYopter.value)", forHTTPHeaderField: "Authorization")
+            }
+            
+            
+            
             urlRequest = try JSONEncoding.default.encode(urlRequest, with: parameters)
         case .GetFavoriteArticles(let parameters):
             

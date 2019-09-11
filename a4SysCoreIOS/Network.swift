@@ -119,10 +119,10 @@ open class Network: NSObject {
             urll = YopterRouter.OfferSearch(parameter: self.urlParameters!)
             break
         case .OfferFavorite:
-            urll = YopterRouter.OfferSearch(parameter: self.urlParameters!)
+            urll = YopterRouter.OfferFavorite(idOffer: self.idOffert, parameter: self.urlParameters!)
             break
         case .OfferDelete:
-            urll = YopterRouter.OfferSearch(parameter: self.urlParameters!)
+            urll = YopterRouter.OfferDelete(idOffer: self.idOffert, parameter: self.urlParameters!)
             break
         case .WakeUp:
             urll = YopterRouter.WakeUp(parameter: self.urlParameters!)
@@ -136,6 +136,18 @@ open class Network: NSObject {
             urll = YopterRouter.StoresSearch(parameter: self.urlParameters!)
             parserB = StoresParse()
             break
+        case .GetArticles:
+            urll = YopterRouter.GetArticles(parameter: self.urlParameters!)
+            parserB = ArticulosParse()
+            break
+        case .GetFavoriteOffers:
+            urll = YopterRouter.GetFavoriteOffers(parameter: self.urlParameters!)
+            parserB = OffertsParser()
+        case .ArticleDelete:
+            urll = YopterRouter.ArticleDelete(idOffer: self.idOffert, parameter: self.urlParameters!)
+        case .OfferTaken:
+            urll = YopterRouter.OfferTaken(idOffer: self.idOffert, parameter: self.urlParameters!)
+            parserB = OffertTakenResponseParse()
         default:
             print("sin endPoint")
             break

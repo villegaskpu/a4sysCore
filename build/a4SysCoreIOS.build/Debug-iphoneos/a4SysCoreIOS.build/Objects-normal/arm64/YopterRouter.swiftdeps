@@ -11,17 +11,21 @@ depends-top-level:
 - "AssignmentPrecedence"
 - !private "Commons"
 - !private "Constants"
+- !private "FloatLiteralType"
 - "HTTPMethod"
+- !private "IntegerLiteralType"
 - !private "JSONEncoding"
 - "Parameters"
 - !private "Settings"
 - "String"
+- !private "StringLiteralType"
 - !private "TimeZone"
 - !private "URLComponents"
 - !private "URLEncoding"
 - !private "URLQueryItem"
 - "URLRequest"
 - "URLRequestConvertible"
+- !private "UnicodeScalarType"
 - !private "WebService"
 - "YopterRouter"
 - !private "globalConstants"
@@ -60,6 +64,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "map"]
 - !private ["s28CustomDebugStringConvertibleP", "newBaseURLString"]
 - !private ["s28CustomDebugStringConvertibleP", "queryItems"]
+- !private ["s28CustomDebugStringConvertibleP", "setValue"]
 - !private ["s28CustomDebugStringConvertibleP", "url"]
 - !private ["s17CustomReflectableP", "addValue"]
 - !private ["s17CustomReflectableP", "asURL"]
@@ -71,6 +76,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "map"]
 - !private ["s17CustomReflectableP", "queryItems"]
+- !private ["s17CustomReflectableP", "setValue"]
 - !private ["s17CustomReflectableP", "url"]
 - !private ["s23CustomStringConvertibleP", "addValue"]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
@@ -87,6 +93,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "map"]
 - !private ["s23CustomStringConvertibleP", "newBaseURLString"]
 - !private ["s23CustomStringConvertibleP", "queryItems"]
+- !private ["s23CustomStringConvertibleP", "setValue"]
 - !private ["s23CustomStringConvertibleP", "url"]
 - !private ["10Foundation12DataProtocolP", "first"]
 - !private ["Se", "appendingPathComponent"]
@@ -130,6 +137,7 @@ depends-member:
 - !private ["SQ", "put"]
 - !private ["SQ", "queryItems"]
 - !private ["SQ", "rawValue"]
+- !private ["SQ", "setValue"]
 - !private ["SQ", "url"]
 - !private ["s25ExpressibleByArrayLiteralP", "first"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "filter"]
@@ -162,6 +170,7 @@ depends-member:
 - !private ["SH", "put"]
 - !private ["SH", "queryItems"]
 - !private ["SH", "rawValue"]
+- !private ["SH", "setValue"]
 - !private ["SH", "url"]
 - !private ["9Alamofire12JSONEncodingV", "default"]
 - !private ["9Alamofire12JSONEncodingV", "encode"]
@@ -200,6 +209,7 @@ depends-member:
 - !private ["10Foundation20ReferenceConvertibleP", "identifier"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "queryItems"]
+- !private ["10Foundation20ReferenceConvertibleP", "setValue"]
 - !private ["10Foundation20ReferenceConvertibleP", "url"]
 - !private ["ST", "asURL"]
 - !private ["ST", "filter"]
@@ -231,6 +241,7 @@ depends-member:
 - !private ["10Foundation10URLRequestV", "addValue"]
 - !private ["10Foundation10URLRequestV", "httpMethod"]
 - !private ["10Foundation10URLRequestV", "init"]
+- !private ["10Foundation10URLRequestV", "setValue"]
 - !private ["10Foundation10URLRequestV", "url"]
 - ["9Alamofire21URLRequestConvertibleP", "Arrived"]
 - ["9Alamofire21URLRequestConvertibleP", "ArticleDelete"]
@@ -299,6 +310,7 @@ depends-member:
 - !private ["9Alamofire21URLRequestConvertibleP", "method"]
 - !private ["9Alamofire21URLRequestConvertibleP", "path"]
 - !private ["9Alamofire21URLRequestConvertibleP", "print"]
+- !private ["9Alamofire21URLRequestConvertibleP", "setValue"]
 - !private ["9Alamofire21URLRequestConvertibleP", "url"]
 - !private ["12a4SysCoreIOS10WebServiceC", "baseURLString"]
 - !private ["12a4SysCoreIOS10WebServiceC", "newBaseURLString"]
@@ -400,6 +412,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "queryItems"]
+- !private ["s21_ObjectiveCBridgeableP", "setValue"]
 - !private ["s21_ObjectiveCBridgeableP", "url"]
 depends-nominal:
 - !private "Sa"

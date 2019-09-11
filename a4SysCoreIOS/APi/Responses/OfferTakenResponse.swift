@@ -9,16 +9,16 @@
 import Foundation
 import ObjectMapper
 
-class OfferTakenResponse : Mappable
+public class OfferTakenResponse : Mappable
 {
-    var takeCode : String?
-    var takeCodeType : TakeCodeType?
+    public var takeCode : String?
+    public var takeCodeType : TakeCodeType?
     
-    required init?(map: Map) {
+    public required init?(map: Map) {
         
     }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         takeCode <- map["takeCode"]
         takeCodeType <- map["takeCodeType"]
     }
