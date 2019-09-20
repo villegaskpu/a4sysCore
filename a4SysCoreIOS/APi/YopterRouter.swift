@@ -56,7 +56,7 @@ enum YopterRouter: URLRequestConvertible
     case SearchArticle(idArticle: String)
     case ValidateGender(idEmployee: String)
     case GetTheme(parameter: Parameters)
-    case GetCompanies
+    case GetCompanies(parameter: Parameters)
     case GetFilters
     case OfferSearchFilter(parameter: Parameters)
     
@@ -154,7 +154,7 @@ enum YopterRouter: URLRequestConvertible
         case .GetTheme:
             return .post
         case .GetCompanies:
-            return .get
+            return .post
         case .GetFilters:
             return .post
         case .OfferSearchFilter:
@@ -256,7 +256,7 @@ enum YopterRouter: URLRequestConvertible
         case .GetTheme:
             return "refresh-config"
         case .GetCompanies:
-            return "/company/v1/findByXAppId"
+            return "/companies/employee"
         case .GetFilters:
             return "/refresh/category/alias"
         case .OfferSearchFilter:
@@ -435,11 +435,14 @@ enum YopterRouter: URLRequestConvertible
         case .GetTheme(let parameters):
             let newUrl = try Constants.newBaseURLString.asURL()
             urlRequest.url = newUrl.appendingPathComponent(path)
+            if let tokenYopter = globalConstants.filter({$0.key == "token"}).first {
+                urlRequest.setValue("bearer \(tokenYopter.value)", forHTTPHeaderField: "Authorization")
+            }
             urlRequest = try JSONEncoding.default.encode(urlRequest, with: parameters)
-        case .GetCompanies:
+        case .GetCompanies(let parameters):
             let newUrl = try Constants.newBaseURLString.asURL()
             urlRequest.url = newUrl.appendingPathComponent(path)
-            urlRequest = try JSONEncoding.default.encode(urlRequest)
+            urlRequest = try JSONEncoding.default.encode(urlRequest, with: parameters)
         case .GetFilters:
             if let appid = globalConstants.filter({$0.key == "appID"}).first {
                 let queryStringParam  =  [
@@ -449,15 +452,7 @@ enum YopterRouter: URLRequestConvertible
                 print("getFilter")
                 urlRequest = try JSONEncoding.default.encode(urlRequest, with: queryStringParam)
             }
-            
-            
         case .OfferSearchFilter(let parameters):
-            let newUrl = try Constants.baseURLString.asURL()
-            urlRequest.url = newUrl.appendingPathComponent(path)
-            if let tokenOld = Settings.sharedInstance.getOldToken() {
-                urlRequest.addValue("bearer \(tokenOld)", forHTTPHeaderField: "Authorization")
-            }
-            
             urlRequest = try JSONEncoding.default.encode(urlRequest, with: parameters)
         }
 

@@ -9,15 +9,15 @@
 import Foundation
 import ObjectMapper
 
-class SignUpResponse: Mappable
+public class SignUpResponse: Mappable
 {
-    var token : String?
-    var customer : Customer?
-    var tokenYopter : String?
+    public var token : String?
+    public var customer : Customer?
+    public var tokenYopter : String?
     
-    required init?(map: Map) { }
+    public required init?(map: Map) { }
     
-    func mapping(map: Map) {
+    public func mapping(map: Map) {
         token <- map["token"]
         customer <- map["customer"]
         tokenYopter <- map["tokenYopter"]

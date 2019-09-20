@@ -165,7 +165,7 @@ open class Requests{
         return ["location" : ["latitude" : latitude, "longitude" : longitude], "radio" : 10]
     }
     
-    open class func createThemeRequest() -> [String : Any]
+    open class func createThemeRequest(valor:String) -> [String : Any]
     {
         return ["date" : Settings.sharedInstance.getDateRefreshTheme()]
     }

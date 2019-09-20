@@ -29,6 +29,8 @@ open class Network: NSObject {
     private var idOffert:String = ""
     private var constants: [String:Any] = [:]
     private var EnviromentSet:Environment = .test
+    private var terminoAbuscar = ""
+    private var idEmpleado = ""
     
     public func setUrlParameters(urlParameters:[String:Any]) {
         self.urlParameters = urlParameters
@@ -39,9 +41,17 @@ open class Network: NSObject {
         print("globalConstants: \(globalConstants)")
     }
     
+    public func setTerminoAbuscar(_ term: String) {
+        self.terminoAbuscar = term
+    }
+    
     public func setEnvironment(Environment: Environment) {
         ENVIRONMENTFRAME = Environment
         self.EnviromentSet = Environment
+    }
+    
+    public func setIdEmpleado(idEmpleado: String) {
+        self.idEmpleado = idEmpleado
     }
     
     private func set(parser: BaseParser) {
@@ -100,6 +110,9 @@ open class Network: NSObject {
             urll = YopterRouter.Login(parameter: self.urlParameters!)
             parserB = LoginParser()
             break
+        case .GetTheme:
+            urll = YopterRouter.GetTheme(parameter: self.urlParameters!)
+            parserB = ConfigurationsParser()
         case .GetHome:
             urll = YopterRouter.GetHome(parameter: self.urlParameters!)
             parserB = HomeParser()
@@ -113,7 +126,7 @@ open class Network: NSObject {
             urll = YopterRouter.ArticleRating(idOffer: self.idOffert, parameter: self.urlParameters!)
         case .GetFavoriteArticles:
             urll = YopterRouter.OfferSearch(parameter: self.urlParameters!)
-            parserB = HomeParser()
+            parserB = ArticulosParse()
             break
         case .ArticleFavorite:
             urll = YopterRouter.OfferSearch(parameter: self.urlParameters!)
@@ -148,6 +161,32 @@ open class Network: NSObject {
         case .OfferTaken:
             urll = YopterRouter.OfferTaken(idOffer: self.idOffert, parameter: self.urlParameters!)
             parserB = OffertTakenResponseParse()
+        case .GetReportReason:
+            urll = YopterRouter.GetReportReason
+            parserB = ReporReasonParser()
+        case .GetStores:
+            urll = YopterRouter.GetStores(idOffer: self.idOffert, parameter: self.urlParameters!)
+            parserB = StoresParse()
+        case .ReportOffer:
+            urll = YopterRouter.ReportOffer(idOffer: self.idOffert, parameter: self.urlParameters!)
+        case .Suggest:
+            urll = YopterRouter.Suggest(term: self.terminoAbuscar)
+        case .OfferSearchFilter:
+            urll = YopterRouter.OfferSearchFilter(parameter: self.urlParameters!)
+            parserB = OffertsParser()
+        case .ForgotPassword:
+            urll = YopterRouter.ForgotPassword(parameter: self.urlParameters!)
+        case .GetCompanies:
+            urll = YopterRouter.GetCompanies(parameter: self.urlParameters!)
+            parserB = CompanysParser()
+        case .Register:
+            urll = YopterRouter.Register(parameter: self.urlParameters!)
+            parserB = SignUpResponseParser()
+        case .ValidateGender:
+            urll = YopterRouter.ValidateGender(idEmployee: self.idEmpleado)
+            parserB = CustomerParser()
+        case .HeartBeat:
+            urll = YopterRouter.HeartBeat(parameter: [self.urlParameters!])
         default:
             print("sin endPoint")
             break

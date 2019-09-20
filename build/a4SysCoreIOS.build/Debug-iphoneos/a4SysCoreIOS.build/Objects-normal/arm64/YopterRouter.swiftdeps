@@ -16,7 +16,6 @@ depends-top-level:
 - !private "IntegerLiteralType"
 - !private "JSONEncoding"
 - "Parameters"
-- !private "Settings"
 - "String"
 - !private "StringLiteralType"
 - !private "TimeZone"
@@ -47,7 +46,6 @@ depends-member:
 - !private ["12a4SysCoreIOS7CommonsC", "getUserAgent"]
 - !private ["SL", "asURL"]
 - !private ["12a4SysCoreIOS9ConstantsV", "appID"]
-- !private ["12a4SysCoreIOS9ConstantsV", "baseURLString"]
 - !private ["12a4SysCoreIOS9ConstantsV", "language"]
 - !private ["12a4SysCoreIOS9ConstantsV", "newBaseURLString"]
 - !private ["10Foundation15ContiguousBytesP", "first"]
@@ -215,8 +213,6 @@ depends-member:
 - !private ["ST", "filter"]
 - !private ["ST", "first"]
 - !private ["ST", "map"]
-- !private ["12a4SysCoreIOS8SettingsC", "getOldToken"]
-- !private ["12a4SysCoreIOS8SettingsC", "sharedInstance"]
 - !private ["SS", "asURL"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
@@ -287,7 +283,6 @@ depends-member:
 - ["9Alamofire21URLRequestConvertibleP", "Register"]
 - ["9Alamofire21URLRequestConvertibleP", "ReportOffer"]
 - ["9Alamofire21URLRequestConvertibleP", "SearchArticle"]
-- !private ["9Alamofire21URLRequestConvertibleP", "Settings"]
 - ["9Alamofire21URLRequestConvertibleP", "StoresSearch"]
 - ["9Alamofire21URLRequestConvertibleP", "SuccessNotification"]
 - ["9Alamofire21URLRequestConvertibleP", "Suggest"]
@@ -360,7 +355,6 @@ depends-member:
 - ["12a4SysCoreIOS12YopterRouterO", "Register"]
 - ["12a4SysCoreIOS12YopterRouterO", "ReportOffer"]
 - ["12a4SysCoreIOS12YopterRouterO", "SearchArticle"]
-- !private ["12a4SysCoreIOS12YopterRouterO", "Settings"]
 - ["12a4SysCoreIOS12YopterRouterO", "StoresSearch"]
 - ["12a4SysCoreIOS12YopterRouterO", "String"]
 - ["12a4SysCoreIOS12YopterRouterO", "SuccessNotification"]
@@ -460,7 +454,6 @@ depends-nominal:
 - !private "SY"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "ST"
-- !private "12a4SysCoreIOS8SettingsC"
 - !private "SS"
 - !private "s27StringInterpolationProtocolP"
 - !private "Sy"
@@ -528,4 +521,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "a60f19a4cb66617f9cff35e475153507"
+interface-hash: "9a1d1983c443a0524287d13f045d562e"

@@ -16,7 +16,6 @@ depends-top-level:
 - "Requests"
 - !private "Settings"
 - "String"
-- !private "StringLiteralType"
 - !private "print"
 depends-member:
 - !private ["So10CLLocationC", "coordinate"]

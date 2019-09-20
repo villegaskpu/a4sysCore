@@ -8,7 +8,7 @@
 
 import ObjectMapper
 
-class Configurations: Mappable {
+open class Configurations: Mappable {
     public var customColors:CustomColors = CustomColors()
     public var images: Images = Images()
     public var menu:[Menu] = []
