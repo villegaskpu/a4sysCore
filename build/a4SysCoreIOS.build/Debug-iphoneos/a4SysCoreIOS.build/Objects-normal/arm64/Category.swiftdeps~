@@ -12,6 +12,7 @@ depends-top-level:
 - "Map"
 - "Mappable"
 - "String"
+- "StringLiteralType"
 depends-member:
 - ["12ObjectMapper12BaseMappableP", ""]
 - !private ["12ObjectMapper12BaseMappableP", "categories"]

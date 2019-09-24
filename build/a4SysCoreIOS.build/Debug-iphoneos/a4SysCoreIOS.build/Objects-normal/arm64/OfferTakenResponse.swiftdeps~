@@ -12,6 +12,7 @@ depends-top-level:
 - "Mappable"
 - "OfferTakenResponse"
 - "String"
+- !private "StringLiteralType"
 - "TakeCodeType"
 depends-member:
 - ["12ObjectMapper12BaseMappableP", ""]
@@ -80,4 +81,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "34a67a35cb6ecfe52b6aac4726df4e26"
+interface-hash: "566a19eb79cb02587b83077c24f00fb7"

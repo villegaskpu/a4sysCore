@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
 options: "62d6173a8f306e6a4d74932ab097d744"
-build_time: [1568926548, 589511000]
+build_time: [1569273791, 480393000]
 inputs:
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Models/Parser/SugestParse.swift": [1568383320, 365096983]
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Models/Parser/ConfigurationsParser.swift": [1568824851, 602843616]
@@ -48,7 +48,7 @@ inputs:
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Enviroment.swift": [1567611535, 991710376]
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Models/Parser/CustomerParser.swift": [1568750017, 415564681]
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Models/Modelos/BeaconAnnouncement.swift": [1566421089, 260433169]
-  "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/APi/Requests/Requests.swift": [1568823427, 776862201]
+  "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/APi/Requests/Requests.swift": [1569012104, 645049198]
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Models/Modelos/Article.swift": [1566420918, 257365608]
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Models/Modelos/OfferTakenSum.swift": [1566422131, 954866945]
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Models/Modelos/ExternalInfo.swift": [1566421486, 274633056]
@@ -58,7 +58,7 @@ inputs:
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Models/Modelos/BeaconInstallationType.swift": [1566421172, 188461530]
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Models/Modelos/UserStatus.swift": [1566422520, 371503531]
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Models/Modelos/OfferCount.swift": [1566421782, 999411704]
-  "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Network.swift": [1568926540, 113546548]
+  "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Network.swift": [1569273582, 75581226]
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Models/Modelos/WhoAmI.swift": [1566422542, 959594791]
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Models/Modelos/Menu.swift": [1566421729, 10961291]
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Models/Modelos/OfferTaken.swift": [1566422105, 615961740]
@@ -79,6 +79,7 @@ inputs:
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/APi/YopterRouter.swift": [1568825676, 958495071]
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/APi/Responses/AnnouncementResponse.swift": [1562943946, 496787479]
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Models/Modelos/SantanderProduct.swift": [1566422302, 137622466]
+  "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Models/Parser/WhoAmIParse.swift": [1569258728, 455322621]
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Models/Modelos/Rating.swift": [1566422181, 602136284]
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Models/Parser/CompanysParse.swift": [1568738968, 39464710]
   "/Users/david/proyectosXcode/aaaaaCore/a4SysCoreIOS/a4SysCoreIOS/Models/Parser/OffertsParser.swift": [1567720512, 932030445]

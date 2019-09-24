@@ -12,7 +12,6 @@ depends-top-level:
 - "Mappable"
 - "OfferTakenResponse"
 - "String"
-- !private "StringLiteralType"
 - "TakeCodeType"
 depends-member:
 - ["12ObjectMapper12BaseMappableP", ""]

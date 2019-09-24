@@ -44,6 +44,7 @@ depends-top-level:
 - "Void"
 - !private "WakeUpParser"
 - !private "WebService"
+- !private "WhoAmiParse"
 - !private "YopterRouter"
 - "endPoint"
 - !private "globalConstants"
@@ -72,6 +73,7 @@ depends-member:
 - !private ["s7CVarArgP", "StoresParse"]
 - !private ["s7CVarArgP", "WakeUpParser"]
 - !private ["s7CVarArgP", "WebService"]
+- !private ["s7CVarArgP", "WhoAmiParse"]
 - !private ["s7CVarArgP", "YopterRouter"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "callService"]
@@ -79,6 +81,7 @@ depends-member:
 - !private ["s7CVarArgP", "globalConstants"]
 - ["s7CVarArgP", "httpAdditionalHeaders"]
 - !private ["s7CVarArgP", "idEmpleado"]
+- !private ["s7CVarArgP", "idNotification"]
 - !private ["s7CVarArgP", "idOffert"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "init"]
@@ -112,6 +115,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "StoresParse"]
 - !private ["s28CustomDebugStringConvertibleP", "WakeUpParser"]
 - !private ["s28CustomDebugStringConvertibleP", "WebService"]
+- !private ["s28CustomDebugStringConvertibleP", "WhoAmiParse"]
 - !private ["s28CustomDebugStringConvertibleP", "YopterRouter"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "callService"]
@@ -120,6 +124,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "globalConstants"]
 - ["s28CustomDebugStringConvertibleP", "httpAdditionalHeaders"]
 - !private ["s28CustomDebugStringConvertibleP", "idEmpleado"]
+- !private ["s28CustomDebugStringConvertibleP", "idNotification"]
 - !private ["s28CustomDebugStringConvertibleP", "idOffert"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
@@ -155,6 +160,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "StoresParse"]
 - !private ["s23CustomStringConvertibleP", "WakeUpParser"]
 - !private ["s23CustomStringConvertibleP", "WebService"]
+- !private ["s23CustomStringConvertibleP", "WhoAmiParse"]
 - !private ["s23CustomStringConvertibleP", "YopterRouter"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
@@ -165,6 +171,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "globalConstants"]
 - ["s23CustomStringConvertibleP", "httpAdditionalHeaders"]
 - !private ["s23CustomStringConvertibleP", "idEmpleado"]
+- !private ["s23CustomStringConvertibleP", "idNotification"]
 - !private ["s23CustomStringConvertibleP", "idOffert"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "init"]
@@ -229,11 +236,14 @@ depends-member:
 - !private ["SQ", "SignUpResponseParser"]
 - !private ["SQ", "StoresParse"]
 - ["SQ", "StoresSearch"]
+- ["SQ", "SuccessNotification"]
 - ["SQ", "Suggest"]
 - ["SQ", "ValidateGender"]
 - ["SQ", "WakeUp"]
 - !private ["SQ", "WakeUpParser"]
 - !private ["SQ", "WebService"]
+- ["SQ", "WhoAmI"]
+- !private ["SQ", "WhoAmiParse"]
 - !private ["SQ", "YopterRouter"]
 - ["SQ", ""]
 - !private ["SQ", "callService"]
@@ -241,6 +251,7 @@ depends-member:
 - !private ["SQ", "globalConstants"]
 - ["SQ", "httpAdditionalHeaders"]
 - !private ["SQ", "idEmpleado"]
+- !private ["SQ", "idNotification"]
 - !private ["SQ", "idOffert"]
 - !private ["SQ", "init"]
 - !private ["SQ", "init"]
@@ -297,11 +308,14 @@ depends-member:
 - !private ["SH", "SignUpResponseParser"]
 - !private ["SH", "StoresParse"]
 - ["SH", "StoresSearch"]
+- ["SH", "SuccessNotification"]
 - ["SH", "Suggest"]
 - ["SH", "ValidateGender"]
 - ["SH", "WakeUp"]
 - !private ["SH", "WakeUpParser"]
 - !private ["SH", "WebService"]
+- ["SH", "WhoAmI"]
+- !private ["SH", "WhoAmiParse"]
 - !private ["SH", "YopterRouter"]
 - ["SH", ""]
 - !private ["SH", "callService"]
@@ -309,6 +323,7 @@ depends-member:
 - !private ["SH", "globalConstants"]
 - ["SH", "httpAdditionalHeaders"]
 - !private ["SH", "idEmpleado"]
+- !private ["SH", "idNotification"]
 - !private ["SH", "idOffert"]
 - !private ["SH", "init"]
 - !private ["SH", "init"]
@@ -355,6 +370,7 @@ depends-member:
 - ["So8NSObjectC", "Void"]
 - !private ["So8NSObjectC", "WakeUpParser"]
 - !private ["So8NSObjectC", "WebService"]
+- !private ["So8NSObjectC", "WhoAmiParse"]
 - !private ["So8NSObjectC", "YopterRouter"]
 - ["So8NSObjectC", ""]
 - ["So8NSObjectC", "callService"]
@@ -365,6 +381,7 @@ depends-member:
 - !private ["So8NSObjectC", "globalConstants"]
 - ["So8NSObjectC", "httpAdditionalHeaders"]
 - ["So8NSObjectC", "idEmpleado"]
+- ["So8NSObjectC", "idNotification"]
 - ["So8NSObjectC", "idOffert"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "init"]
@@ -376,6 +393,7 @@ depends-member:
 - ["So8NSObjectC", "setConstants"]
 - ["So8NSObjectC", "setEnvironment"]
 - ["So8NSObjectC", "setIdEmpleado"]
+- ["So8NSObjectC", "setIdNotification"]
 - ["So8NSObjectC", "setIdOffert"]
 - ["So8NSObjectC", "setTerminoAbuscar"]
 - ["So8NSObjectC", "setUrlParameters"]
@@ -402,6 +420,7 @@ depends-member:
 - !private ["So8NSObjectP", "StoresParse"]
 - !private ["So8NSObjectP", "WakeUpParser"]
 - !private ["So8NSObjectP", "WebService"]
+- !private ["So8NSObjectP", "WhoAmiParse"]
 - !private ["So8NSObjectP", "YopterRouter"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "callService"]
@@ -409,6 +428,7 @@ depends-member:
 - !private ["So8NSObjectP", "globalConstants"]
 - ["So8NSObjectP", "httpAdditionalHeaders"]
 - !private ["So8NSObjectP", "idEmpleado"]
+- !private ["So8NSObjectP", "idNotification"]
 - !private ["So8NSObjectP", "idOffert"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "init"]
@@ -447,6 +467,7 @@ depends-member:
 - ["12a4SysCoreIOS7NetworkC", "Void"]
 - !private ["12a4SysCoreIOS7NetworkC", "WakeUpParser"]
 - !private ["12a4SysCoreIOS7NetworkC", "WebService"]
+- !private ["12a4SysCoreIOS7NetworkC", "WhoAmiParse"]
 - !private ["12a4SysCoreIOS7NetworkC", "YopterRouter"]
 - !private ["12a4SysCoreIOS7NetworkC", "callService"]
 - !private ["12a4SysCoreIOS7NetworkC", "constants"]
@@ -455,6 +476,7 @@ depends-member:
 - ["12a4SysCoreIOS7NetworkC", "endPointN"]
 - !private ["12a4SysCoreIOS7NetworkC", "globalConstants"]
 - !private ["12a4SysCoreIOS7NetworkC", "idEmpleado"]
+- !private ["12a4SysCoreIOS7NetworkC", "idNotification"]
 - !private ["12a4SysCoreIOS7NetworkC", "idOffert"]
 - ["12a4SysCoreIOS7NetworkC", "init"]
 - !private ["12a4SysCoreIOS7NetworkC", "parseError"]
@@ -464,6 +486,7 @@ depends-member:
 - ["12a4SysCoreIOS7NetworkC", "setConstants"]
 - ["12a4SysCoreIOS7NetworkC", "setEnvironment"]
 - ["12a4SysCoreIOS7NetworkC", "setIdEmpleado"]
+- ["12a4SysCoreIOS7NetworkC", "setIdNotification"]
 - ["12a4SysCoreIOS7NetworkC", "setIdOffert"]
 - ["12a4SysCoreIOS7NetworkC", "setTerminoAbuscar"]
 - ["12a4SysCoreIOS7NetworkC", "setUrlParameters"]
@@ -508,14 +531,17 @@ depends-member:
 - !private ["9Alamofire21URLRequestConvertibleP", "Register"]
 - !private ["9Alamofire21URLRequestConvertibleP", "ReportOffer"]
 - !private ["9Alamofire21URLRequestConvertibleP", "StoresSearch"]
+- !private ["9Alamofire21URLRequestConvertibleP", "SuccessNotification"]
 - !private ["9Alamofire21URLRequestConvertibleP", "Suggest"]
 - !private ["9Alamofire21URLRequestConvertibleP", "ValidateGender"]
 - !private ["9Alamofire21URLRequestConvertibleP", "WakeUp"]
+- !private ["9Alamofire21URLRequestConvertibleP", "WhoAmI"]
 - !private ["So13NSURLResponseC", "statusCode"]
 - ["So25NSURLSessionConfigurationC", "default"]
 - ["So25NSURLSessionConfigurationC", "httpAdditionalHeaders"]
 - !private ["12a4SysCoreIOS12WakeUpParserC", "init"]
 - !private ["12a4SysCoreIOS10WebServiceC", "setup"]
+- !private ["12a4SysCoreIOS11WhoAmiParseC", "init"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "ArticleDelete"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "ArticleRating"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "ForgotPassword"]
@@ -538,9 +564,11 @@ depends-member:
 - !private ["12a4SysCoreIOS12YopterRouterO", "Register"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "ReportOffer"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "StoresSearch"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "SuccessNotification"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "Suggest"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "ValidateGender"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "WakeUp"]
+- !private ["12a4SysCoreIOS12YopterRouterO", "WhoAmI"]
 - !private ["12a4SysCoreIOS12YopterRouterO", "deinit"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ArticulosParse"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "BaseParser"]
@@ -561,6 +589,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "StoresParse"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "WakeUpParser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "WebService"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "WhoAmiParse"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "YopterRouter"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "callService"]
@@ -568,6 +597,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "globalConstants"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "httpAdditionalHeaders"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "idEmpleado"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "idNotification"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "idOffert"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -604,9 +634,11 @@ depends-member:
 - ["12a4SysCoreIOS8endPointO", "Register"]
 - ["12a4SysCoreIOS8endPointO", "ReportOffer"]
 - ["12a4SysCoreIOS8endPointO", "StoresSearch"]
+- ["12a4SysCoreIOS8endPointO", "SuccessNotification"]
 - ["12a4SysCoreIOS8endPointO", "Suggest"]
 - ["12a4SysCoreIOS8endPointO", "ValidateGender"]
 - ["12a4SysCoreIOS8endPointO", "WakeUp"]
+- ["12a4SysCoreIOS8endPointO", "WhoAmI"]
 depends-nominal:
 - "12a4SysCoreIOS8ApiErrorC"
 - !private "12a4SysCoreIOS14ArticulosParseC"
@@ -650,6 +682,7 @@ depends-nominal:
 - "So25NSURLSessionConfigurationC"
 - !private "12a4SysCoreIOS12WakeUpParserC"
 - !private "12a4SysCoreIOS10WebServiceC"
+- !private "12a4SysCoreIOS11WhoAmiParseC"
 - !private "12a4SysCoreIOS12YopterRouterO"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "12a4SysCoreIOS8endPointO"
@@ -693,4 +726,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/AdSupport.framework/Headers/AdSupport.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "101a249fa51f5b7afc9a79486419f516"
+interface-hash: "672c11ba08bb83a25dfc0491aa0d1d0a"

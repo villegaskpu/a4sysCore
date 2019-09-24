@@ -31,6 +31,8 @@ open class Network: NSObject {
     private var EnviromentSet:Environment = .test
     private var terminoAbuscar = ""
     private var idEmpleado = ""
+    private var idNotification = ""
+    private var IdArticulo = ""
     
     public func setUrlParameters(urlParameters:[String:Any]) {
         self.urlParameters = urlParameters
@@ -43,6 +45,10 @@ open class Network: NSObject {
     
     public func setTerminoAbuscar(_ term: String) {
         self.terminoAbuscar = term
+    }
+    
+    public func setIdNotification(_ idNotification: String) {
+        self.idNotification = idNotification
     }
     
     public func setEnvironment(Environment: Environment) {
@@ -90,6 +96,10 @@ open class Network: NSObject {
     
     public func setIdOffert(idOfert:String) {
         self.idOffert = idOfert
+    }
+    
+    public func setIdArticulo(IdArticulo:String) {
+        self.IdArticulo = IdArticulo
     }
     
     private func parseError(JSONObject: Any) -> AnyObject? {
@@ -187,6 +197,14 @@ open class Network: NSObject {
             parserB = CustomerParser()
         case .HeartBeat:
             urll = YopterRouter.HeartBeat(parameter: [self.urlParameters!])
+        case .WhoAmI:
+            urll = YopterRouter.WhoAmI(parameter: self.urlParameters!)
+            parserB = WhoAmiParse()
+        case .SuccessNotification:
+            urll = YopterRouter.SuccessNotification(idNotification: self.idNotification, parameter: self.urlParameters!)
+        case .SearchArticle:
+            urll = YopterRouter.SearchArticle(idArticle: self.IdArticulo)
+            parserB = ArticulosParse()
         default:
             print("sin endPoint")
             break

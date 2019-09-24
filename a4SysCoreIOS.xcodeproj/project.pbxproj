@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		633031EB2326B67F0044B505 /* ArticulosParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633031EA2326B67F0044B505 /* ArticulosParse.swift */; };
 		636112112329A4D9005BF225 /* OfferTakenResponseParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636112102329A4D9005BF225 /* OfferTakenResponseParse.swift */; };
+		636BD4BC2339343500425E1E /* WhoAmIParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636BD4BB2339343500425E1E /* WhoAmIParse.swift */; };
 		63755D9422FDD05800D161FA /* a4SysCoreIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 63755D9222FDD05800D161FA /* a4SysCoreIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63755D9E22FDD08900D161FA /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63755D9B22FDD08800D161FA /* ObjectMapper.framework */; };
 		63755D9F22FDD08900D161FA /* AlamofireObjectMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63755D9C22FDD08800D161FA /* AlamofireObjectMapper.swift */; };
@@ -108,6 +109,7 @@
 /* Begin PBXFileReference section */
 		633031EA2326B67F0044B505 /* ArticulosParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticulosParse.swift; sourceTree = "<group>"; };
 		636112102329A4D9005BF225 /* OfferTakenResponseParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferTakenResponseParse.swift; sourceTree = "<group>"; };
+		636BD4BB2339343500425E1E /* WhoAmIParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoAmIParse.swift; sourceTree = "<group>"; };
 		63755D8F22FDD05800D161FA /* a4SysCoreIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = a4SysCoreIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63755D9222FDD05800D161FA /* a4SysCoreIOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = a4SysCoreIOS.h; sourceTree = "<group>"; };
 		63755D9322FDD05800D161FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -373,6 +375,7 @@
 				637964FF23315D5300E70130 /* SignUpResponseParse.swift */,
 				637965052331709800E70130 /* CustomerParser.swift */,
 				6379651923328CB500E70130 /* ConfigurationsParser.swift */,
+				636BD4BB2339343500425E1E /* WhoAmIParse.swift */,
 			);
 			path = Parser;
 			sourceTree = "<group>";
@@ -596,6 +599,7 @@
 				63755DCA22FDD1A900D161FA /* YopterRouter.swift in Sources */,
 				63755DC522FDD19B00D161FA /* AnnouncementResponse.swift in Sources */,
 				63755E3022FDD1CD00D161FA /* SantanderProduct.swift in Sources */,
+				636BD4BC2339343500425E1E /* WhoAmIParse.swift in Sources */,
 				63755E1222FDD1CD00D161FA /* Rating.swift in Sources */,
 				637964EA2331404200E70130 /* CompanysParse.swift in Sources */,
 				63A6338A2321BAA5008C047C /* OffertsParser.swift in Sources */,

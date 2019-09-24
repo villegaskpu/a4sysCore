@@ -10,13 +10,10 @@ depends-top-level:
 - !private "<-"
 - "Configurations"
 - "CustomColors"
-- "FloatLiteralType"
 - "Images"
-- "IntegerLiteralType"
 - "Map"
 - "Mappable"
 - "Menu"
-- !private "StringLiteralType"
 depends-member:
 - ["12ObjectMapper12BaseMappableP", "CustomColors"]
 - ["12ObjectMapper12BaseMappableP", "Images"]

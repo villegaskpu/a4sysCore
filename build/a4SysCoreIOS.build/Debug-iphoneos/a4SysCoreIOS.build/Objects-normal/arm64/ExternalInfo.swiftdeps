@@ -13,6 +13,7 @@ depends-top-level:
 - "Mappable"
 - "SantanderProduct"
 - "String"
+- "StringLiteralType"
 depends-member:
 - ["12ObjectMapper12BaseMappableP", "SantanderProduct"]
 - ["12ObjectMapper12BaseMappableP", ""]
